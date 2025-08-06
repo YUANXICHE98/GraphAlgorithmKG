@@ -1,14 +1,7 @@
-# GraphAlgorithmKG 项目依赖
-# 适用于 Python 3.10+
-
 # 核心依赖
 pandas>=1.5.0
 numpy>=1.24.0
-pyyaml>=6.0.0
-networkx>=2.8.0
-
-# LLM相关
-openai>=1.0.0
+scikit-learn>=1.2.0
 
 # 文档处理
 PyPDF2>=3.0.0
@@ -20,23 +13,20 @@ lxml>=4.9.0
 # 数据库连接
 neo4j>=5.0.0
 
+# LLM相关
+openai>=0.27.0
+tiktoken>=0.4.0
+
 # 文本处理
 jieba>=0.42.1
-
-# 可视化（可选）
-matplotlib>=3.6.0
-plotly>=5.12.0
+nltk>=3.8.0
 
 # 工具库
-tqdm>=4.64.0
-requests>=2.28.0
+tqdm>=4.65.0
 colorama>=0.4.6
 python-dateutil>=2.8.2
 
-# 机器学习（用于实体类型推断）
-scikit-learn>=1.2.0
-
-# 开发工具（可选）
+# 开发工具
 pytest>=7.0.0
 black>=23.0.0
 flake8>=6.0.0

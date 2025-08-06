@@ -1,6 +1,13 @@
-# 知识图谱构建系统
+# GraphAlgorithmKG
 
-基于LLM的动态知识图谱构建系统，支持多种文档格式处理、自动知识抽取和Neo4j集成。
+🚀 基于LLM的动态知识图谱构建系统，专门用于图算法领域的知识抽取和管理。
+
+## ✨ 最新更新 (v2.1)
+
+- 🧠 **LLM语义验证**: 结合规则验证和LLM语义判断的智能验证系统
+- 📊 **实时进度监控**: 详细的阶段输出和处理状态监控
+- 🔄 **更换推理模型**: 使用 `gpt-3.5-turbo` 替代 `gpt-4o`，降低成本
+- 🛠️ **完善环境支持**: 支持多种Python环境，完整的依赖管理
 
 ## ✨ 核心功能
 
@@ -75,6 +82,32 @@ KnowledgeGraphBuilder/
 │
 └── logs/                        # 日志文件（运行时生成）
 ```
+
+## 🚀 快速开始
+
+### 环境设置
+
+```bash
+# 1. 克隆仓库
+git clone https://github.com/YUANXICHE98/GraphAlgorithmKG.git
+cd GraphAlgorithmKG
+
+# 2. 创建环境（推荐）
+conda create -n GraphAlgorithmKG python=3.10
+conda activate GraphAlgorithmKG
+
+# 3. 安装依赖
+pip install -r requirements.txt
+
+# 4. 配置API
+cp config.json.template config.json
+# 编辑 config.json，填入你的VimsAI API密钥
+
+# 5. 测试运行
+python quick_start.py demo
+```
+
+详细环境设置请参考 [ENVIRONMENT_SETUP.md](ENVIRONMENT_SETUP.md)
 
 ## 💻 使用方法
 

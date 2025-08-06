@@ -9,6 +9,7 @@ from typing import List, Dict, Any, Optional
 from dataclasses import dataclass
 
 from ontology.dynamic_schema import DynamicOntologyManager
+from pipeline.llm_validator import LLMSemanticValidator
 
 @dataclass
 class ExtractionResult:
@@ -28,6 +29,7 @@ class LLMKGExtractor:
         self.model = model
         self.max_retries = 3
         self.timeout = 30
+        self.validator = LLMSemanticValidator(ontology_manager, model)
     
     def extract_from_text(self, text: str, chunk_id: str = "") -> ExtractionResult:
         """从文本中抽取知识三元组"""
@@ -43,20 +45,25 @@ class LLMKGExtractor:
             # 解析响应
             result = self._parse_llm_response(response)
             
-            # 验证抽取的三元组
+            # 验证抽取的三元组（规则+语义）
             validated_triples = []
             for triple in result.get("triples", []):
-                validation = self.ontology.validate_triple(
-                    triple["subject"], 
-                    triple["predicate"], 
-                    triple["object"]
+                validation = self.validator.validate_triple(
+                    triple["subject"],
+                    triple["predicate"],
+                    triple["object"],
+                    context=text[:200],  # 提供上下文
+                    use_llm=True
                 )
-                
-                if validation["valid"]:
+
+                if validation.valid:
+                    # 添加验证信息到三元组
+                    triple["validation_confidence"] = validation.confidence
+                    triple["validation_method"] = "rule+semantic" if not validation.rule_validation["valid"] else "rule"
                     validated_triples.append(triple)
                 else:
-                    print(f"⚠️  三元组验证失败: {triple}")
-                    print(f"   问题: {', '.join(validation['issues'])}")
+                    print(f"⚠️  三元组最终验证失败: {triple}")
+                    print(f"   问题: {', '.join(validation.issues)}")
             
             processing_time = time.time() - start_time
             

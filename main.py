@@ -21,6 +21,7 @@ from pipeline.kg_updater import KnowledgeGraphUpdater
 from pipeline.kg_retriever import KGRetriever
 from pipeline.neo4j_connector import import_storage_to_neo4j, export_neo4j_to_files
 from pipeline.triple_cleaner import TripleCleaner
+from pipeline.progress_monitor import monitor
 
 class KnowledgeGraphBuilder:
     """统一知识图谱构建器"""
@@ -58,30 +59,50 @@ class KnowledgeGraphBuilder:
 
     def process_documents(self, input_paths: List[str], **kwargs) -> Dict[str, Any]:
         """处理文档的完整流程"""
-        print("🚀 开始文档处理流程...")
-        
-        # 文档处理 -> 文本切片 -> LLM抽取 -> 本体映射 -> 图谱更新
+        monitor.start_stage("文档处理流程", len(input_paths), {
+            "输入文档": input_paths,
+            "配置": kwargs
+        })
+
         all_triples = []
-        
-        for path in input_paths:
-            print(f"📄 处理文档: {path}")
-            
-            # 1. 文档处理
-            doc = self.document_processor.process_document(path)
-            self.session_stats["documents_processed"] += 1
-            
-            # 2. 文本切片
-            chunks = self.text_splitter.split_text(doc.content)
-            self.session_stats["chunks_extracted"] += len(chunks)
-            
-            # 3. LLM抽取
-            for chunk in chunks:
-                extraction_result = self.llm_extractor.extract_from_text(chunk)
-                if extraction_result.success:
-                    all_triples.extend(extraction_result.triples)
-                else:
-                    print(f"警告: 文本块抽取失败: {extraction_result.error_message}")
-        
+
+        for i, path in enumerate(input_paths, 1):
+            monitor.log_item_processing(f"文档 {i}/{len(input_paths)}", "processing", path)
+
+            try:
+                # 1. 文档处理
+                monitor.start_stage("文档解析", 1, {"文档路径": path})
+                doc = self.document_processor.process_document(path)
+                self.session_stats["documents_processed"] += 1
+                monitor.end_stage("completed", 1)
+
+                # 2. 文本切片
+                monitor.start_stage("文本切片", 1, {"文档长度": len(doc.content)})
+                chunks = self.text_splitter.split_text(doc.content)
+                self.session_stats["chunks_extracted"] += len(chunks)
+                monitor.end_stage("completed", len(chunks))
+
+                # 3. LLM抽取
+                monitor.start_stage("LLM知识抽取", len(chunks))
+                doc_triples = []
+                for j, chunk in enumerate(chunks, 1):
+                    extraction_result = self.llm_extractor.extract_from_text(chunk)
+                    if extraction_result.success:
+                        doc_triples.extend(extraction_result.triples)
+                        monitor.log_item_processing(f"文本块 {j}", "success", f"抽取 {len(extraction_result.triples)} 个三元组")
+                    else:
+                        monitor.log_item_processing(f"文本块 {j}", "failed", extraction_result.error_message)
+                        monitor.update_stage(error=f"文本块 {j}: {extraction_result.error_message}")
+
+                all_triples.extend(doc_triples)
+                monitor.end_stage("completed", len(doc_triples))
+                monitor.log_item_processing(f"文档 {i}/{len(input_paths)}", "success", f"总计抽取 {len(doc_triples)} 个三元组")
+
+            except Exception as e:
+                monitor.log_item_processing(f"文档 {i}/{len(input_paths)}", "failed", str(e))
+                monitor.update_stage(error=f"文档处理失败: {str(e)}")
+
+        monitor.end_stage("completed", len(all_triples))
         return self._process_triples_pipeline(all_triples, **kwargs)
 
     def process_triples_file(self, file_path: str, **kwargs) -> Dict[str, Any]:
@@ -96,37 +117,53 @@ class KnowledgeGraphBuilder:
         if not triples:
             print("⚠️  没有三元组需要处理")
             return {"status": "no_data"}
-        
-        print(f"🔄 开始处理 {len(triples)} 个三元组...")
-        
-        # 1. 清理三元组
-        cleaned_triples = self.triple_cleaner.clean_triples(triples)
-        print(f"   ✅ 清理后: {len(cleaned_triples)} 个三元组")
-        
-        # 2. 本体映射（包含动态扩展）
-        mapping_results = self.mapper.map_triples(cleaned_triples)
-        mapped_triples = [r.mapped_triple for r in mapping_results if r.success]
-        print(f"   ✅ 映射成功: {len(mapped_triples)} 个三元组")
-        
-        # 3. 更新知识图谱
-        update_result = self.kg_updater.update_kg_from_triples(mapped_triples)
-        
-        self.session_stats["triples_generated"] = len(triples)
-        self.session_stats["entities_created"] = update_result.new_entities
-        self.session_stats["relations_created"] = update_result.new_relations
-        
-        print(f"   ✅ 新增实体: {update_result.new_entities}")
-        print(f"   ✅ 新增关系: {update_result.new_relations}")
-        
-        print("\n🎉 知识图谱构建完成!")
-        self._print_session_summary()
-        
-        return {
-            "status": "completed",
-            "stats": self.session_stats,
-            "ontology_version": self.ontology.current_version,
-            "storage_path": self.config.get('storage_path', 'dynamic_kg_storage')
-        }
+
+        monitor.start_stage("三元组处理流水线", len(triples))
+
+        try:
+            # 1. 清理三元组
+            monitor.start_stage("三元组清理", len(triples))
+            cleaned_triples = self.triple_cleaner.clean_triples(triples)
+            monitor.end_stage("completed", len(cleaned_triples))
+
+            # 2. 本体映射（包含动态扩展）
+            monitor.start_stage("本体映射", len(cleaned_triples))
+            mapping_results = self.mapper.map_triples(cleaned_triples)
+            mapped_triples = [r.mapped_triple for r in mapping_results if r.success]
+            failed_mappings = [r for r in mapping_results if not r.success]
+
+            for failed in failed_mappings:
+                monitor.update_stage(error=f"映射失败: {failed.issues}")
+
+            monitor.end_stage("completed", len(mapped_triples))
+
+            # 3. 更新知识图谱
+            monitor.start_stage("知识图谱更新", len(mapped_triples))
+            update_result = self.kg_updater.update_kg_from_triples(mapped_triples)
+            monitor.end_stage("completed", update_result.new_entities + update_result.new_relations)
+
+            # 更新统计信息
+            self.session_stats["triples_generated"] = len(triples)
+            self.session_stats["entities_created"] = update_result.new_entities
+            self.session_stats["relations_created"] = update_result.new_relations
+
+            monitor.end_stage("completed", len(mapped_triples))
+
+            print("\n🎉 知识图谱构建完成!")
+            self._print_session_summary()
+            monitor.print_session_summary()
+
+            return {
+                "status": "completed",
+                "stats": self.session_stats,
+                "ontology_version": self.ontology.current_version,
+                "storage_path": self.config.get('storage_path', 'dynamic_kg_storage')
+            }
+
+        except Exception as e:
+            monitor.end_stage("failed")
+            print(f"❌ 三元组处理流水线失败: {e}")
+            return {"status": "failed", "error": str(e)}
 
     def search_knowledge_graph(self, query: str, max_hops: int = 2) -> Dict[str, Any]:
         """搜索知识图谱"""

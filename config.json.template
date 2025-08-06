@@ -1,0 +1,23 @@
+{
+  "openai": {
+    "api_key": "YOUR_VIMSAI_API_KEY_HERE",
+    "base_url": "https://vir.vimsai.com/v1",
+    "model": "gpt-4o"
+  },
+  "neo4j": {
+    "uri": "bolt://localhost:7687",
+    "username": "neo4j",
+    "password": "your_neo4j_password"
+  },
+  "storage": {
+    "default_path": "dynamic_kg_storage",
+    "backup_enabled": true,
+    "formats": ["json", "csv", "graphml"]
+  },
+  "processing": {
+    "chunk_size": 1000,
+    "chunk_overlap": 100,
+    "max_retries": 3,
+    "timeout": 30
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "is_instance_of": {
+    "name": "is_instance_of",
+    "description": "实例关系",
+    "subject_types": [],
+    "object_types": [
+      "Paradigm",
+      "Algorithm",
+      "Technique",
+      "Framework",
+      "Task",
+      "Metric",
+      "Boolean"
+    ],
+    "is_symmetric": false,
+    "inverse_relation": null,
+    "aliases": [
+      "is_a",
+      "type_of",
+      "belongs_to"
+    ],
+    "is_boolean": false,
+    "created_at": "2025-07-21T18:04:00.920715",
+    "usage_count": 58
+  },
+  "has_algorithm": {
+    "name": "has_algorithm",
+    "description": "任务拥有算法",
+    "subject_types": [
+      "Task"
+    ],
+    "object_types": [
+      "Algorithm"
+    ],
+    "is_symmetric": false,
+    "inverse_relation": null,
+    "aliases": [
+      "contains_algorithm",
+      "uses_algorithm"
+    ],
+    "is_boolean": false,
+    "created_at": "2025-07-21T18:04:00.920718",
+    "usage_count": 12
+  },
+  "implements": {
+    "name": "implements",
+    "description": "技术实现算法",
+    "subject_types": [
+      "Technique"
+    ],
+    "object_types": [
+      "Algorithm"
+    ],
+    "is_symmetric": false,
+    "inverse_relation": "implemented_by",
+    "aliases": [],
+    "is_boolean": false,
+    "created_at": "2025-07-21T18:04:00.920720",
+    "usage_count": 12
+  },
+  "implemented_by": {
+    "name": "implemented_by",
+    "description": "算法被技术实现",
+    "subject_types": [
+      "Algorithm"
+    ],
+    "object_types": [
+      "Technique"
+    ],
+    "is_symmetric": false,
+    "inverse_relation": "implements",
+    "aliases": [],
+    "is_boolean": false,
+    "created_at": "2025-07-21T18:04:00.920722",
+    "usage_count": 0
+  },
+  "uses_paradigm": {
+    "name": "uses_paradigm",
+    "description": "使用范式",
+    "subject_types": [
+      "Algorithm",
+      "Technique"
+    ],
+    "object_types": [
+      "Paradigm"
+    ],
+    "is_symmetric": false,
+    "inverse_relation": null,
+    "aliases": [],
+    "is_boolean": false,
+    "created_at": "2025-07-21T18:04:00.920724",
+    "usage_count": 26
+  },
+  "builds_on": {
+    "name": "builds_on",
+    "description": "基于关系",
+    "subject_types": [
+      "Framework",
+      "Technique",
+      "Algorithm"
+    ],
+    "object_types": [
+      "Framework",
+      "Technique",
+      "Algorithm"
+    ],
+    "is_symmetric": false,
+    "inverse_relation": null,
+    "aliases": [],
+    "is_boolean": false,
+    "created_at": "2025-07-21T18:04:00.920726",
+    "usage_count": 16
+  },
+  "reduces_computation_by": {
+    "name": "reduces_computation_by",
+    "description": "降低计算量关系（百分比）",
+    "subject_types": [
+      "Technique",
+      "Algorithm"
+    ],
+    "object_types": [
+      "Metric"
+    ],
+    "is_symmetric": false,
+    "inverse_relation": null,
+    "aliases": [
+      "减少计算",
+      "降低成本"
+    ],
+    "is_boolean": false,
+    "created_at": "2025-07-21T18:04:00.920728",
+    "usage_count": 6
+  },
+  "maintains_accuracy": {
+    "name": "maintains_accuracy",
+    "description": "保持准确性关系",
+    "subject_types": [
+      "Technique",
+      "Algorithm"
+    ],
+    "object_types": [
+      "Metric"
+    ],
+    "is_symmetric": false,
+    "inverse_relation": null,
+    "aliases": [
+      "保持精度",
+      "维持准确率"
+    ],
+    "is_boolean": false,
+    "created_at": "2025-07-21T18:04:00.920730",
+    "usage_count": 4
+  },
+  "used_in": {
+    "name": "used_in",
+    "description": "应用场景关系",
+    "subject_types": [
+      "Algorithm",
+      "Technique"
+    ],
+    "object_types": [
+      "Task"
+    ],
+    "is_symmetric": false,
+    "inverse_relation": null,
+    "aliases": [
+      "applied_in",
+      "utilized_in",
+      "适用于"
+    ],
+    "is_boolean": false,
+    "created_at": "2025-07-21T18:04:00.920732",
+    "usage_count": 12
+  },
+  "has_advantage": {
+    "name": "has_advantage",
+    "description": "具有优势",
+    "subject_types": [
+      "Algorithm",
+      "Technique",
+      "Framework"
+    ],
+    "object_types": [],
+    "is_symmetric": false,
+    "inverse_relation": null,
+    "aliases": [
+      "优势",
+      "advantage"
+    ],
+    "is_boolean": false,
+    "created_at": "2025-07-21T18:04:00.920733",
+    "usage_count": 10
+  },
+  "has_challenge": {
+    "name": "has_challenge",
+    "description": "面临挑战",
+    "subject_types": [
+      "Algorithm",
+      "Technique",
+      "Framework"
+    ],
+    "object_types": [],
+    "is_symmetric": false,
+    "inverse_relation": null,
+    "aliases": [
+      "挑战",
+      "challenge",
+      "limitation"
+    ],
+    "is_boolean": false,
+    "created_at": "2025-07-21T18:04:00.920735",
+    "usage_count": 10
+  },
+  "calculates": {
+    "name": "calculates",
+    "description": "计算关系",
+    "subject_types": [
+      "Algorithm"
+    ],
+    "object_types": [
+      "Metric"
+    ],
+    "is_symmetric": false,
+    "inverse_relation": null,
+    "aliases": [
+      "computes",
+      "determines",
+      "计算"
+    ],
+    "is_boolean": false,
+    "created_at": "2025-07-21T18:04:00.920737",
+    "usage_count": 2
+  },
+  "explains": {
+    "name": "explains",
+    "description": "解释关系",
+    "subject_types": [
+      "Algorithm",
+      "Technique"
+    ],
+    "object_types": [],
+    "is_symmetric": false,
+    "inverse_relation": null,
+    "aliases": [
+      "解释",
+      "阐明",
+      "clarifies"
+    ],
+    "is_boolean": false,
+    "created_at": "2025-07-21T18:04:00.920739",
+    "usage_count": 0
+  },
+  "is_graph_RL": {
+    "name": "is_graph_RL",
+    "description": "是否为图强化学习方法",
+    "subject_types": [
+      "Algorithm",
+      "Technique"
+    ],
+    "object_types": [
+      "Boolean"
+    ],
+    "is_symmetric": false,
+    "inverse_relation": null,
+    "aliases": [
+      "图强化学习"
+    ],
+    "is_boolean": true,
+    "created_at": "2025-07-21T18:04:00.920741",
+    "usage_count": 0
+  },
+  "is_sequential_decision": {
+    "name": "is_sequential_decision",
+    "description": "是否涉及序贯决策",
+    "subject_types": [
+      "Algorithm",
+      "Technique",
+      "Paradigm"
+    ],
+    "object_types": [
+      "Boolean"
+    ],
+    "is_symmetric": false,
+    "inverse_relation": null,
+    "aliases": [
+      "序贯决策"
+    ],
+    "is_boolean": true,
+    "created_at": "2025-07-21T18:04:00.920743",
+    "usage_count": 12
+  },
+  "uses_heuristic": {
+    "name": "uses_heuristic",
+    "description": "是否使用启发式方法",
+    "subject_types": [
+      "Algorithm",
+      "Technique"
+    ],
+    "object_types": [
+      "Boolean"
+    ],
+    "is_symmetric": false,
+    "inverse_relation": null,
+    "aliases": [
+      "启发式",
+      "heuristic"
+    ],
+    "is_boolean": true,
+    "created_at": "2025-07-21T18:04:00.920745",
+    "usage_count": 8
+  },
+  "is_graph_rl": {
+    "name": "is_graph_rl",
+    "description": "自动识别的关系类型: is_graph_rl",
+    "subject_types": [],
+    "object_types": [],
+    "is_symmetric": false,
+    "inverse_relation": null,
+    "aliases": [],
+    "is_boolean": false,
+    "created_at": "2025-07-23T09:36:51.974151",
+    "usage_count": 0
+  }
+}

@@ -1,0 +1,250 @@
+# 知识图谱Schema配置文件
+# 这是唯一的Schema定义源，所有其他地方都从这里读取
+
+metadata:
+  name: "图算法知识图谱本体"
+  version: "2.0.0"
+  description: "基于动态扩展的图算法领域知识图谱本体定义"
+  created_at: "2025-01-20"
+  updated_at: "2025-01-20"
+  author: "KG Builder"
+
+# 实体类型定义
+entity_types:
+  Paradigm:
+    description: "解决问题的通用范式或决策框架"
+    examples: ["Sequential_Decision", "Divide_and_Conquer", "Probabilistic_Inference"]
+    keywords: ["paradigm", "approach", "method", "strategy", "framework"]
+    patterns: [".*_paradigm$", ".*_approach$", ".*_method$"]
+    aliases: ["范式", "方法", "策略"]
+    color: "#FF6B6B"  # 可视化颜色
+    
+  Algorithm:
+    description: "具体算法或算法家族"
+    examples: ["MINERVA", "Ant_Colony", "Greedy_Search", "Path_Ranking_Algorithm"]
+    keywords: ["algorithm", "algo", "search", "sort", "optimization"]
+    patterns: [".*_algorithm$", ".*_search$", ".*_sort$"]
+    aliases: ["算法", "算法族"]
+    color: "#4ECDC4"
+    
+  Technique:
+    description: "面向效率/性能的手段"
+    examples: ["Pruning", "Random_Walk", "Approximate_Computing"]
+    keywords: ["technique", "optimization", "pruning", "compression"]
+    patterns: [".*_technique$", ".*_optimization$"]
+    aliases: ["技术", "技巧", "优化"]
+    color: "#45B7D1"
+    
+  Framework:
+    description: "结合多种组件的体系/方法论"
+    examples: ["Graph_Reinforcement_Learning", "Graph_Neural_Network"]
+    keywords: ["framework", "system", "architecture", "platform"]
+    patterns: [".*_framework$", ".*_system$"]
+    aliases: ["框架", "系统", "体系"]
+    color: "#96CEB4"
+    
+  Task:
+    description: "研究/应用任务"
+    examples: ["Graph_Sparse_Reasoning", "Relation_Prediction", "Node_Classification"]
+    keywords: ["task", "problem", "application", "reasoning"]
+    patterns: [".*_task$", ".*_problem$", ".*_reasoning$"]
+    aliases: ["任务", "问题", "应用"]
+    color: "#FFEAA7"
+    
+  Metric:
+    description: "衡量效果的指标"
+    examples: ["Relation_Confidence", "Compute_Reduction", "Accuracy_Retention"]
+    keywords: ["accuracy", "precision", "recall", "score", "rate", "confidence"]
+    patterns: [".*_accuracy$", ".*_score$", ".*_rate$", ".*%$"]
+    aliases: ["指标", "度量", "评分"]
+    color: "#DDA0DD"
+    
+  Boolean:
+    description: "布尔值类型（True/False）"
+    examples: ["True", "False"]
+    keywords: ["true", "false", "boolean", "bool"]
+    patterns: ["^(true|false|True|False)$"]
+    aliases: ["布尔", "真假", "是否"]
+    color: "#F0F0F0"
+
+# 关系类型定义
+relation_types:
+  # 核心结构关系
+  is_instance_of:
+    description: "实例关系"
+    examples: ["(MINERVA, is_instance_of, Algorithm)"]
+    subject_types: ["*"]  # * 表示任意类型
+    object_types: ["Paradigm", "Algorithm", "Technique", "Framework", "Task", "Metric"]
+    aliases: ["is_a", "type_of", "belongs_to", "属于"]
+    is_symmetric: false
+    
+  has_algorithm:
+    description: "任务拥有算法"
+    examples: ["(Graph_Sparse_Reasoning, has_algorithm, MINERVA)"]
+    subject_types: ["Task"]
+    object_types: ["Algorithm"]
+    aliases: ["contains_algorithm", "uses_algorithm", "包含算法"]
+    
+  implements:
+    description: "技术实现算法"
+    examples: ["(Pruning, implements, MINERVA)"]
+    subject_types: ["Technique"]
+    object_types: ["Algorithm"]
+    inverse_relation: "implemented_by"
+    aliases: ["实现"]
+    
+  implemented_by:
+    description: "算法被技术实现"
+    examples: ["(MINERVA, implemented_by, Pruning)"]
+    subject_types: ["Algorithm"]
+    object_types: ["Technique"]
+    inverse_relation: "implements"
+    aliases: ["被实现"]
+    
+  uses_paradigm:
+    description: "使用范式"
+    examples: ["(MINERVA, uses_paradigm, Sequential_Decision)"]
+    subject_types: ["Algorithm", "Technique"]
+    object_types: ["Paradigm"]
+    aliases: ["基于范式", "采用方法"]
+    
+  builds_on:
+    description: "基于关系"
+    examples: ["(GNN_RL, builds_on, Graph_Reinforcement_Learning)"]
+    subject_types: ["Framework", "Technique", "Algorithm"]
+    object_types: ["Framework", "Technique", "Algorithm"]
+    aliases: ["基于", "构建于"]
+    
+  # 性能与应用关系
+  reduces_computation_by:
+    description: "降低计算量（百分比）"
+    examples: ["(RL_Agent_Pruning_Strategy, reduces_computation_by, 90%)"]
+    subject_types: ["Technique", "Algorithm"]
+    object_types: ["Metric"]
+    aliases: ["减少计算", "降低成本"]
+    
+  maintains_accuracy:
+    description: "保持准确性"
+    examples: ["(RL_Agent_Pruning_Strategy, maintains_accuracy, 98%)"]
+    subject_types: ["Technique", "Algorithm"]
+    object_types: ["Metric"]
+    aliases: ["保持精度", "维持准确率"]
+    
+  used_in:
+    description: "应用场景"
+    examples: ["(Path_Ranking_Algorithm, used_in, Relation_Prediction)"]
+    subject_types: ["Algorithm", "Technique"]
+    object_types: ["Task"]
+    aliases: ["applied_in", "utilized_in", "适用于"]
+    
+  calculates:
+    description: "计算关系"
+    examples: ["(PRA, calculates, Relation_Confidence)"]
+    subject_types: ["Algorithm"]
+    object_types: ["Metric"]
+    aliases: ["computes", "determines", "计算"]
+    
+  explains:
+    description: "解释关系"
+    examples: ["(Attention_Weights, explains, Decision_Path)"]
+    subject_types: ["Algorithm", "Technique"]
+    object_types: ["*"]
+    aliases: ["解释", "阐明", "clarifies"]
+    
+  # 特征描述关系
+  has_advantage:
+    description: "具有优势"
+    examples: ["(Path_Ranking_Algorithm, has_advantage, High_Explainability)"]
+    subject_types: ["Algorithm", "Technique", "Framework"]
+    object_types: ["*"]  # 可以是任意文本值
+    aliases: ["优势", "advantage"]
+    
+  has_challenge:
+    description: "面临挑战"
+    examples: ["(Monte_Carlo_Tree_Search, has_challenge, High_Compute_Cost)"]
+    subject_types: ["Algorithm", "Technique", "Framework"]
+    object_types: ["*"]
+    aliases: ["挑战", "challenge", "limitation"]
+    
+  # 布尔属性关系
+  is_graph_RL:
+    description: "是否为图强化学习方法"
+    examples: ["(MINERVA, is_graph_RL, True)"]
+    subject_types: ["Algorithm", "Technique"]
+    object_types: ["Boolean"]
+    is_boolean: true
+    aliases: ["图强化学习"]
+    
+  is_sequential_decision:
+    description: "是否涉及序贯决策"
+    examples: ["(Path_Ranking_Algorithm, is_sequential_decision, True)"]
+    subject_types: ["Algorithm", "Technique", "Paradigm"]
+    object_types: ["Boolean"]
+    is_boolean: true
+    aliases: ["序贯决策"]
+    
+  uses_heuristic:
+    description: "是否使用启发式方法"
+    examples: ["(Monte_Carlo_Tree_Search, uses_heuristic, True)"]
+    subject_types: ["Algorithm", "Technique"]
+    object_types: ["Boolean"]
+    is_boolean: true
+    aliases: ["启发式", "heuristic"]
+
+# 动态扩展配置
+expansion_config:
+  entity_type_threshold: 5      # 新实体类型识别阈值
+  relation_type_threshold: 3    # 新关系类型识别阈值
+  update_frequency: 100         # 处理多少个三元组后检查更新
+  min_confidence: 0.7           # 新类型的最低置信度
+  auto_update: true             # 是否自动更新本体
+
+# LLM Prompt模板
+llm_prompts:
+  extraction_system_prompt: |
+    你是一个知识图谱抽取专家。请严格按照给定的本体Schema从文本中抽取知识三元组。
+    
+    ## 实体类型定义：
+    {entity_types_description}
+    
+    ## 关系类型定义：
+    {relation_types_description}
+    
+    ## 抽取要求：
+    1. 只抽取明确的事实关系，不要推理或猜测
+    2. 实体名称保持原文，不要翻译或改写
+    3. 关系必须来自预定义的关系类型
+    4. 为每个三元组提供置信度评分（0.1-1.0）
+    5. 如果发现新的实体或关系类型，请在对应数组中列出
+    
+  extraction_user_prompt: |
+    请从以下文本中抽取知识三元组：
+    
+    文本内容：
+    {text}
+    
+    请按以下JSON格式输出：
+    {{
+      "triples": [
+        {{
+          "subject": "实体1",
+          "predicate": "关系",
+          "object": "实体2",
+          "confidence": 0.9,
+          "evidence": "支持这个三元组的文本片段"
+        }}
+      ],
+      "new_entities": ["新发现的实体类型"],
+      "new_relations": ["新发现的关系类型"]
+    }}
+    
+  validation_prompt: |
+    请验证以下三元组是否符合本体Schema定义：
+    
+    三元组：({subject}, {predicate}, {object})
+    
+    Schema约束：
+    - {predicate}的主语类型限制：{subject_types}
+    - {predicate}的宾语类型限制：{object_types}
+    
+    请返回验证结果和建议的修正方案。

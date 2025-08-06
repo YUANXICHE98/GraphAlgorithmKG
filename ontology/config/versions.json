@@ -1,0 +1,14 @@
+{
+  "current_version": "1.0.1",
+  "versions": [
+    {
+      "version": "1.0.1",
+      "timestamp": "2025-07-23T09:36:51.974158",
+      "description": "自动扩展本体",
+      "changes": [
+        "添加新实体类型: Concept",
+        "添加新关系类型: is_graph_rl"
+      ]
+    }
+  ]
+}

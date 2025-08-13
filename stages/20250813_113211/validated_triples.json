@@ -1,0 +1,113 @@
+{
+  "stage_name": "validated_triples",
+  "timestamp": "2025-08-13T11:32:39.902153",
+  "session_id": "20250813_113211",
+  "data": [
+    {
+      "subject": "GraphSAGE",
+      "predicate": "is_instance_of",
+      "object": "Algorithm",
+      "confidence": 0.9,
+      "evidence": "GraphSAGE是一种归纳式图神经网络算法。",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "Graph Attention Network",
+      "predicate": "is_instance_of",
+      "object": "Algorithm",
+      "confidence": 0.9,
+      "evidence": "GAT使用注意力机制来聚合邻居节点的信息。",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "Graph Convolutional Network",
+      "predicate": "is_instance_of",
+      "object": "Algorithm",
+      "confidence": 0.9,
+      "evidence": "GCN是最早的图卷积网络之一。",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "Graph Neural Networks",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "evidence": "图神经网络（Graph Neural Networks, GNN）是一类用于处理图结构数据的深度学习模型。",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "GraphSAGE",
+      "predicate": "builds_on",
+      "object": "Graph Neural Networks",
+      "confidence": 0.7,
+      "evidence": "GraphSAGE是一种归纳式图神经网络算法。",
+      "validation_confidence": 0.95,
+      "validation_method": "rule+semantic"
+    },
+    {
+      "subject": "Graph Attention Network",
+      "predicate": "builds_on",
+      "object": "Graph Neural Networks",
+      "confidence": 0.7,
+      "evidence": "GAT使用注意力机制来聚合邻居节点的信息。",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "Graph Convolutional Network",
+      "predicate": "builds_on",
+      "object": "Graph Neural Networks",
+      "confidence": 0.7,
+      "evidence": "GCN是最早的图卷积网络之一。",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "Graph Neural Networks",
+      "predicate": "used_in",
+      "object": "社交网络分析",
+      "confidence": 0.8,
+      "evidence": "图神经网络广泛应用于：社交网络分析",
+      "validation_confidence": 0.95,
+      "validation_method": "rule+semantic"
+    },
+    {
+      "subject": "Graph Neural Networks",
+      "predicate": "used_in",
+      "object": "推荐系统",
+      "confidence": 0.8,
+      "evidence": "图神经网络广泛应用于：推荐系统",
+      "validation_confidence": 0.9,
+      "validation_method": "rule+semantic"
+    },
+    {
+      "subject": "Graph Neural Networks",
+      "predicate": "used_in",
+      "object": "知识图谱",
+      "confidence": 0.8,
+      "evidence": "图神经网络广泛应用于：知识图谱",
+      "validation_confidence": 0.9,
+      "validation_method": "rule+semantic"
+    },
+    {
+      "subject": "Graph Neural Networks",
+      "predicate": "used_in",
+      "object": "分子性质预测",
+      "confidence": 0.8,
+      "evidence": "图神经网络广泛应用于：分子性质预测",
+      "validation_confidence": 0.95,
+      "validation_method": "rule+semantic"
+    }
+  ],
+  "metadata": {
+    "original_count": 11,
+    "validated_count": 11,
+    "validation_rate": 1.0,
+    "chunk_id": ""
+  },
+  "data_count": 11
+}

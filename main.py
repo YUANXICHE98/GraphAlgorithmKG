@@ -22,6 +22,7 @@ from pipeline.kg_retriever import KGRetriever
 from pipeline.neo4j_connector import import_storage_to_neo4j, export_neo4j_to_files
 from pipeline.triple_cleaner import TripleCleaner
 from pipeline.progress_monitor import monitor
+from pipeline.stage_saver import stage_saver
 
 class KnowledgeGraphBuilder:
     """统一知识图谱构建器"""
@@ -126,6 +127,15 @@ class KnowledgeGraphBuilder:
             cleaned_triples = self.triple_cleaner.clean_triples(triples)
             monitor.end_stage("completed", len(cleaned_triples))
 
+            # 保存清理后的三元组
+            if cleaned_triples:
+                clean_metadata = {
+                    "original_count": len(triples),
+                    "cleaned_count": len(cleaned_triples),
+                    "clean_rate": len(cleaned_triples) / len(triples) if triples else 0
+                }
+                stage_saver.save_stage("cleaned_triples", cleaned_triples, clean_metadata)
+
             # 2. 本体映射（包含动态扩展）
             monitor.start_stage("本体映射", len(cleaned_triples))
             mapping_results = self.mapper.map_triples(cleaned_triples)
@@ -136,6 +146,16 @@ class KnowledgeGraphBuilder:
                 monitor.update_stage(error=f"映射失败: {failed.issues}")
 
             monitor.end_stage("completed", len(mapped_triples))
+
+            # 保存映射后的三元组
+            if mapped_triples:
+                mapping_metadata = {
+                    "cleaned_count": len(cleaned_triples),
+                    "mapped_count": len(mapped_triples),
+                    "mapping_rate": len(mapped_triples) / len(cleaned_triples) if cleaned_triples else 0,
+                    "failed_count": len(failed_mappings)
+                }
+                stage_saver.save_stage("mapped_triples", mapped_triples, mapping_metadata)
 
             # 3. 更新知识图谱
             monitor.start_stage("知识图谱更新", len(mapped_triples))
@@ -149,9 +169,28 @@ class KnowledgeGraphBuilder:
 
             monitor.end_stage("completed", len(mapped_triples))
 
+            # 保存最终知识图谱
+            final_kg_data = {
+                "entities": list(self.ontology.entities.values()),
+                "relations": self.ontology.relations,
+                "statistics": {
+                    "total_entities": len(self.ontology.entities),
+                    "total_relations": len(self.ontology.relations),
+                    "new_entities": update_result.new_entities,
+                    "new_relations": update_result.new_relations
+                }
+            }
+            final_metadata = {
+                "session_stats": self.session_stats,
+                "ontology_version": self.ontology.current_version,
+                "processing_time": monitor.session_start_time
+            }
+            stage_saver.save_stage("final_kg", final_kg_data, final_metadata)
+
             print("\n🎉 知识图谱构建完成!")
             self._print_session_summary()
             monitor.print_session_summary()
+            stage_saver.print_session_summary()
 
             return {
                 "status": "completed",

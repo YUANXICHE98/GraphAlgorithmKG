@@ -10,6 +10,7 @@ from dataclasses import dataclass
 
 from ontology.dynamic_schema import DynamicOntologyManager
 from pipeline.llm_validator import LLMSemanticValidator
+from pipeline.stage_saver import stage_saver
 
 @dataclass
 class ExtractionResult:
@@ -31,19 +32,36 @@ class LLMKGExtractor:
         self.timeout = 30
         self.validator = LLMSemanticValidator(ontology_manager, model)
     
-    def extract_from_text(self, text: str, chunk_id: str = "") -> ExtractionResult:
+    def extract_from_text(self, text: str, chunk_id: str = "", save_stages: bool = True) -> ExtractionResult:
         """从文本中抽取知识三元组"""
         start_time = time.time()
-        
+
         try:
             # 获取动态生成的Prompt
             prompts = self.ontology.get_llm_extraction_prompt(text)
-            
+
             # 调用LLM（这里需要根据你的LLM接口实现）
             response = self._call_llm(prompts["system"], prompts["user"])
-            
+
             # 解析响应
             result = self._parse_llm_response(response)
+
+            # 保存原始抽取结果
+            if save_stages and result.get("triples"):
+                raw_metadata = {
+                    "text_length": len(text),
+                    "chunk_id": chunk_id,
+                    "model": self.model,
+                    "llm_response_time": time.time() - start_time
+                }
+                stage_saver.save_stage("raw_extraction", result.get("triples", []), raw_metadata)
+
+                # 创建手工审核文件
+                review_file = stage_saver.create_manual_review_file(
+                    "LLM原始抽取",
+                    result.get("triples", [])
+                )
+                print(f"📋 手工审核文件: {review_file}")
             
             # 验证抽取的三元组（规则+语义）
             validated_triples = []
@@ -64,7 +82,17 @@ class LLMKGExtractor:
                 else:
                     print(f"⚠️  三元组最终验证失败: {triple}")
                     print(f"   问题: {', '.join(validation.issues)}")
-            
+
+            # 保存验证后的三元组
+            if save_stages and validated_triples:
+                validation_metadata = {
+                    "original_count": len(result.get("triples", [])),
+                    "validated_count": len(validated_triples),
+                    "validation_rate": len(validated_triples) / len(result.get("triples", [])) if result.get("triples") else 0,
+                    "chunk_id": chunk_id
+                }
+                stage_saver.save_stage("validated_triples", validated_triples, validation_metadata)
+
             processing_time = time.time() - start_time
             
             return ExtractionResult(

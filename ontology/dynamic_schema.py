@@ -245,6 +245,37 @@ class DynamicOntologyManager:
         inferer = EntityTypeInferer()
         return inferer._infer_type_from_name(entity_name)
 
+    def _identify_relation_type(self, predicate: str) -> Optional[str]:
+        """识别关系类型"""
+        predicate_lower = predicate.lower().strip()
+
+        # 直接匹配
+        if predicate in self.relation_types:
+            return predicate
+
+        # 模糊匹配
+        for relation_name in self.relation_types.keys():
+            if predicate_lower == relation_name.lower():
+                return relation_name
+
+        # 别名匹配
+        for relation_name, config in self.relation_types.items():
+            if predicate_lower in [alias.lower() for alias in config.aliases]:
+                return relation_name
+
+        # 相似度匹配
+        import difflib
+        matches = difflib.get_close_matches(predicate_lower,
+                                          [r.lower() for r in self.relation_types.keys()],
+                                          n=1, cutoff=0.8)
+        if matches:
+            # 找到对应的原始关系名
+            for relation_name in self.relation_types.keys():
+                if relation_name.lower() == matches[0]:
+                    return relation_name
+
+        return None
+
     def _is_literal(self, value: str) -> bool:
         """判断是否为字面值"""
         # 数字

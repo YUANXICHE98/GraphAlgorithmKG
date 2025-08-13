@@ -121,11 +121,16 @@ dmypy.json
 # Project specific
 dynamic_kg_storage/
 demo_kg_storage/
+review_storage/
 *.pkl
-*.log
 .DS_Store
 .vscode/
 .idea/
+
+# Logs
+logs/*.log
+logs/*.txt
+*.log
 
 # API keys and config
 config.json

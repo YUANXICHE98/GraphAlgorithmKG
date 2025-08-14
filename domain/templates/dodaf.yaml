@@ -1,0 +1,104 @@
+context_indicators:
+  Architecture:
+  - architecture
+  - framework
+  - enterprise
+  - design
+  Model:
+  - model
+  - diagram
+  - specification
+  - represents
+  Stakeholder:
+  - stakeholder
+  - user
+  - customer
+  - interested
+  View:
+  - view
+  - perspective
+  - operational
+  - technical
+description: 美国国防部架构框架相关知识领域
+display_name: DoDAF架构框架
+domain_name: dodaf
+entity_types:
+  Architecture:
+    description: 架构实体
+    examples:
+    - Enterprise Architecture
+    - System Architecture
+  Model:
+    description: 模型实体
+    examples:
+    - OV-1
+    - SV-1
+    - TV-1
+  Stakeholder:
+    description: 利益相关者
+    examples:
+    - User
+    - Developer
+    - Operator
+  View:
+    description: 视图实体
+    examples:
+    - Operational View
+    - System View
+    - Technical View
+external_resources:
+  dodaf_spec: https://dodcio.defense.gov/Library/DoD-Architecture-Framework/
+  togaf: https://www.opengroup.org/togaf
+keywords:
+  Architecture:
+  - architecture
+  - framework
+  - enterprise
+  - system
+  Model:
+  - model
+  - diagram
+  - specification
+  - ov-
+  - sv-
+  - tv-
+  Stakeholder:
+  - stakeholder
+  - user
+  - operator
+  - developer
+  - customer
+  View:
+  - view
+  - perspective
+  - operational
+  - system
+  - technical
+patterns:
+  Architecture:
+  - .*[Aa]rchitecture$
+  - .*[Ff]ramework$
+  Model:
+  - ^[A-Z]{2}-\d+$
+  - .*[Mm]odel$
+  - .*[Dd]iagram$
+  View:
+  - .*[Vv]iew$
+  - .*[Pp]erspective$
+relation_types:
+  contains:
+    description: 包含关系
+    object_types:
+    - View
+    - Model
+    subject_types:
+    - Architecture
+    - View
+  supports:
+    description: 支持关系
+    object_types:
+    - Stakeholder
+    - Architecture
+    subject_types:
+    - Model
+    - View

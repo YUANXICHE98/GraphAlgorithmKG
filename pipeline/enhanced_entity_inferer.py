@@ -60,13 +60,32 @@ class EntityTypeCache:
         return sorted(high_freq_entities, key=lambda x: x['frequency'], reverse=True)
 
 class EnhancedEntityTypeInferer:
-    """增强的分层实体类型推断器"""
-    
-    def __init__(self):
+    """增强的分层实体类型推断器（支持多领域）"""
+
+    def __init__(self, domain_name: str = "graph_algorithms"):
         # 实体类型缓存
         self.entity_cache = EntityTypeCache()
-        
-        # 清理后的通用关键词（移除具体算法名称）
+
+        # 当前领域
+        self.current_domain = domain_name
+
+        # 领域模板管理器
+        from domain.domain_template import template_manager
+        self.template_manager = template_manager
+
+        # 多级索引
+        from indexing.multi_level_index import multi_level_index
+        self.multi_index = multi_level_index
+
+        # 初始化基础结构
+        self._init_base_structures()
+
+        # 动态加载领域配置
+        self._load_domain_config()
+
+    def _init_base_structures(self):
+        """初始化基础数据结构"""
+        # 兼容性：保留原有的关键词结构
         self.type_keywords = {
             'Algorithm': [
                 'algorithm', 'method', 'approach', 'technique', 'procedure',
@@ -149,7 +168,33 @@ class EnhancedEntityTypeInferer:
                 'applies', 'employs', 'utilizes', 'adopts'
             ]
         }
-    
+
+    def _load_domain_config(self):
+        """加载领域配置"""
+        template = self.template_manager.get_template(self.current_domain)
+        if template:
+            # 更新关键词
+            if template.keywords:
+                self.type_keywords.update(template.keywords)
+
+            # 更新模式
+            if template.patterns:
+                self.type_patterns.update(template.patterns)
+
+            # 更新上下文指示词
+            if template.context_indicators:
+                self.context_indicators.update(template.context_indicators)
+
+            print(f"✅ 加载领域配置: {template.display_name}")
+        else:
+            print(f"⚠️ 未找到领域模板: {self.current_domain}")
+
+    def switch_domain(self, domain_name: str):
+        """切换领域"""
+        self.current_domain = domain_name
+        self._load_domain_config()
+        print(f"🔄 切换到领域: {domain_name}")
+
     def infer_entity_type(self, entity_name: str, context: str = "") -> InferenceResult:
         """分层实体类型推断"""
         start_time = time.time()
@@ -164,7 +209,18 @@ class EnhancedEntityTypeInferer:
                 inference_time=time.time() - start_time
             )
         
-        # 第2层：模式匹配（快）
+        # 第2层：多级索引搜索（快速且准确）
+        index_results = self.multi_index.search(entity_name, top_k=1)
+        if index_results:
+            best_type, confidence = index_results[0]
+            return InferenceResult(
+                entity_type=best_type,
+                confidence=confidence,
+                method='index',
+                inference_time=time.time() - start_time
+            )
+
+        # 第3层：模式匹配（快）
         pattern_result = self._pattern_match(entity_name)
         if pattern_result:
             return InferenceResult(
@@ -173,8 +229,8 @@ class EnhancedEntityTypeInferer:
                 method='pattern',
                 inference_time=time.time() - start_time
             )
-        
-        # 第3层：关键词匹配（中等）
+
+        # 第4层：关键词匹配（中等）
         keyword_result = self._keyword_match(entity_name)
         if keyword_result:
             return InferenceResult(
@@ -184,7 +240,7 @@ class EnhancedEntityTypeInferer:
                 inference_time=time.time() - start_time
             )
         
-        # 第4层：上下文推断（慢）
+        # 第5层：上下文推断（慢）
         if context:
             context_result = self._context_infer(entity_name, context)
             if context_result:
@@ -194,8 +250,8 @@ class EnhancedEntityTypeInferer:
                     method='context',
                     inference_time=time.time() - start_time
                 )
-        
-        # 第5层：未知类型（交给LLM处理）
+
+        # 第6层：未知类型（交给LLM处理）
         return InferenceResult(
             entity_type=None,
             confidence=0.0,

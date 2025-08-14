@@ -1,0 +1,102 @@
+context_indicators:
+  Algorithm:
+  - algorithm
+  - method
+  - implements
+  - proposes
+  - solves
+  Framework:
+  - framework
+  - based on
+  - built on
+  - uses
+  - leverages
+  Task:
+  - task
+  - used for
+  - applied to
+  - addresses
+  - tackles
+description: 图算法和图神经网络相关的知识领域
+display_name: 图算法
+domain_name: graph_algorithms
+entity_types:
+  Algorithm:
+    description: 算法实体
+    examples:
+    - GraphSAGE
+    - PageRank
+    - Dijkstra
+  Framework:
+    description: 框架实体
+    examples:
+    - Graph Neural Networks
+    - TensorFlow
+  Task:
+    description: 任务实体
+    examples:
+    - Node Classification
+    - Link Prediction
+external_resources:
+  arxiv: cs.DS,cs.LG
+  wikipedia: https://en.wikipedia.org/wiki/Category:Graph_algorithms
+keywords:
+  Algorithm:
+  - algorithm
+  - method
+  - approach
+  - search
+  - optimization
+  Framework:
+  - framework
+  - network
+  - neural
+  - system
+  - platform
+  Task:
+  - task
+  - problem
+  - prediction
+  - classification
+  - analysis
+  - 分析
+  - 预测
+  - 系统
+patterns:
+  Algorithm:
+  - ^Graph[A-Z][a-zA-Z]*$
+  - ^[A-Z]{2,}$
+  - .*[Aa]lgorithm$
+  Framework:
+  - .*[Ff]ramework$
+  - .*[Nn]etwork$
+  - .*[Ss]ystem$
+  Task:
+  - .*[Pp]rediction$
+  - .*[Cc]lassification$
+  - .*分析$
+  - .*预测$
+  - .*系统$
+relation_types:
+  builds_on:
+    description: 构建关系
+    object_types:
+    - Framework
+    - Algorithm
+    subject_types:
+    - Algorithm
+  is_instance_of:
+    description: 实例关系
+    object_types:
+    - Algorithm
+    - Framework
+    subject_types:
+    - Algorithm
+    - Framework
+  used_in:
+    description: 应用关系
+    object_types:
+    - Task
+    subject_types:
+    - Algorithm
+    - Framework

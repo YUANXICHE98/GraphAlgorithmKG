@@ -185,18 +185,18 @@ class DynamicOntologyManager:
             relation_config = self.relation_types[predicate]
             
             # 检查主语类型约束
-            subject_type = self._identify_entity_type(subject)
-            if (relation_config.subject_types and 
+            subject_type = self._identify_entity_type(subject, context="")
+            if (relation_config.subject_types and
                 relation_config.subject_types != ["*"] and
                 subject_type not in relation_config.subject_types):
                 validation_result["valid"] = False
                 validation_result["issues"].append(
                     f"主语类型不匹配: {subject}({subject_type}) 不在允许的类型 {relation_config.subject_types} 中"
                 )
-            
+
             # 检查宾语类型约束
             if not self._is_literal(obj):
-                object_type = self._identify_entity_type(obj)
+                object_type = self._identify_entity_type(obj, context="")
                 if (relation_config.object_types and 
                     relation_config.object_types != ["*"] and
                     object_type not in relation_config.object_types):
@@ -219,10 +219,11 @@ class DynamicOntologyManager:
         
         return [rel for rel, _ in sorted(similarities, key=lambda x: x[1], reverse=True)]
     
-    def _identify_entity_type(self, entity_name: str) -> Optional[str]:
-        """识别实体类型"""
+    def _identify_entity_type(self, entity_name: str, context: str = "") -> Optional[str]:
+        """识别实体类型（分层推断）"""
         entity_lower = entity_name.lower()
 
+        # 第1层：Schema配置中的精确匹配
         for type_name, config in self.entity_types.items():
             # 检查关键词
             for keyword in config.keywords:
@@ -236,14 +237,31 @@ class DynamicOntologyManager:
                     config.usage_count += 1
                     return type_name
 
-        # 如果Schema配置中找不到，尝试使用EntityTypeInferer
-        return self._extract_type_from_name(entity_name)
+        # 第2层：使用增强的实体类型推断器
+        inferred_type = self._extract_type_from_name(entity_name, context)
 
-    def _extract_type_from_name(self, entity_name: str) -> Optional[str]:
-        """从实体名称提取类型（使用EntityTypeInferer）"""
-        from pipeline.entity_type_inferer import EntityTypeInferer
-        inferer = EntityTypeInferer()
-        return inferer._infer_type_from_name(entity_name)
+        # 如果推断成功且在已知类型中，增加使用计数
+        if inferred_type and inferred_type in self.entity_types:
+            self.entity_types[inferred_type].usage_count += 1
+
+        return inferred_type
+
+    def _extract_type_from_name(self, entity_name: str, context: str = "") -> Optional[str]:
+        """从实体名称提取类型（使用增强的推断器）"""
+        from pipeline.enhanced_entity_inferer import EnhancedEntityTypeInferer
+
+        if not hasattr(self, '_entity_inferer'):
+            self._entity_inferer = EnhancedEntityTypeInferer()
+
+        result = self._entity_inferer.infer_entity_type(entity_name, context)
+
+        # 如果推断成功，更新缓存
+        if result.entity_type and result.confidence > 0.7:
+            self._entity_inferer.update_cache_from_validation(
+                entity_name, result.entity_type, result.confidence, 'schema_inference'
+            )
+
+        return result.entity_type
 
     def _identify_relation_type(self, predicate: str) -> Optional[str]:
         """识别关系类型"""

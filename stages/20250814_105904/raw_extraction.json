@@ -1,0 +1,91 @@
+{
+  "stage_name": "raw_extraction",
+  "timestamp": "2025-08-14T10:59:21.730255",
+  "session_id": "20250814_105904",
+  "data": [
+    {
+      "subject": "GraphSAGE",
+      "predicate": "is_instance_of",
+      "object": "Algorithm",
+      "confidence": 0.9,
+      "evidence": "GraphSAGE是一种归纳式图神经网络算法。"
+    },
+    {
+      "subject": "Graph Attention Network",
+      "predicate": "is_instance_of",
+      "object": "Algorithm",
+      "confidence": 0.9,
+      "evidence": "GAT使用注意力机制来聚合邻居节点的信息。"
+    },
+    {
+      "subject": "Graph Convolutional Network",
+      "predicate": "is_instance_of",
+      "object": "Algorithm",
+      "confidence": 0.9,
+      "evidence": "GCN是最早的图卷积网络之一。"
+    },
+    {
+      "subject": "GraphSAGE",
+      "predicate": "builds_on",
+      "object": "Graph Neural Networks",
+      "confidence": 0.8,
+      "evidence": "GraphSAGE是一种归纳式图神经网络算法。"
+    },
+    {
+      "subject": "Graph Attention Network",
+      "predicate": "builds_on",
+      "object": "Graph Neural Networks",
+      "confidence": 0.8,
+      "evidence": "GAT使用注意力机制来聚合邻居节点的信息。"
+    },
+    {
+      "subject": "Graph Convolutional Network",
+      "predicate": "builds_on",
+      "object": "Graph Neural Networks",
+      "confidence": 0.8,
+      "evidence": "GCN是最早的图卷积网络之一。"
+    },
+    {
+      "subject": "Graph Neural Networks",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.9,
+      "evidence": "图神经网络（Graph Neural Networks, GNN）是一类用于处理图结构数据的深度学习模型。"
+    },
+    {
+      "subject": "Graph Neural Networks",
+      "predicate": "used_in",
+      "object": "社交网络分析",
+      "confidence": 0.8,
+      "evidence": "图神经网络广泛应用于：社交网络分析"
+    },
+    {
+      "subject": "Graph Neural Networks",
+      "predicate": "used_in",
+      "object": "推荐系统",
+      "confidence": 0.8,
+      "evidence": "图神经网络广泛应用于：推荐系统"
+    },
+    {
+      "subject": "Graph Neural Networks",
+      "predicate": "used_in",
+      "object": "知识图谱",
+      "confidence": 0.8,
+      "evidence": "图神经网络广泛应用于：知识图谱"
+    },
+    {
+      "subject": "Graph Neural Networks",
+      "predicate": "used_in",
+      "object": "分子性质预测",
+      "confidence": 0.8,
+      "evidence": "图神经网络广泛应用于：分子性质预测"
+    }
+  ],
+  "metadata": {
+    "text_length": 294,
+    "chunk_id": "",
+    "model": "gpt-3.5-turbo",
+    "llm_response_time": 17.500118017196655
+  },
+  "data_count": 11
+}

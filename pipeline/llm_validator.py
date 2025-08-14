@@ -74,9 +74,29 @@ class LLMSemanticValidator:
             semantic_validation=semantic_result,
             validation_time=validation_time
         )
-        
+
+        # 如果验证通过，更新实体类型缓存
+        if final_valid and hasattr(self.ontology, '_entity_inferer'):
+            # 从语义验证结果中提取建议的类型
+            if semantic_result.get('suggested_types'):
+                suggested_types = semantic_result['suggested_types']
+
+                # 更新主语类型缓存
+                if suggested_types.get('subject_type'):
+                    self.ontology._entity_inferer.update_cache_from_validation(
+                        subject, suggested_types['subject_type'],
+                        final_confidence, 'llm_semantic_validation'
+                    )
+
+                # 更新宾语类型缓存
+                if suggested_types.get('object_type'):
+                    self.ontology._entity_inferer.update_cache_from_validation(
+                        obj, suggested_types['object_type'],
+                        final_confidence, 'llm_semantic_validation'
+                    )
+
         print(f"   🎯 最终验证结果: {'✅ 通过' if final_valid else '❌ 失败'} (耗时: {validation_time:.2f}s)")
-        
+
         return result
     
     def _llm_semantic_validation(self, subject: str, predicate: str, obj: str, 

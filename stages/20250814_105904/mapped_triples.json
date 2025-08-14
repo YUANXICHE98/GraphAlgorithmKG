@@ -1,0 +1,190 @@
+{
+  "stage_name": "mapped_triples",
+  "timestamp": "2025-08-14T10:59:42.417615",
+  "session_id": "20250814_105904",
+  "data": [
+    {
+      "subject": "Graphsage",
+      "subject_type": "Algorithm",
+      "predicate": "is_instance_of",
+      "object": "Algorithm",
+      "object_type": "Algorithm",
+      "confidence": 0.9,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Graphsage",
+        "predicate": "is_instance_of",
+        "object": "Algorithm",
+        "confidence": 0.9,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Graph_Attention_Network",
+      "subject_type": "Framework",
+      "predicate": "is_instance_of",
+      "object": "Algorithm",
+      "object_type": "Algorithm",
+      "confidence": 0.9,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Graph_Attention_Network",
+        "predicate": "is_instance_of",
+        "object": "Algorithm",
+        "confidence": 0.9,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Graph_Convolutional_Network",
+      "subject_type": "Framework",
+      "predicate": "is_instance_of",
+      "object": "Algorithm",
+      "object_type": "Algorithm",
+      "confidence": 0.9,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Graph_Convolutional_Network",
+        "predicate": "is_instance_of",
+        "object": "Algorithm",
+        "confidence": 0.9,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Graphsage",
+      "subject_type": "Algorithm",
+      "predicate": "builds_on",
+      "object": "Graph_Neural_Networks",
+      "object_type": "Framework",
+      "confidence": 0.8738851890731821,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Graphsage",
+        "predicate": "builds_on",
+        "object": "Graph_Neural_Networks",
+        "confidence": 0.8,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Graph_Attention_Network",
+      "subject_type": "Framework",
+      "predicate": "builds_on",
+      "object": "Graph_Neural_Networks",
+      "object_type": "Framework",
+      "confidence": 0.8738851890731821,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Graph_Attention_Network",
+        "predicate": "builds_on",
+        "object": "Graph_Neural_Networks",
+        "confidence": 0.8,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Graph_Convolutional_Network",
+      "subject_type": "Framework",
+      "predicate": "builds_on",
+      "object": "Graph_Neural_Networks",
+      "object_type": "Framework",
+      "confidence": 0.8738851890731821,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Graph_Convolutional_Network",
+        "predicate": "builds_on",
+        "object": "Graph_Neural_Networks",
+        "confidence": 0.8,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Graph_Neural_Networks",
+      "subject_type": "Framework",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "object_type": "Paradigm",
+      "confidence": 0.9,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Graph_Neural_Networks",
+        "predicate": "is_instance_of",
+        "object": "Framework",
+        "confidence": 0.9,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Graph_Neural_Networks",
+      "subject_type": "Framework",
+      "predicate": "used_in",
+      "object": "社交网络分析",
+      "object_type": "Task",
+      "confidence": 0.8738851890731821,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Graph_Neural_Networks",
+        "predicate": "used_in",
+        "object": "社交网络分析",
+        "confidence": 0.8,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Graph_Neural_Networks",
+      "subject_type": "Framework",
+      "predicate": "used_in",
+      "object": "推荐系统",
+      "object_type": null,
+      "confidence": 0.7544600578097613,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Graph_Neural_Networks",
+        "predicate": "used_in",
+        "object": "推荐系统",
+        "confidence": 0.8,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Graph_Neural_Networks",
+      "subject_type": "Framework",
+      "predicate": "used_in",
+      "object": "知识图谱",
+      "object_type": null,
+      "confidence": 0.7544600578097613,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Graph_Neural_Networks",
+        "predicate": "used_in",
+        "object": "知识图谱",
+        "confidence": 0.8,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Graph_Neural_Networks",
+      "subject_type": "Framework",
+      "predicate": "used_in",
+      "object": "分子性质预测",
+      "object_type": null,
+      "confidence": 0.7544600578097613,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Graph_Neural_Networks",
+        "predicate": "used_in",
+        "object": "分子性质预测",
+        "confidence": 0.8,
+        "source": "unknown"
+      }
+    }
+  ],
+  "metadata": {
+    "cleaned_count": 11,
+    "mapped_count": 11,
+    "mapping_rate": 1.0,
+    "failed_count": 0
+  },
+  "data_count": 11
+}

@@ -69,13 +69,9 @@ class EnhancedEntityTypeInferer:
         # 当前领域
         self.current_domain = domain_name
 
-        # 领域模板管理器
-        from domain.domain_template import template_manager
-        self.template_manager = template_manager
-
-        # 多级索引
-        from indexing.multi_level_index import multi_level_index
-        self.multi_index = multi_level_index
+        # 使用本体Schema系统
+        from ontology.managers.dynamic_schema import DynamicOntologyManager
+        self.ontology_manager = DynamicOntologyManager()
 
         # 初始化基础结构
         self._init_base_structures()
@@ -170,30 +166,25 @@ class EnhancedEntityTypeInferer:
         }
 
     def _load_domain_config(self):
-        """加载领域配置"""
-        template = self.template_manager.get_template(self.current_domain)
-        if template:
-            # 更新关键词
-            if template.keywords:
-                self.type_keywords.update(template.keywords)
+        """从本体Schema加载配置"""
+        # 从本体Schema中获取实体类型和关系配置
+        entity_types = self.ontology_manager.entity_types
 
-            # 更新模式
-            if template.patterns:
-                self.type_patterns.update(template.patterns)
+        # 更新关键词和模式
+        for entity_type, config in entity_types.items():
+            if hasattr(config, 'keywords') and config.keywords:
+                self.type_keywords[entity_type] = config.keywords
+            if hasattr(config, 'patterns') and config.patterns:
+                self.type_patterns[entity_type] = config.patterns
 
-            # 更新上下文指示词
-            if template.context_indicators:
-                self.context_indicators.update(template.context_indicators)
+        print(f"✅ 从本体Schema加载配置: {len(entity_types)} 个实体类型")
 
-            print(f"✅ 加载领域配置: {template.display_name}")
-        else:
-            print(f"⚠️ 未找到领域模板: {self.current_domain}")
-
-    def switch_domain(self, domain_name: str):
-        """切换领域"""
-        self.current_domain = domain_name
+    def switch_domain(self, schema_file: str):
+        """切换Schema配置"""
+        from ontology.managers.dynamic_schema import DynamicOntologyManager
+        self.ontology_manager = DynamicOntologyManager(schema_file)
         self._load_domain_config()
-        print(f"🔄 切换到领域: {domain_name}")
+        print(f"🔄 切换到Schema: {schema_file}")
 
     def infer_entity_type(self, entity_name: str, context: str = "") -> InferenceResult:
         """分层实体类型推断"""
@@ -209,14 +200,13 @@ class EnhancedEntityTypeInferer:
                 inference_time=time.time() - start_time
             )
         
-        # 第2层：多级索引搜索（快速且准确）
-        index_results = self.multi_index.search(entity_name, top_k=1)
-        if index_results:
-            best_type, confidence = index_results[0]
+        # 第2层：本体Schema匹配（快速且准确）
+        schema_result = self._schema_match(entity_name)
+        if schema_result:
             return InferenceResult(
-                entity_type=best_type,
-                confidence=confidence,
-                method='index',
+                entity_type=schema_result,
+                confidence=0.9,
+                method='schema',
                 inference_time=time.time() - start_time
             )
 
@@ -264,6 +254,29 @@ class EnhancedEntityTypeInferer:
         cached = self.entity_cache.get(entity_name)
         if cached and cached['confidence'] > self.entity_cache.confidence_threshold:
             return cached
+        return None
+
+    def _schema_match(self, entity_name: str) -> Optional[str]:
+        """基于本体Schema的匹配"""
+        entity_lower = entity_name.lower()
+
+        # 检查Schema中定义的实体类型
+        for entity_type, config in self.ontology_manager.entity_types.items():
+            # 检查关键词
+            if hasattr(config, 'keywords'):
+                for keyword in config.keywords:
+                    if keyword.lower() in entity_lower:
+                        return entity_type
+
+            # 检查模式
+            if hasattr(config, 'patterns'):
+                for pattern in config.patterns:
+                    try:
+                        if re.match(pattern, entity_name, re.IGNORECASE):
+                            return entity_type
+                    except re.error:
+                        continue
+
         return None
     
     def _pattern_match(self, entity_name: str) -> Optional[str]:

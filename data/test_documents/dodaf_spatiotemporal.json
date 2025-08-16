@@ -1,0 +1,97 @@
+{
+  "document_info": {
+    "title": "DoDAF Spatiotemporal Implementation",
+    "domain": "spatiotemporal",
+    "description": "DoDAF implementation with DO-DA-F (Action-Condition-Result) structure for spatiotemporal systems",
+    "source": "Spatiotemporal Systems Research",
+    "version": "1.0",
+    "date": "2024-01-15"
+  },
+  "text_content": "时空概念在水利领域中是用于描述水利事件及其相关实体在时间和空间维度上分布与动态变化的核心理论基础。时间维度用于描述水利事件发生的时间点、持续时间及时间顺序，空间维度则用于描述水利实体在地理空间中的位置、形态以及它们之间的相互关系。例如，对于一次洪水事件，时间主体系的具体表达如下：洪水事件ID_001 = {时间属性：开始时间=2024-10-23 08:00, 持续时间=4小时, 状态=进行中，时间关系：before(降水ID_005)，空间关系：位于长江流域，主体关系：由暴雨事件引起}。在DO-DA-F架构映射中，动作（DO）映射到水利事件类型，条件（DA）映射到监测条件和环境状态，结果（F）映射到结果事件和输出。监测系统执行过程包括：执行水位监测（动作），传感器正常工作状态（条件），生成水位数据报告（结果）。",
+  "expected_schema": "ontology/config/spatiotemporal_schema.yaml",
+  "do_da_f_example": {
+    "do": "执行水位监测",
+    "da": {
+      "condition": "传感器正常工作状态",
+      "description": "传感器设备运行正常，能够准确采集数据"
+    },
+    "f": {
+      "action": "生成水位数据报告",
+      "result": "输出包含时间戳和位置信息的水位监测数据"
+    }
+  },
+  "expected_triples": [
+    {
+      "subject": "洪水事件",
+      "predicate": "is_instance_of",
+      "object": "Event",
+      "confidence": 0.95
+    },
+    {
+      "subject": "执行水位监测",
+      "predicate": "is_instance_of",
+      "object": "Action",
+      "confidence": 0.90
+    },
+    {
+      "subject": "传感器正常工作状态",
+      "predicate": "is_instance_of",
+      "object": "Condition",
+      "confidence": 0.90
+    },
+    {
+      "subject": "生成水位数据报告",
+      "predicate": "is_instance_of",
+      "object": "Outcome",
+      "confidence": 0.90
+    },
+    {
+      "subject": "长江流域",
+      "predicate": "is_instance_of",
+      "object": "SpatialEntity",
+      "confidence": 0.85
+    },
+    {
+      "subject": "2024-10-23 08:00",
+      "predicate": "is_instance_of",
+      "object": "TemporalEntity",
+      "confidence": 0.85
+    },
+    {
+      "subject": "4小时",
+      "predicate": "is_instance_of",
+      "object": "TemporalEntity",
+      "confidence": 0.80
+    },
+    {
+      "subject": "洪水事件",
+      "predicate": "hasStartTime",
+      "object": "2024-10-23 08:00",
+      "confidence": 0.90
+    },
+    {
+      "subject": "洪水事件",
+      "predicate": "hasDuration",
+      "object": "4小时",
+      "confidence": 0.90
+    },
+    {
+      "subject": "洪水事件",
+      "predicate": "locatedAt",
+      "object": "长江流域",
+      "confidence": 0.90
+    },
+    {
+      "subject": "执行水位监测",
+      "predicate": "hasCondition",
+      "object": "传感器正常工作状态",
+      "confidence": 0.85
+    },
+    {
+      "subject": "执行水位监测",
+      "predicate": "resultsIn",
+      "object": "生成水位数据报告",
+      "confidence": 0.85
+    }
+  ]
+}

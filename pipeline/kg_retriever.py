@@ -12,7 +12,7 @@ import numpy as np
 from collections import defaultdict, deque
 import difflib
 
-from ontology.dynamic_schema import DynamicOntologyManager
+from ontology.managers.dynamic_schema import DynamicOntologyManager
 
 @dataclass
 class SearchResult:

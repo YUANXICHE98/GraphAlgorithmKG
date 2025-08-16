@@ -1,0 +1,62 @@
+[
+  {
+    "text": "The Department of Defense Architecture Framework (DoDAF) provides a comprehensive approach to enterprise architecture development. The framework defines multiple architectural views that support different stakeholder perspectives. The Operational View (OV) captures the operational aspects of the enterprise, including OV-1 High Level Operational Concept Graphic and OV-2 Operational Resource Flow Description. The System View (SV) describes the systems and interconnections supporting operational activities, with SV-1 Systems Interface Description and SV-2 Systems Resource Flow Description being fundamental models. The Technical View (TV) provides the technical standards and rules governing the implementation, including TV-1 Technical Standards Profile. Each architectural view contains specific models that address particular stakeholder concerns. The enterprise architecture must support various capabilities including command and control, intelligence gathering, and logistics operations. System architects and operational planners collaborate to ensure that the architecture meets user requirements and supports mission objectives. The framework emphasizes the importance of stakeholder engagement throughout the architecture development process.",
+    "schema": "../schema_config.yaml",
+    "session_id": "20250816_113201"
+  },
+  {
+    "text": "The Department of Defense Architecture Framework (DoDAF) provides a comprehensive approach to enterprise architecture development. The framework defines multiple architectural views that support different stakeholder perspectives. The Operational View (OV) captures the operational aspects of the enterprise, including OV-1 High Level Operational Concept Graphic and OV-2 Operational Resource Flow Description. The System View (SV) describes the systems and interconnections supporting operational activities, with SV-1 Systems Interface Description and SV-2 Systems Resource Flow Description being fundamental models. The Technical View (TV) provides the technical standards and rules governing the implementation, including TV-1 Technical Standards Profile. Each architectural view contains specific models that address particular stakeholder concerns. The enterprise architecture must support various capabilities including command and control, intelligence gathering, and logistics operations. System architects and operational planners collaborate to ensure that the architecture meets user requirements and supports mission objectives. The framework emphasizes the importance of stakeholder engagement throughout the architecture development process.",
+    "schema": "../schema_config.yaml",
+    "session_id": "20250816_105118"
+  },
+  {
+    "text": "The Department of Defense Architecture Framework (DoDAF) provides a comprehensive approach to enterprise architecture development. The framework defines multiple architectural views that support different stakeholder perspectives. The Operational View (OV) captures the operational aspects of the enterprise, including OV-1 High Level Operational Concept Graphic and OV-2 Operational Resource Flow Description. The System View (SV) describes the systems and interconnections supporting operational activities, with SV-1 Systems Interface Description and SV-2 Systems Resource Flow Description being fundamental models. The Technical View (TV) provides the technical standards and rules governing the implementation, including TV-1 Technical Standards Profile. Each architectural view contains specific models that address particular stakeholder concerns. The enterprise architecture must support various capabilities including command and control, intelligence gathering, and logistics operations. System architects and operational planners collaborate to ensure that the architecture meets user requirements and supports mission objectives. The framework emphasizes the importance of stakeholder engagement throughout the architecture development process.",
+    "schema": "../schema_config.yaml",
+    "session_id": "20250816_111802"
+  },
+  {
+    "text": "时空概念在水利领域中是用于描述水利事件及其相关实体在时间和空间维度上分布与动态变化的核心理论基础。时间维度用于描述水利事件发生的时间点、持续时间及时间顺序，空间维度则用于描述水利实体在地理空间中的位置、形态以及它们之间的相互关系。例如，对于一次洪水事件，时间主体系的具体表达如下：洪水事件ID_001 = {时间属性：开始时间=2024-10-23 08:00, 持续时间=4小时, 状态=进行中，时间关系：before(降水ID_005)，空间关系：位于长江流域，主体关系：由暴雨事件引起}。在DO-DA-F架构映射中，动作（DO）映射到水利事件类型，条件（DA）映射到监测条件和环境状态，结果（F）映射到结果事件和输出。监测系统执行过程包括：执行水位监测（动作），传感器正常工作状态（条件），生成水位数据报告（结果）。",
+    "schema": "spatiotemporal_schema.yaml",
+    "session_id": "20250816_111803"
+  },
+  {
+    "text": "The Department of Defense Architecture Framework (DoDAF) provides a comprehensive approach to enterprise architecture development. The framework defines multiple architectural views that support different stakeholder perspectives. The Operational View (OV) captures the operational aspects of the enterprise, including OV-1 High Level Operational Concept Graphic and OV-2 Operational Resource Flow Description. The System View (SV) describes the systems and interconnections supporting operational activities, with SV-1 Systems Interface Description and SV-2 Systems Resource Flow Description being fundamental models. The Technical View (TV) provides the technical standards and rules governing the implementation, including TV-1 Technical Standards Profile. Each architectural view contains specific models that address particular stakeholder concerns. The enterprise architecture must support various capabilities including command and control, intelligence gathering, and logistics operations. System architects and operational planners collaborate to ensure that the architecture meets user requirements and supports mission objectives. The framework emphasizes the importance of stakeholder engagement throughout the architecture development process.",
+    "schema": "../schema_config.yaml",
+    "session_id": "20250816_113155"
+  },
+  {
+    "text": "时空概念在水利领域中是用于描述水利事件及其相关实体在时间和空间维度上分布与动态变化的核心理论基础。时间维度用于描述水利事件发生的时间点、持续时间及时间顺序，空间维度则用于描述水利实体在地理空间中的位置、形态以及它们之间的相互关系。例如，对于一次洪水事件，时间主体系的具体表达如下：洪水事件ID_001 = {时间属性：开始时间=2024-10-23 08:00, 持续时间=4小时, 状态=进行中，时间关系：before(降水ID_005)，空间关系：位于长江流域，主体关系：由暴雨事件引起}。在DO-DA-F架构映射中，动作（DO）映射到水利事件类型，条件（DA）映射到监测条件和环境状态，结果（F）映射到结果事件和输出。监测系统执行过程包括：执行水位监测（动作），传感器正常工作状态（条件），生成水位数据报告（结果）。",
+    "schema": "spatiotemporal_schema.yaml",
+    "session_id": "20250816_110516"
+  },
+  {
+    "text": "The Department of Defense Architecture Framework (DoDAF) provides a comprehensive approach to enterprise architecture development. The framework defines multiple architectural views that support different stakeholder perspectives. The Operational View (OV) captures the operational aspects of the enterprise, including OV-1 High Level Operational Concept Graphic and OV-2 Operational Resource Flow Description. The System View (SV) describes the systems and interconnections supporting operational activities, with SV-1 Systems Interface Description and SV-2 Systems Resource Flow Description being fundamental models. The Technical View (TV) provides the technical standards and rules governing the implementation, including TV-1 Technical Standards Profile. Each architectural view contains specific models that address particular stakeholder concerns. The enterprise architecture must support various capabilities including command and control, intelligence gathering, and logistics operations. System architects and operational planners collaborate to ensure that the architecture meets user requirements and supports mission objectives. The framework emphasizes the importance of stakeholder engagement throughout the architecture development process.",
+    "schema": "../schema_config.yaml",
+    "session_id": "20250816_105241"
+  },
+  {
+    "text": "时空概念在水利领域中是用于描述水利事件及其相关实体在时间和空间维度上分布与动态变化的核心理论基础。时间维度用于描述水利事件发生的时间点、持续时间及时间顺序，空间维度则用于描述水利实体在地理空间中的位置、形态以及它们之间的相互关系。例如，对于一次洪水事件，时间主体系的具体表达如下：洪水事件ID_001 = {时间属性：开始时间=2024-10-23 08:00, 持续时间=4小时, 状态=进行中，时间关系：before(降水ID_005)，空间关系：位于长江流域，主体关系：由暴雨事件引起}。在DO-DA-F架构映射中，动作（DO）映射到水利事件类型，条件（DA）映射到监测条件和环境状态，结果（F）映射到结果事件和输出。监测系统执行过程包括：执行水位监测（动作），传感器正常工作状态（条件），生成水位数据报告（结果）。",
+    "schema": "spatiotemporal_schema.yaml",
+    "session_id": "20250816_113159"
+  },
+  {
+    "text": "The Department of Defense Architecture Framework (DoDAF) provides a comprehensive approach to enterprise architecture development. The framework defines multiple architectural views that support different stakeholder perspectives. The Operational View (OV) captures the operational aspects of the enterprise, including OV-1 High Level Operational Concept Graphic and OV-2 Operational Resource Flow Description. The System View (SV) describes the systems and interconnections supporting operational activities, with SV-1 Systems Interface Description and SV-2 Systems Resource Flow Description being fundamental models. The Technical View (TV) provides the technical standards and rules governing the implementation, including TV-1 Technical Standards Profile. Each architectural view contains specific models that address particular stakeholder concerns. The enterprise architecture must support various capabilities including command and control, intelligence gathering, and logistics operations. System architects and operational planners collaborate to ensure that the architecture meets user requirements and supports mission objectives. The framework emphasizes the importance of stakeholder engagement throughout the architecture development process.",
+    "schema": "../schema_config.yaml",
+    "session_id": "20250816_113157"
+  },
+  {
+    "text": "时空概念在水利领域中是用于描述水利事件及其相关实体在时间和空间维度上分布与动态变化的核心理论基础。时间维度用于描述水利事件发生的时间点、持续时间及时间顺序，空间维度则用于描述水利实体在地理空间中的位置、形态以及它们之间的相互关系。例如，对于一次洪水事件，时间主体系的具体表达如下：洪水事件ID_001 = {时间属性：开始时间=2024-10-23 08:00, 持续时间=4小时, 状态=进行中，时间关系：before(降水ID_005)，空间关系：位于长江流域，主体关系：由暴雨事件引起}。在DO-DA-F架构映射中，动作（DO）映射到水利事件类型，条件（DA）映射到监测条件和环境状态，结果（F）映射到结果事件和输出。监测系统执行过程包括：执行水位监测（动作），传感器正常工作状态（条件），生成水位数据报告（结果）。",
+    "schema": "spatiotemporal_schema.yaml",
+    "session_id": "20250816_113156"
+  },
+  {
+    "text": "The Department of Defense Architecture Framework (DoDAF) provides a comprehensive approach to enterprise architecture development. The framework defines multiple architectural views that support different stakeholder perspectives. The Operational View (OV) captures the operational aspects of the enterprise, including OV-1 High Level Operational Concept Graphic and OV-2 Operational Resource Flow Description. The System View (SV) describes the systems and interconnections supporting operational activities, with SV-1 Systems Interface Description and SV-2 Systems Resource Flow Description being fundamental models. The Technical View (TV) provides the technical standards and rules governing the implementation, including TV-1 Technical Standards Profile. Each architectural view contains specific models that address particular stakeholder concerns. The enterprise architecture must support various capabilities including command and control, intelligence gathering, and logistics operations. System architects and operational planners collaborate to ensure that the architecture meets user requirements and supports mission objectives. The framework emphasizes the importance of stakeholder engagement throughout the architecture development process.",
+    "schema": "../schema_config.yaml",
+    "session_id": "20250816_110515"
+  },
+  {
+    "text": "The system implements DO-DA-F structure where DO represents actions like checkTemperature, monitorWaterLevel, and executeFloodWarning. DA represents conditions such as temperature thresholds, sensor status, and water level limits. F represents results including turnOnAirConditioner, generateWaterLevelReport, and activateEmergencyResponse. Each action has specific conditions that must be met, and when those conditions are satisfied, specific results are produced. The monitoring system continuously checks these conditions and executes the corresponding actions to produce the desired outcomes.",
+    "schema": "spatiotemporal_schema.yaml",
+    "session_id": "20250816_113158"
+  }
+]

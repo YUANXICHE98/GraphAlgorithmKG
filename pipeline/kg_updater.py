@@ -15,7 +15,7 @@ from datetime import datetime
 import networkx as nx
 
 # 使用动态本体系统的类
-from ontology.dynamic_schema import DynamicOntologyManager, EntityTypeConfig, RelationTypeConfig, Entity, Relation
+from ontology.managers.dynamic_schema import DynamicOntologyManager, EntityTypeConfig, RelationTypeConfig, Entity, Relation
 
 @dataclass
 class KGUpdateResult:

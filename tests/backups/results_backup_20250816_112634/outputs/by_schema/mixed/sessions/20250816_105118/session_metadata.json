@@ -1,0 +1,16 @@
+{
+  "session_id": "20250816_105118",
+  "start_time": "2025-08-16T10:51:18.240265",
+  "end_time": null,
+  "document_path": "data/test_documents/dodaf_enterprise_architecture.json",
+  "schema_used": "",
+  "total_processing_time": 0.0,
+  "stages_completed": [
+    "document_input",
+    "schema_detection",
+    "triple_extraction",
+    "entity_inference",
+    "final_kg"
+  ],
+  "final_stats": {}
+}

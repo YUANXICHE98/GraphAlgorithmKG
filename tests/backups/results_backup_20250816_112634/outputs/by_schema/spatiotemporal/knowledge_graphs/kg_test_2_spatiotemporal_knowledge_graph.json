@@ -1,0 +1,187 @@
+{
+  "metadata": {
+    "schema": "spatiotemporal_schema.yaml",
+    "source_document": "data/test_documents/dodaf_spatiotemporal.json",
+    "created_at": "2025-08-15T13:58:04.209752",
+    "processing_time": 0.05780291557312012,
+    "builder_version": "3.0.0"
+  },
+  "entities": [
+    {
+      "id": "entity_873ce1c5",
+      "name": "Operational View",
+      "type": "View",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 8.106231689453125e-05,
+        "original_name": "Operational View",
+        "type_description": "视图实体，表示不同的架构视角",
+        "aliases": [
+          "视图",
+          "视角"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/dodaf_spatiotemporal.json",
+      "created_at": "2025-08-15T13:58:04.209197",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_b7fbfae6",
+      "name": "DoDAF",
+      "type": "Architecture",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 5.2928924560546875e-05,
+        "original_name": "DoDAF",
+        "type_description": "架构实体",
+        "aliases": [
+          "架构",
+          "框架"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/dodaf_spatiotemporal.json",
+      "created_at": "2025-08-15T13:58:04.209197",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_07782c22",
+      "name": "Framework",
+      "type": "Architecture",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 5.412101745605469e-05,
+        "original_name": "Framework",
+        "type_description": "架构实体",
+        "aliases": [
+          "架构",
+          "框架"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/dodaf_spatiotemporal.json",
+      "created_at": "2025-08-15T13:58:04.209197",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_217816f6",
+      "name": "OV-1",
+      "type": "Model",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 6.175041198730469e-05,
+        "original_name": "OV-1",
+        "type_description": "模型实体，表示具体的架构模型",
+        "aliases": [
+          "模型",
+          "图表"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/dodaf_spatiotemporal.json",
+      "created_at": "2025-08-15T13:58:04.209197",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_4afa80e7",
+      "name": "Algorithm",
+      "type": "Algorithm",
+      "properties": {
+        "inference_method": "keyword",
+        "inference_time": 0.00019478797912597656,
+        "original_name": "Algorithm"
+      },
+      "confidence": 0.7,
+      "source": "data/test_documents/dodaf_spatiotemporal.json",
+      "created_at": "2025-08-15T13:58:04.209197",
+      "schema": "spatiotemporal_schema.yaml"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0d6a3a1b",
+      "subject_id": "entity_b7fbfae6",
+      "subject_name": "DoDAF",
+      "predicate": "is_instance_of",
+      "object_id": "entity_07782c22",
+      "object_name": "Framework",
+      "properties": {
+        "extraction_confidence": 0.9,
+        "triple_index": 0,
+        "relation_description": "实例关系",
+        "expected_subject_types": [
+          "*"
+        ],
+        "expected_object_types": [
+          "*"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/dodaf_spatiotemporal.json",
+      "created_at": "2025-08-15T13:58:04.209197",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_7bb32b15",
+      "subject_id": "entity_873ce1c5",
+      "subject_name": "Operational View",
+      "predicate": "is_instance_of",
+      "object_id": "entity_07782c22",
+      "object_name": "Framework",
+      "properties": {
+        "extraction_confidence": 0.85,
+        "triple_index": 1,
+        "relation_description": "实例关系",
+        "expected_subject_types": [
+          "*"
+        ],
+        "expected_object_types": [
+          "*"
+        ]
+      },
+      "confidence": 0.85,
+      "source": "data/test_documents/dodaf_spatiotemporal.json",
+      "created_at": "2025-08-15T13:58:04.209197",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_c9ab8e3c",
+      "subject_id": "entity_217816f6",
+      "subject_name": "OV-1",
+      "predicate": "is_instance_of",
+      "object_id": "entity_4afa80e7",
+      "object_name": "Algorithm",
+      "properties": {
+        "extraction_confidence": 0.8,
+        "triple_index": 2,
+        "relation_description": "实例关系",
+        "expected_subject_types": [
+          "*"
+        ],
+        "expected_object_types": [
+          "*"
+        ]
+      },
+      "confidence": 0.8,
+      "source": "data/test_documents/dodaf_spatiotemporal.json",
+      "created_at": "2025-08-15T13:58:04.209197",
+      "schema": "spatiotemporal_schema.yaml"
+    }
+  ],
+  "statistics": {
+    "total_entities": 5,
+    "total_relations": 3,
+    "entity_type_distribution": {
+      "View": 1,
+      "Architecture": 2,
+      "Model": 1,
+      "Algorithm": 1
+    },
+    "relation_type_distribution": {
+      "is_instance_of": 3
+    },
+    "average_entity_confidence": 0.86,
+    "average_relation_confidence": 0.85
+  }
+}

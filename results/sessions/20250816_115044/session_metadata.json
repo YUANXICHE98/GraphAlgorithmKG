@@ -1,0 +1,24 @@
+{
+  "session_id": "20250816_115044",
+  "start_time": "2025-08-16T11:50:44.774620",
+  "end_time": "2025-08-16T11:50:45.520061",
+  "document_path": "data/test_documents/dodaf_enterprise_architecture.json",
+  "schema_used": "",
+  "total_processing_time": 0.745441,
+  "stages_completed": [
+    "document_input",
+    "schema_detection",
+    "triple_extraction",
+    "entity_inference",
+    "final_kg"
+  ],
+  "final_stats": {
+    "total_entities": 21,
+    "total_relations": 96,
+    "processing_time": 0.7392518520355225,
+    "schema_used": "../schema_config.yaml",
+    "extraction_methods": [
+      "rule_extraction"
+    ]
+  }
+}

@@ -1,0 +1,2661 @@
+{
+  "stage_name": "entity_inference",
+  "stage_number": 4,
+  "timestamp": "2025-08-16T12:19:42.894520",
+  "description": "实体推断和关系构建，生成21个实体，96个关系",
+  "data": {
+    "entities": [
+      {
+        "id": "entity_be8545ae",
+        "name": "Resource",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 7.510185241699219e-05,
+          "original_name": "Resource"
+        },
+        "confidence": 0.0,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_3bacfbd5",
+        "name": "Standards",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 5.412101745605469e-05,
+          "original_name": "Standards"
+        },
+        "confidence": 0.0,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_1bda80f2",
+        "name": "view",
+        "type": "Framework",
+        "properties": {
+          "inference_method": "schema",
+          "inference_time": 1.4781951904296875e-05,
+          "original_name": "view",
+          "type_description": "结合多种组件的体系/方法论",
+          "aliases": [
+            "框架",
+            "系统",
+            "体系",
+            "架构",
+            "视图"
+          ]
+        },
+        "confidence": 0.9,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_431accab",
+        "name": "Operational",
+        "type": "Framework",
+        "properties": {
+          "inference_method": "schema",
+          "inference_time": 1.4781951904296875e-05,
+          "original_name": "Operational",
+          "type_description": "结合多种组件的体系/方法论",
+          "aliases": [
+            "框架",
+            "系统",
+            "体系",
+            "架构",
+            "视图"
+          ]
+        },
+        "confidence": 0.9,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_d6856404",
+        "name": "Systems",
+        "type": "Framework",
+        "properties": {
+          "inference_method": "schema",
+          "inference_time": 1.4066696166992188e-05,
+          "original_name": "Systems",
+          "type_description": "结合多种组件的体系/方法论",
+          "aliases": [
+            "框架",
+            "系统",
+            "体系",
+            "架构",
+            "视图"
+          ]
+        },
+        "confidence": 0.9,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_d38212a0",
+        "name": "SV",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 4.9114227294921875e-05,
+          "original_name": "SV"
+        },
+        "confidence": 0.0,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_d99a604c",
+        "name": "Concept",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 5.125999450683594e-05,
+          "original_name": "Concept"
+        },
+        "confidence": 0.0,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_cce99c59",
+        "name": "Profile",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 5.1021575927734375e-05,
+          "original_name": "Profile"
+        },
+        "confidence": 0.0,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_ad1ec60c",
+        "name": "Technical",
+        "type": "Framework",
+        "properties": {
+          "inference_method": "schema",
+          "inference_time": 1.4066696166992188e-05,
+          "original_name": "Technical",
+          "type_description": "结合多种组件的体系/方法论",
+          "aliases": [
+            "框架",
+            "系统",
+            "体系",
+            "架构",
+            "视图"
+          ]
+        },
+        "confidence": 0.9,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_a45da96d",
+        "name": "System",
+        "type": "Framework",
+        "properties": {
+          "inference_method": "schema",
+          "inference_time": 1.4066696166992188e-05,
+          "original_name": "System",
+          "type_description": "结合多种组件的体系/方法论",
+          "aliases": [
+            "框架",
+            "系统",
+            "体系",
+            "架构",
+            "视图"
+          ]
+        },
+        "confidence": 0.9,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_f1a76f66",
+        "name": "Flow",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 5.0067901611328125e-05,
+          "original_name": "Flow"
+        },
+        "confidence": 0.0,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_3c1aac82",
+        "name": "Interface",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 5.173683166503906e-05,
+          "original_name": "Interface"
+        },
+        "confidence": 0.0,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_2067d966",
+        "name": "specific",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 5.1021575927734375e-05,
+          "original_name": "specific"
+        },
+        "confidence": 0.0,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_4351cfeb",
+        "name": "View",
+        "type": "Framework",
+        "properties": {
+          "inference_method": "schema",
+          "inference_time": 1.3113021850585938e-05,
+          "original_name": "View",
+          "type_description": "结合多种组件的体系/方法论",
+          "aliases": [
+            "框架",
+            "系统",
+            "体系",
+            "架构",
+            "视图"
+          ]
+        },
+        "confidence": 0.9,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_b5a7adde",
+        "name": "Description",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 5.316734313964844e-05,
+          "original_name": "Description"
+        },
+        "confidence": 0.0,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_2e9413b5",
+        "name": "OV",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 4.792213439941406e-05,
+          "original_name": "OV"
+        },
+        "confidence": 0.0,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_655d20c1",
+        "name": "High",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 4.982948303222656e-05,
+          "original_name": "High"
+        },
+        "confidence": 0.0,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_271ddf82",
+        "name": "TV",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 4.792213439941406e-05,
+          "original_name": "TV"
+        },
+        "confidence": 0.0,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_a4704fd3",
+        "name": "The",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 4.792213439941406e-05,
+          "original_name": "The"
+        },
+        "confidence": 0.0,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_a0db49ba",
+        "name": "Level",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 4.887580871582031e-05,
+          "original_name": "Level"
+        },
+        "confidence": 0.0,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_aabf4342",
+        "name": "Graphic",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 4.887580871582031e-05,
+          "original_name": "Graphic"
+        },
+        "confidence": 0.0,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      }
+    ],
+    "relations": [
+      {
+        "id": "rel_7992ac99",
+        "subject_id": "entity_1bda80f2",
+        "subject_name": "view",
+        "predicate": "implements",
+        "object_id": "entity_2067d966",
+        "object_name": "specific",
+        "properties": {
+          "extraction_confidence": 0.7,
+          "triple_index": 0,
+          "relation_description": "技术实现算法",
+          "expected_subject_types": [
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Algorithm"
+          ]
+        },
+        "confidence": 0.7,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_70083573",
+        "subject_id": "entity_be8545ae",
+        "subject_name": "Resource",
+        "predicate": "used_in",
+        "object_id": "entity_a0db49ba",
+        "object_name": "Level",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 1,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_4fb4bc1f",
+        "subject_id": "entity_be8545ae",
+        "subject_name": "Resource",
+        "predicate": "used_in",
+        "object_id": "entity_d99a604c",
+        "object_name": "Concept",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 2,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_cef06a45",
+        "subject_id": "entity_be8545ae",
+        "subject_name": "Resource",
+        "predicate": "used_in",
+        "object_id": "entity_f1a76f66",
+        "object_name": "Flow",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 3,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_526cd8d0",
+        "subject_id": "entity_be8545ae",
+        "subject_name": "Resource",
+        "predicate": "used_in",
+        "object_id": "entity_aabf4342",
+        "object_name": "Graphic",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 4,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_c122ad08",
+        "subject_id": "entity_be8545ae",
+        "subject_name": "Resource",
+        "predicate": "used_in",
+        "object_id": "entity_431accab",
+        "object_name": "Operational",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 5,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_a2143840",
+        "subject_id": "entity_be8545ae",
+        "subject_name": "Resource",
+        "predicate": "used_in",
+        "object_id": "entity_4351cfeb",
+        "object_name": "View",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 6,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_8d1eda84",
+        "subject_id": "entity_be8545ae",
+        "subject_name": "Resource",
+        "predicate": "used_in",
+        "object_id": "entity_b5a7adde",
+        "object_name": "Description",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 7,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_89cfa038",
+        "subject_id": "entity_be8545ae",
+        "subject_name": "Resource",
+        "predicate": "used_in",
+        "object_id": "entity_2e9413b5",
+        "object_name": "OV",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 8,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_578c6482",
+        "subject_id": "entity_be8545ae",
+        "subject_name": "Resource",
+        "predicate": "used_in",
+        "object_id": "entity_655d20c1",
+        "object_name": "High",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 9,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_9dce4498",
+        "subject_id": "entity_be8545ae",
+        "subject_name": "Resource",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 10,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_4daf47ce",
+        "subject_id": "entity_a0db49ba",
+        "subject_name": "Level",
+        "predicate": "used_in",
+        "object_id": "entity_d99a604c",
+        "object_name": "Concept",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 11,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_0a4b3b2c",
+        "subject_id": "entity_a0db49ba",
+        "subject_name": "Level",
+        "predicate": "used_in",
+        "object_id": "entity_f1a76f66",
+        "object_name": "Flow",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 12,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_f99dc692",
+        "subject_id": "entity_a0db49ba",
+        "subject_name": "Level",
+        "predicate": "used_in",
+        "object_id": "entity_aabf4342",
+        "object_name": "Graphic",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 13,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_585494f4",
+        "subject_id": "entity_a0db49ba",
+        "subject_name": "Level",
+        "predicate": "used_in",
+        "object_id": "entity_431accab",
+        "object_name": "Operational",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 14,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_068eaec1",
+        "subject_id": "entity_a0db49ba",
+        "subject_name": "Level",
+        "predicate": "used_in",
+        "object_id": "entity_4351cfeb",
+        "object_name": "View",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 15,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_a037e914",
+        "subject_id": "entity_a0db49ba",
+        "subject_name": "Level",
+        "predicate": "used_in",
+        "object_id": "entity_b5a7adde",
+        "object_name": "Description",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 16,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_c33fe682",
+        "subject_id": "entity_a0db49ba",
+        "subject_name": "Level",
+        "predicate": "used_in",
+        "object_id": "entity_2e9413b5",
+        "object_name": "OV",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 17,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_2f7503bb",
+        "subject_id": "entity_a0db49ba",
+        "subject_name": "Level",
+        "predicate": "used_in",
+        "object_id": "entity_655d20c1",
+        "object_name": "High",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 18,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_af5d3478",
+        "subject_id": "entity_a0db49ba",
+        "subject_name": "Level",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 19,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_2e9f96c3",
+        "subject_id": "entity_d99a604c",
+        "subject_name": "Concept",
+        "predicate": "used_in",
+        "object_id": "entity_f1a76f66",
+        "object_name": "Flow",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 20,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_28032124",
+        "subject_id": "entity_d99a604c",
+        "subject_name": "Concept",
+        "predicate": "used_in",
+        "object_id": "entity_aabf4342",
+        "object_name": "Graphic",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 21,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_6580e05e",
+        "subject_id": "entity_d99a604c",
+        "subject_name": "Concept",
+        "predicate": "used_in",
+        "object_id": "entity_431accab",
+        "object_name": "Operational",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 22,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_dfdb437d",
+        "subject_id": "entity_d99a604c",
+        "subject_name": "Concept",
+        "predicate": "used_in",
+        "object_id": "entity_4351cfeb",
+        "object_name": "View",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 23,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_d3e65cad",
+        "subject_id": "entity_d99a604c",
+        "subject_name": "Concept",
+        "predicate": "used_in",
+        "object_id": "entity_b5a7adde",
+        "object_name": "Description",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 24,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_5898d3b9",
+        "subject_id": "entity_d99a604c",
+        "subject_name": "Concept",
+        "predicate": "used_in",
+        "object_id": "entity_2e9413b5",
+        "object_name": "OV",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 25,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_2cd1cab1",
+        "subject_id": "entity_d99a604c",
+        "subject_name": "Concept",
+        "predicate": "used_in",
+        "object_id": "entity_655d20c1",
+        "object_name": "High",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 26,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_86a30781",
+        "subject_id": "entity_d99a604c",
+        "subject_name": "Concept",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 27,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_c126379f",
+        "subject_id": "entity_f1a76f66",
+        "subject_name": "Flow",
+        "predicate": "used_in",
+        "object_id": "entity_aabf4342",
+        "object_name": "Graphic",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 28,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_691bee30",
+        "subject_id": "entity_f1a76f66",
+        "subject_name": "Flow",
+        "predicate": "used_in",
+        "object_id": "entity_431accab",
+        "object_name": "Operational",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 29,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_2d93ec97",
+        "subject_id": "entity_f1a76f66",
+        "subject_name": "Flow",
+        "predicate": "used_in",
+        "object_id": "entity_4351cfeb",
+        "object_name": "View",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 30,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_21885dca",
+        "subject_id": "entity_f1a76f66",
+        "subject_name": "Flow",
+        "predicate": "used_in",
+        "object_id": "entity_b5a7adde",
+        "object_name": "Description",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 31,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_1a243403",
+        "subject_id": "entity_f1a76f66",
+        "subject_name": "Flow",
+        "predicate": "used_in",
+        "object_id": "entity_2e9413b5",
+        "object_name": "OV",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 32,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_25fba6a5",
+        "subject_id": "entity_f1a76f66",
+        "subject_name": "Flow",
+        "predicate": "used_in",
+        "object_id": "entity_655d20c1",
+        "object_name": "High",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 33,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_7b429791",
+        "subject_id": "entity_f1a76f66",
+        "subject_name": "Flow",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 34,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_2d32a650",
+        "subject_id": "entity_aabf4342",
+        "subject_name": "Graphic",
+        "predicate": "used_in",
+        "object_id": "entity_431accab",
+        "object_name": "Operational",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 35,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_5a7a63b4",
+        "subject_id": "entity_aabf4342",
+        "subject_name": "Graphic",
+        "predicate": "used_in",
+        "object_id": "entity_4351cfeb",
+        "object_name": "View",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 36,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_18b66701",
+        "subject_id": "entity_aabf4342",
+        "subject_name": "Graphic",
+        "predicate": "used_in",
+        "object_id": "entity_b5a7adde",
+        "object_name": "Description",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 37,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_612ad3c3",
+        "subject_id": "entity_aabf4342",
+        "subject_name": "Graphic",
+        "predicate": "used_in",
+        "object_id": "entity_2e9413b5",
+        "object_name": "OV",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 38,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_6d58f07c",
+        "subject_id": "entity_aabf4342",
+        "subject_name": "Graphic",
+        "predicate": "used_in",
+        "object_id": "entity_655d20c1",
+        "object_name": "High",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 39,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_a8a3ad15",
+        "subject_id": "entity_aabf4342",
+        "subject_name": "Graphic",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 40,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_3c50bbcd",
+        "subject_id": "entity_431accab",
+        "subject_name": "Operational",
+        "predicate": "used_in",
+        "object_id": "entity_4351cfeb",
+        "object_name": "View",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 41,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_d56445c4",
+        "subject_id": "entity_431accab",
+        "subject_name": "Operational",
+        "predicate": "used_in",
+        "object_id": "entity_b5a7adde",
+        "object_name": "Description",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 42,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_599db022",
+        "subject_id": "entity_431accab",
+        "subject_name": "Operational",
+        "predicate": "used_in",
+        "object_id": "entity_2e9413b5",
+        "object_name": "OV",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 43,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_2990bb11",
+        "subject_id": "entity_431accab",
+        "subject_name": "Operational",
+        "predicate": "used_in",
+        "object_id": "entity_655d20c1",
+        "object_name": "High",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 44,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_4ad3e834",
+        "subject_id": "entity_431accab",
+        "subject_name": "Operational",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 45,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_dbd051c8",
+        "subject_id": "entity_4351cfeb",
+        "subject_name": "View",
+        "predicate": "used_in",
+        "object_id": "entity_b5a7adde",
+        "object_name": "Description",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 46,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_2caf0311",
+        "subject_id": "entity_4351cfeb",
+        "subject_name": "View",
+        "predicate": "used_in",
+        "object_id": "entity_2e9413b5",
+        "object_name": "OV",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 47,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_c5a16db1",
+        "subject_id": "entity_4351cfeb",
+        "subject_name": "View",
+        "predicate": "used_in",
+        "object_id": "entity_655d20c1",
+        "object_name": "High",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 48,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_607d4b8f",
+        "subject_id": "entity_4351cfeb",
+        "subject_name": "View",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 49,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_34e7f93a",
+        "subject_id": "entity_b5a7adde",
+        "subject_name": "Description",
+        "predicate": "used_in",
+        "object_id": "entity_2e9413b5",
+        "object_name": "OV",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 50,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_d55f928b",
+        "subject_id": "entity_b5a7adde",
+        "subject_name": "Description",
+        "predicate": "used_in",
+        "object_id": "entity_655d20c1",
+        "object_name": "High",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 51,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_cb7e43b9",
+        "subject_id": "entity_b5a7adde",
+        "subject_name": "Description",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 52,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_a881c05b",
+        "subject_id": "entity_2e9413b5",
+        "subject_name": "OV",
+        "predicate": "used_in",
+        "object_id": "entity_655d20c1",
+        "object_name": "High",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 53,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_72689e90",
+        "subject_id": "entity_2e9413b5",
+        "subject_name": "OV",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 54,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_db001269",
+        "subject_id": "entity_655d20c1",
+        "subject_name": "High",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 55,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_432f38f9",
+        "subject_id": "entity_d38212a0",
+        "subject_name": "SV",
+        "predicate": "used_in",
+        "object_id": "entity_a45da96d",
+        "object_name": "System",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 56,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_d6c4d7fc",
+        "subject_id": "entity_d38212a0",
+        "subject_name": "SV",
+        "predicate": "used_in",
+        "object_id": "entity_be8545ae",
+        "object_name": "Resource",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 57,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_f56a4c0d",
+        "subject_id": "entity_d38212a0",
+        "subject_name": "SV",
+        "predicate": "used_in",
+        "object_id": "entity_f1a76f66",
+        "object_name": "Flow",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 58,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_a6355f53",
+        "subject_id": "entity_d38212a0",
+        "subject_name": "SV",
+        "predicate": "used_in",
+        "object_id": "entity_3c1aac82",
+        "object_name": "Interface",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 59,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_ce253155",
+        "subject_id": "entity_d38212a0",
+        "subject_name": "SV",
+        "predicate": "used_in",
+        "object_id": "entity_4351cfeb",
+        "object_name": "View",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 60,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_f6c86b25",
+        "subject_id": "entity_d38212a0",
+        "subject_name": "SV",
+        "predicate": "used_in",
+        "object_id": "entity_b5a7adde",
+        "object_name": "Description",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 61,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_4728fedf",
+        "subject_id": "entity_d38212a0",
+        "subject_name": "SV",
+        "predicate": "used_in",
+        "object_id": "entity_d6856404",
+        "object_name": "Systems",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 62,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_94b77fce",
+        "subject_id": "entity_d38212a0",
+        "subject_name": "SV",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 63,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_fe954c93",
+        "subject_id": "entity_a45da96d",
+        "subject_name": "System",
+        "predicate": "used_in",
+        "object_id": "entity_be8545ae",
+        "object_name": "Resource",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 64,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_487d79ee",
+        "subject_id": "entity_a45da96d",
+        "subject_name": "System",
+        "predicate": "used_in",
+        "object_id": "entity_f1a76f66",
+        "object_name": "Flow",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 65,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_c44006f9",
+        "subject_id": "entity_a45da96d",
+        "subject_name": "System",
+        "predicate": "used_in",
+        "object_id": "entity_3c1aac82",
+        "object_name": "Interface",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 66,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_ad407c62",
+        "subject_id": "entity_a45da96d",
+        "subject_name": "System",
+        "predicate": "used_in",
+        "object_id": "entity_4351cfeb",
+        "object_name": "View",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 67,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_23c18aef",
+        "subject_id": "entity_a45da96d",
+        "subject_name": "System",
+        "predicate": "used_in",
+        "object_id": "entity_b5a7adde",
+        "object_name": "Description",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 68,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_e50cd4fc",
+        "subject_id": "entity_a45da96d",
+        "subject_name": "System",
+        "predicate": "used_in",
+        "object_id": "entity_d6856404",
+        "object_name": "Systems",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 69,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_e63730fa",
+        "subject_id": "entity_a45da96d",
+        "subject_name": "System",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 70,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_375811ae",
+        "subject_id": "entity_be8545ae",
+        "subject_name": "Resource",
+        "predicate": "used_in",
+        "object_id": "entity_3c1aac82",
+        "object_name": "Interface",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 71,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_b8f567e5",
+        "subject_id": "entity_be8545ae",
+        "subject_name": "Resource",
+        "predicate": "used_in",
+        "object_id": "entity_d6856404",
+        "object_name": "Systems",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 72,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_cacb9b22",
+        "subject_id": "entity_f1a76f66",
+        "subject_name": "Flow",
+        "predicate": "used_in",
+        "object_id": "entity_3c1aac82",
+        "object_name": "Interface",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 73,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_bd6a1d40",
+        "subject_id": "entity_f1a76f66",
+        "subject_name": "Flow",
+        "predicate": "used_in",
+        "object_id": "entity_d6856404",
+        "object_name": "Systems",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 74,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_b3a0cd7b",
+        "subject_id": "entity_3c1aac82",
+        "subject_name": "Interface",
+        "predicate": "used_in",
+        "object_id": "entity_4351cfeb",
+        "object_name": "View",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 75,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_6b26d1b5",
+        "subject_id": "entity_3c1aac82",
+        "subject_name": "Interface",
+        "predicate": "used_in",
+        "object_id": "entity_b5a7adde",
+        "object_name": "Description",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 76,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_155a389a",
+        "subject_id": "entity_3c1aac82",
+        "subject_name": "Interface",
+        "predicate": "used_in",
+        "object_id": "entity_d6856404",
+        "object_name": "Systems",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 77,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_0a9b78f6",
+        "subject_id": "entity_3c1aac82",
+        "subject_name": "Interface",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 78,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_6ba34f86",
+        "subject_id": "entity_4351cfeb",
+        "subject_name": "View",
+        "predicate": "used_in",
+        "object_id": "entity_d6856404",
+        "object_name": "Systems",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 79,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_89002591",
+        "subject_id": "entity_b5a7adde",
+        "subject_name": "Description",
+        "predicate": "used_in",
+        "object_id": "entity_d6856404",
+        "object_name": "Systems",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 80,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_f2e261a2",
+        "subject_id": "entity_d6856404",
+        "subject_name": "Systems",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 81,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_2773f6a2",
+        "subject_id": "entity_3bacfbd5",
+        "subject_name": "Standards",
+        "predicate": "used_in",
+        "object_id": "entity_4351cfeb",
+        "object_name": "View",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 82,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_ad673bc9",
+        "subject_id": "entity_3bacfbd5",
+        "subject_name": "Standards",
+        "predicate": "used_in",
+        "object_id": "entity_271ddf82",
+        "object_name": "TV",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 83,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_08ff1335",
+        "subject_id": "entity_3bacfbd5",
+        "subject_name": "Standards",
+        "predicate": "used_in",
+        "object_id": "entity_cce99c59",
+        "object_name": "Profile",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 84,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_1a5bc18f",
+        "subject_id": "entity_3bacfbd5",
+        "subject_name": "Standards",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 85,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_8875afed",
+        "subject_id": "entity_3bacfbd5",
+        "subject_name": "Standards",
+        "predicate": "used_in",
+        "object_id": "entity_ad1ec60c",
+        "object_name": "Technical",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 86,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_2a4eb50b",
+        "subject_id": "entity_4351cfeb",
+        "subject_name": "View",
+        "predicate": "used_in",
+        "object_id": "entity_271ddf82",
+        "object_name": "TV",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 87,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_665ca3ef",
+        "subject_id": "entity_4351cfeb",
+        "subject_name": "View",
+        "predicate": "used_in",
+        "object_id": "entity_cce99c59",
+        "object_name": "Profile",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 88,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_ef50550d",
+        "subject_id": "entity_4351cfeb",
+        "subject_name": "View",
+        "predicate": "used_in",
+        "object_id": "entity_ad1ec60c",
+        "object_name": "Technical",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 89,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_00c421ab",
+        "subject_id": "entity_271ddf82",
+        "subject_name": "TV",
+        "predicate": "used_in",
+        "object_id": "entity_cce99c59",
+        "object_name": "Profile",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 90,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_3e8de5e6",
+        "subject_id": "entity_271ddf82",
+        "subject_name": "TV",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 91,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_8d17f914",
+        "subject_id": "entity_271ddf82",
+        "subject_name": "TV",
+        "predicate": "used_in",
+        "object_id": "entity_ad1ec60c",
+        "object_name": "Technical",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 92,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_d6f87032",
+        "subject_id": "entity_cce99c59",
+        "subject_name": "Profile",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 93,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_d864a60d",
+        "subject_id": "entity_cce99c59",
+        "subject_name": "Profile",
+        "predicate": "used_in",
+        "object_id": "entity_ad1ec60c",
+        "object_name": "Technical",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 94,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_72402dad",
+        "subject_id": "entity_a4704fd3",
+        "subject_name": "The",
+        "predicate": "used_in",
+        "object_id": "entity_ad1ec60c",
+        "object_name": "Technical",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 95,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "data/test_documents/dodaf_enterprise_architecture.json",
+        "created_at": "2025-08-16T12:19:42.886705",
+        "schema": "../schemas/general/schema_config.yaml"
+      }
+    ],
+    "entity_type_distribution": {
+      "Unknown": 15,
+      "Framework": 6
+    }
+  }
+}

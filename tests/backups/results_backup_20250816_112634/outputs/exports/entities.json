@@ -1,0 +1,52 @@
+{
+  "Dodaf": {
+    "entity_type": "Algorithm",
+    "description": "实体类型: Algorithm",
+    "attributes": {
+      "created_from": "kg_update",
+      "confidence": 0.9,
+      "source": "unknown",
+      "inferred_type": "Algorithm"
+    }
+  },
+  "Framework": {
+    "entity_type": "Paradigm",
+    "description": "实体类型: Paradigm",
+    "attributes": {
+      "created_from": "kg_update",
+      "confidence": 0.9,
+      "source": "unknown",
+      "inferred_type": "Paradigm"
+    }
+  },
+  "Operational_View": {
+    "entity_type": null,
+    "description": "实体类型: None",
+    "attributes": {
+      "created_from": "kg_update",
+      "confidence": 0.7544600578097613,
+      "source": "unknown",
+      "inferred_type": null
+    }
+  },
+  "System_View": {
+    "entity_type": "Framework",
+    "description": "实体类型: Framework",
+    "attributes": {
+      "created_from": "kg_update",
+      "confidence": 0.8738851890731821,
+      "source": "unknown",
+      "inferred_type": "Framework"
+    }
+  },
+  "Technical_View": {
+    "entity_type": null,
+    "description": "实体类型: None",
+    "attributes": {
+      "created_from": "kg_update",
+      "confidence": 0.7544600578097613,
+      "source": "unknown",
+      "inferred_type": null
+    }
+  }
+}

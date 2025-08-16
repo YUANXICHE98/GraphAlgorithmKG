@@ -1,0 +1,55 @@
+{
+  "collection_rules": {
+    "schema_classification": {
+      "source_files": [
+        "01_document_input.json",
+        "02_schema_detection.json"
+      ],
+      "required_fields": [
+        "content",
+        "selected_schema"
+      ],
+      "quality_filters": [
+        "has_valid_schema",
+        "content_length > 100"
+      ]
+    },
+    "entity_inference": {
+      "source_files": [
+        "04_entity_inference.json"
+      ],
+      "required_fields": [
+        "name",
+        "type",
+        "confidence"
+      ],
+      "quality_filters": [
+        "confidence > 0.0",
+        "type != Unknown"
+      ]
+    },
+    "relation_extraction": {
+      "source_files": [
+        "03_triple_extraction.json"
+      ],
+      "required_fields": [
+        "subject",
+        "predicate",
+        "object"
+      ],
+      "quality_filters": [
+        "all_fields_non_empty"
+      ]
+    }
+  },
+  "data_splits": {
+    "train": 0.7,
+    "validation": 0.2,
+    "test": 0.1
+  },
+  "preprocessing": {
+    "text_normalization": true,
+    "remove_duplicates": true,
+    "balance_classes": true
+  }
+}

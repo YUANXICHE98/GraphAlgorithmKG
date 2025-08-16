@@ -1,0 +1,78 @@
+{
+  "stage_name": "mapped_triples",
+  "timestamp": "2025-08-15T12:20:57.260711",
+  "session_id": "20250815_122049",
+  "data": [
+    {
+      "subject": "Dodaf",
+      "subject_type": "Algorithm",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "object_type": "Paradigm",
+      "confidence": 0.9,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Dodaf",
+        "predicate": "is_instance_of",
+        "object": "Framework",
+        "confidence": 0.9,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Operational_View",
+      "subject_type": null,
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "object_type": "Paradigm",
+      "confidence": 0.7544600578097613,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Operational_View",
+        "predicate": "is_instance_of",
+        "object": "Framework",
+        "confidence": 0.8,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "System_View",
+      "subject_type": "Framework",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "object_type": "Paradigm",
+      "confidence": 0.8738851890731821,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "System_View",
+        "predicate": "is_instance_of",
+        "object": "Framework",
+        "confidence": 0.8,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Technical_View",
+      "subject_type": null,
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "object_type": "Paradigm",
+      "confidence": 0.7544600578097613,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Technical_View",
+        "predicate": "is_instance_of",
+        "object": "Framework",
+        "confidence": 0.8,
+        "source": "unknown"
+      }
+    }
+  ],
+  "metadata": {
+    "cleaned_count": 4,
+    "mapped_count": 4,
+    "mapping_rate": 1.0,
+    "failed_count": 0
+  },
+  "data_count": 4
+}

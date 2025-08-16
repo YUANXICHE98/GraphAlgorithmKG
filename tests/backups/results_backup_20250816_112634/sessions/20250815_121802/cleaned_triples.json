@@ -1,0 +1,76 @@
+{
+  "stage_name": "cleaned_triples",
+  "timestamp": "2025-08-15T12:18:13.399732",
+  "session_id": "20250815_121802",
+  "data": [
+    {
+      "subject": "Dodaf",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.9,
+      "source": "unknown"
+    },
+    {
+      "subject": "Operational_View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "source": "unknown"
+    },
+    {
+      "subject": "System_View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "source": "unknown"
+    },
+    {
+      "subject": "Technical_View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "source": "unknown"
+    },
+    {
+      "subject": "Command_And_Control",
+      "predicate": "is_instance_of",
+      "object": "Task",
+      "confidence": 0.7,
+      "source": "unknown"
+    },
+    {
+      "subject": "Intelligence_Gathering",
+      "predicate": "is_instance_of",
+      "object": "Task",
+      "confidence": 0.7,
+      "source": "unknown"
+    },
+    {
+      "subject": "Logistics_Operations",
+      "predicate": "is_instance_of",
+      "object": "Task",
+      "confidence": 0.7,
+      "source": "unknown"
+    },
+    {
+      "subject": "Communication_Systems",
+      "predicate": "is_instance_of",
+      "object": "Task",
+      "confidence": 0.7,
+      "source": "unknown"
+    },
+    {
+      "subject": "Surveillance_And_Reconnaissance",
+      "predicate": "is_instance_of",
+      "object": "Task",
+      "confidence": 0.7,
+      "source": "unknown"
+    }
+  ],
+  "metadata": {
+    "original_count": 9,
+    "cleaned_count": 9,
+    "clean_rate": 1.0
+  },
+  "data_count": 9
+}

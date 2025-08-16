@@ -1,0 +1,158 @@
+{
+  "stage_name": "mapped_triples",
+  "timestamp": "2025-08-15T12:18:13.400711",
+  "session_id": "20250815_121802",
+  "data": [
+    {
+      "subject": "Dodaf",
+      "subject_type": "Algorithm",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "object_type": "Paradigm",
+      "confidence": 0.9,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Dodaf",
+        "predicate": "is_instance_of",
+        "object": "Framework",
+        "confidence": 0.9,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Operational_View",
+      "subject_type": null,
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "object_type": "Paradigm",
+      "confidence": 0.7544600578097613,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Operational_View",
+        "predicate": "is_instance_of",
+        "object": "Framework",
+        "confidence": 0.8,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "System_View",
+      "subject_type": "Framework",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "object_type": "Paradigm",
+      "confidence": 0.8738851890731821,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "System_View",
+        "predicate": "is_instance_of",
+        "object": "Framework",
+        "confidence": 0.8,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Technical_View",
+      "subject_type": null,
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "object_type": "Paradigm",
+      "confidence": 0.7544600578097613,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Technical_View",
+        "predicate": "is_instance_of",
+        "object": "Framework",
+        "confidence": 0.8,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Command_And_Control",
+      "subject_type": null,
+      "predicate": "is_instance_of",
+      "object": "Task",
+      "object_type": "Task",
+      "confidence": 0.7296897837293362,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Command_And_Control",
+        "predicate": "is_instance_of",
+        "object": "Task",
+        "confidence": 0.7,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Intelligence_Gathering",
+      "subject_type": null,
+      "predicate": "is_instance_of",
+      "object": "Task",
+      "object_type": "Task",
+      "confidence": 0.7296897837293362,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Intelligence_Gathering",
+        "predicate": "is_instance_of",
+        "object": "Task",
+        "confidence": 0.7,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Logistics_Operations",
+      "subject_type": null,
+      "predicate": "is_instance_of",
+      "object": "Task",
+      "object_type": "Task",
+      "confidence": 0.7296897837293362,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Logistics_Operations",
+        "predicate": "is_instance_of",
+        "object": "Task",
+        "confidence": 0.7,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Communication_Systems",
+      "subject_type": "Framework",
+      "predicate": "is_instance_of",
+      "object": "Task",
+      "object_type": "Task",
+      "confidence": 0.8451939741783773,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Communication_Systems",
+        "predicate": "is_instance_of",
+        "object": "Task",
+        "confidence": 0.7,
+        "source": "unknown"
+      }
+    },
+    {
+      "subject": "Surveillance_And_Reconnaissance",
+      "subject_type": null,
+      "predicate": "is_instance_of",
+      "object": "Task",
+      "object_type": "Task",
+      "confidence": 0.7296897837293362,
+      "source": "unknown",
+      "original_triple": {
+        "subject": "Surveillance_And_Reconnaissance",
+        "predicate": "is_instance_of",
+        "object": "Task",
+        "confidence": 0.7,
+        "source": "unknown"
+      }
+    }
+  ],
+  "metadata": {
+    "cleaned_count": 9,
+    "mapped_count": 9,
+    "mapping_rate": 1.0,
+    "failed_count": 0
+  },
+  "data_count": 9
+}

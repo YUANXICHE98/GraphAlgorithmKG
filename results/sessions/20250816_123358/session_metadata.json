@@ -1,0 +1,12 @@
+{
+  "session_id": "20250816_123358",
+  "start_time": "2025-08-16T12:33:58.047596",
+  "end_time": null,
+  "document_path": "test_llm_document.json",
+  "schema_used": "",
+  "total_processing_time": 0.0,
+  "stages_completed": [
+    "document_input"
+  ],
+  "final_stats": {}
+}

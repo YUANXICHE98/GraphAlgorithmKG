@@ -1,0 +1,29 @@
+{
+  "classification_time": "2025-08-16T11:16:16.407075",
+  "total_schemas": 3,
+  "statistics": {
+    "general": {
+      "name": "通用知识图谱",
+      "knowledge_graphs": 4,
+      "sessions": 0,
+      "description": "企业架构、框架、算法等通用概念"
+    },
+    "spatiotemporal": {
+      "name": "时空知识图谱",
+      "knowledge_graphs": 5,
+      "sessions": 0,
+      "description": "时空概念、事件、DO-DA-F结构"
+    },
+    "mixed": {
+      "name": "混合类型",
+      "knowledge_graphs": 0,
+      "sessions": 4,
+      "description": "无法明确分类或多Schema混合的结果"
+    }
+  },
+  "file_naming_convention": {
+    "knowledge_graphs": "{session_id}_{schema_type}_knowledge_graph.json",
+    "analysis": "{session_id}_{schema_type}_analysis.json",
+    "exports": "{session_id}_{schema_type}_{format}.{ext}"
+  }
+}

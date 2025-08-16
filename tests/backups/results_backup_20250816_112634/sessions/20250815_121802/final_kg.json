@@ -1,0 +1,51 @@
+{
+  "stage_name": "final_kg",
+  "timestamp": "2025-08-15T12:18:13.403220",
+  "session_id": "20250815_121802",
+  "data": {
+    "entities": [
+      "Entity(name='Dodaf', entity_type='Algorithm', description='实体类型: Algorithm', attributes={'created_from': 'kg_update', 'confidence': 0.9, 'source': 'unknown', 'inferred_type': 'Algorithm'}, created_at='2025-08-15T12:18:13.401626')",
+      "Entity(name='Framework', entity_type='Paradigm', description='实体类型: Paradigm', attributes={'created_from': 'kg_update', 'confidence': 0.9, 'source': 'unknown', 'inferred_type': 'Paradigm'}, created_at='2025-08-15T12:18:13.401640')",
+      "Entity(name='Operational_View', entity_type=None, description='实体类型: None', attributes={'created_from': 'kg_update', 'confidence': 0.7544600578097613, 'source': 'unknown', 'inferred_type': None}, created_at='2025-08-15T12:18:13.401657')",
+      "Entity(name='System_View', entity_type='Framework', description='实体类型: Framework', attributes={'created_from': 'kg_update', 'confidence': 0.8738851890731821, 'source': 'unknown', 'inferred_type': 'Framework'}, created_at='2025-08-15T12:18:13.401663')",
+      "Entity(name='Technical_View', entity_type=None, description='实体类型: None', attributes={'created_from': 'kg_update', 'confidence': 0.7544600578097613, 'source': 'unknown', 'inferred_type': None}, created_at='2025-08-15T12:18:13.401669')",
+      "Entity(name='Command_And_Control', entity_type=None, description='实体类型: None', attributes={'created_from': 'kg_update', 'confidence': 0.7296897837293362, 'source': 'unknown', 'inferred_type': None}, created_at='2025-08-15T12:18:13.401674')",
+      "Entity(name='Task', entity_type='Task', description='实体类型: Task', attributes={'created_from': 'kg_update', 'confidence': 0.7296897837293362, 'source': 'unknown', 'inferred_type': 'Task'}, created_at='2025-08-15T12:18:13.401680')",
+      "Entity(name='Intelligence_Gathering', entity_type=None, description='实体类型: None', attributes={'created_from': 'kg_update', 'confidence': 0.7296897837293362, 'source': 'unknown', 'inferred_type': None}, created_at='2025-08-15T12:18:13.401686')",
+      "Entity(name='Logistics_Operations', entity_type=None, description='实体类型: None', attributes={'created_from': 'kg_update', 'confidence': 0.7296897837293362, 'source': 'unknown', 'inferred_type': None}, created_at='2025-08-15T12:18:13.401692')",
+      "Entity(name='Communication_Systems', entity_type='Framework', description='实体类型: Framework', attributes={'created_from': 'kg_update', 'confidence': 0.8451939741783773, 'source': 'unknown', 'inferred_type': 'Framework'}, created_at='2025-08-15T12:18:13.401697')",
+      "Entity(name='Surveillance_And_Reconnaissance', entity_type=None, description='实体类型: None', attributes={'created_from': 'kg_update', 'confidence': 0.7296897837293362, 'source': 'unknown', 'inferred_type': None}, created_at='2025-08-15T12:18:13.401702')"
+    ],
+    "relations": [
+      "Relation(subject='Dodaf', predicate='is_instance_of', object='Framework', confidence=0.9, source='unknown', created_at='2025-08-15T12:18:13.401649')",
+      "Relation(subject='Operational_View', predicate='is_instance_of', object='Framework', confidence=0.7544600578097613, source='unknown', created_at='2025-08-15T12:18:13.401660')",
+      "Relation(subject='System_View', predicate='is_instance_of', object='Framework', confidence=0.8738851890731821, source='unknown', created_at='2025-08-15T12:18:13.401665')",
+      "Relation(subject='Technical_View', predicate='is_instance_of', object='Framework', confidence=0.7544600578097613, source='unknown', created_at='2025-08-15T12:18:13.401671')",
+      "Relation(subject='Command_And_Control', predicate='is_instance_of', object='Task', confidence=0.7296897837293362, source='unknown', created_at='2025-08-15T12:18:13.401682')",
+      "Relation(subject='Intelligence_Gathering', predicate='is_instance_of', object='Task', confidence=0.7296897837293362, source='unknown', created_at='2025-08-15T12:18:13.401688')",
+      "Relation(subject='Logistics_Operations', predicate='is_instance_of', object='Task', confidence=0.7296897837293362, source='unknown', created_at='2025-08-15T12:18:13.401694')",
+      "Relation(subject='Communication_Systems', predicate='is_instance_of', object='Task', confidence=0.8451939741783773, source='unknown', created_at='2025-08-15T12:18:13.401699')",
+      "Relation(subject='Surveillance_And_Reconnaissance', predicate='is_instance_of', object='Task', confidence=0.7296897837293362, source='unknown', created_at='2025-08-15T12:18:13.401705')"
+    ],
+    "statistics": {
+      "total_entities": 11,
+      "total_relations": 9,
+      "new_entities": 11,
+      "new_relations": 9
+    }
+  },
+  "metadata": {
+    "session_stats": {
+      "start_time": "2025-08-15T12:18:03.045004",
+      "documents_processed": 1,
+      "chunks_extracted": 2,
+      "triples_generated": 9,
+      "entities_created": 11,
+      "relations_created": 9,
+      "ontology_updates": 0
+    },
+    "ontology_version": "2.0.0",
+    "processing_time": 1755231482.9825659
+  },
+  "data_count": 3
+}

@@ -1,0 +1,302 @@
+# 时空本体Schema配置
+# 基于时空概念的知识图谱本体定义
+
+metadata:
+  name: "时空本体"
+  version: "1.0.0"
+  description: "基于时空概念的知识图谱本体，支持时间主体系和空间关系建模"
+  domain: "spatiotemporal"
+  created_at: "2025-01-20"
+  author: "KG Builder"
+
+# 时空实体类型定义
+entity_types:
+  # 时间主体系
+  TemporalEntity:
+    description: "时间实体，表示时间点、时间段等时间概念"
+    examples: ["2024-10-23 08:00", "4小时", "2024年夏季", "确切时间", "不确定时间", "大致时间"]
+    keywords: ["时间", "时刻", "时段", "duration", "time", "temporal", "starttime", "endtime", "约", "大致"]
+    patterns: [".*时间$", ".*时刻$", ".*Time$", ".*Duration$", "\\d{4}-\\d{2}-\\d{2}", "\\d+小时", "\\d+天", "约.*", "大致.*"]
+    aliases: ["时间实体", "时间概念", "确切时间", "不确定时间", "大致时间"]
+    usage_count: 0
+
+  SpatialEntity:
+    description: "空间实体，表示地理位置、空间区域等空间概念"
+    examples: ["长江流域", "河流", "监测站", "流域", "POINT(108.7 34.316)", "LINESTRING", "POLYGON"]
+    keywords: ["空间", "地点", "位置", "区域", "space", "location", "spatial", "流域", "河流", "监测站", "几何", "point", "linestring", "polygon"]
+    patterns: [".*位置$", ".*地点$", ".*Location$", ".*Space$", ".*流域$", ".*河流$", ".*监测站$", "POINT\\(.*\\)", "LINESTRING\\(.*\\)", "POLYGON\\(.*\\)"]
+    aliases: ["空间实体", "地理实体", "河流", "流域", "监测站"]
+    usage_count: 0
+
+  Event:
+    description: "事件实体，具有时空属性的动态过程"
+    examples: ["水利事件", "洪水事件", "降水过程", "监测事件"]
+    keywords: ["事件", "过程", "现象", "event", "process", "phenomenon"]
+    patterns: [".*事件$", ".*过程$", ".*Event$", ".*Process$"]
+    aliases: ["事件", "过程"]
+    usage_count: 0
+
+  # DO-DA-F 结构实体（DoDAF应用）
+  Action:
+    description: "动作实体，表示系统中的行为或操作（DO）"
+    examples: ["执行", "监控", "控制", "部署", "checkTemperature", "monitorWaterLevel", "executeFloodWarning"]
+    keywords: ["动作", "行为", "操作", "执行", "action", "command", "execute", "control", "check", "monitor", "flood", "warning"]
+    patterns: [".*Command$", ".*Execute$", ".*Action$", ".*操作$", ".*Control$", "^check[A-Z].*", "^monitor[A-Z].*", "^execute[A-Z].*"]
+    aliases: ["动作", "操作", "行为", "系统动作"]
+    usage_count: 0
+
+  Condition:
+    description: "条件实体，表示系统运行的前提条件或环境状态（DA）"
+    examples: ["监测条件", "环境状态", "约束条件", "temperature > 30", "sensor_status == normal", "water_level > warning_threshold"]
+    keywords: ["条件", "状态", "约束", "前提", "condition", "state", "constraint", "temperature", "sensor", "status", "normal", "threshold", "warning", "water_level"]
+    patterns: [".*条件$", ".*状态$", ".*Condition$", ".*State$", ".*\\s*>\\s*.*", ".*\\s*==\\s*.*", ".*\\s*<\\s*.*", ".*\\s*>=\\s*.*", ".*\\s*<=\\s*.*", ".*threshold.*", ".*status.*", "water_level\\s*>.*"]
+    aliases: ["条件", "状态", "判断条件", "阈值条件"]
+    usage_count: 0
+
+  Outcome:
+    description: "结果实体，表示动作执行后的结果或输出（F）"
+    examples: ["执行结果", "输出", "效果", "turnOnAirConditioner", "generateWaterLevelReport", "activateEmergencyResponse"]
+    keywords: ["结果", "输出", "效果", "影响", "result", "output", "outcome", "turn", "generate", "activate", "report", "response", "conditioner", "emergency"]
+    patterns: [".*结果$", ".*输出$", ".*Result$", ".*Output$", "^turn[A-Z].*", "^generate[A-Z].*", "^activate[A-Z].*", ".*Report$", ".*Response$", ".*Conditioner$"]
+    aliases: ["结果", "输出", "执行结果", "系统响应"]
+    usage_count: 0
+
+  # 传统架构实体（支持DoDAF）
+  Architecture:
+    description: "架构实体"
+    examples: ["企业架构", "系统架构", "DoDAF", "架构框架"]
+    keywords: ["架构", "框架", "architecture", "framework", "dodaf", "enterprise"]
+    patterns: [".*架构$", ".*框架$", ".*Architecture$", ".*Framework$", "DoDAF", "DODAF"]
+    aliases: ["架构", "框架"]
+    usage_count: 0
+
+  View:
+    description: "视图实体，表示不同的架构视角"
+    examples: ["操作视图", "系统视图", "技术视图", "OV", "SV", "TV"]
+    keywords: ["视图", "视角", "view", "perspective", "operational", "system", "technical"]
+    patterns: [".*视图$", ".*View$", "^[A-Z]{2}$", "^[A-Z]{2}V$"]
+    aliases: ["视图", "视角"]
+    usage_count: 0
+
+  Model:
+    description: "模型实体，表示具体的架构模型"
+    examples: ["OV-1", "OV-2", "SV-1", "SV-2", "TV-1"]
+    keywords: ["模型", "图表", "规范", "model", "diagram"]
+    patterns: ["^[A-Z]{2,3}-\\d+$", "^[A-Z]{2,3}V-\\d+$", ".*模型$", ".*Model$"]
+    aliases: ["模型", "图表"]
+    usage_count: 0
+
+  Stakeholder:
+    description: "利益相关者实体，参与架构开发的人员角色"
+    examples: ["系统架构师", "操作规划师", "用户", "开发者"]
+    keywords: ["架构师", "规划师", "用户", "开发者", "architect", "planner", "user", "developer", "stakeholder"]
+    patterns: [".*架构师$", ".*规划师$", ".*Architect$", ".*Planner$", ".*User$"]
+    aliases: ["利益相关者", "参与者"]
+    usage_count: 0
+
+  MonitoringData:
+    description: "监测数据实体，表示各种监测值和测量结果"
+    examples: ["水位测量值", "降水量", "径流量", "温度值", "传感器数据"]
+    keywords: ["监测", "测量", "数据", "水位", "降水", "径流", "温度", "传感器", "measurement", "monitoring", "sensor"]
+    patterns: [".*测量.*", ".*监测.*", ".*数据$", ".*值$", ".*量$"]
+    aliases: ["监测数据", "测量数据", "传感器数据"]
+    usage_count: 0
+
+  MonitoringStation:
+    description: "监测站实体，表示进行监测活动的设施"
+    examples: ["水文站", "气象站", "监测点", "传感器站点"]
+    keywords: ["监测站", "水文站", "气象站", "监测点", "传感器", "station", "monitoring", "sensor"]
+    patterns: [".*监测站$", ".*水文站$", ".*气象站$", ".*监测点$", ".*Station$"]
+    aliases: ["监测站", "监测点", "站点"]
+    usage_count: 0
+
+# 时空关系类型定义
+relation_types:
+  # 时间关系
+  hasStartTime:
+    description: "具有开始时间"
+    subject_types: ["Event", "Action"]
+    object_types: ["TemporalEntity"]
+    examples: ["(洪水事件, hasStartTime, 2024-10-23 08:00)"]
+
+  hasEndTime:
+    description: "具有结束时间"
+    subject_types: ["Event", "Action"]
+    object_types: ["TemporalEntity"]
+    examples: ["(洪水事件, hasEndTime, 2024-10-23 12:00)"]
+
+  hasDuration:
+    description: "具有持续时间"
+    subject_types: ["Event", "Action"]
+    object_types: ["TemporalEntity"]
+    examples: ["(降水过程, hasDuration, 4小时)"]
+
+  before:
+    description: "时间先于关系"
+    subject_types: ["Event", "TemporalEntity"]
+    object_types: ["Event", "TemporalEntity"]
+    examples: ["(降水事件, before, 洪水事件)"]
+
+  after:
+    description: "时间后于关系"
+    subject_types: ["Event", "TemporalEntity"]
+    object_types: ["Event", "TemporalEntity"]
+    examples: ["(洪水事件, after, 降水事件)"]
+
+  # 空间关系
+  locatedAt:
+    description: "位于空间位置"
+    subject_types: ["Event", "Action", "MonitoringStation"]
+    object_types: ["SpatialEntity"]
+    examples: ["(洪水事件, locatedAt, 长江流域)", "(监测站, locatedAt, 河流)"]
+
+  spatiallyRelatedTo:
+    description: "空间相关关系"
+    subject_types: ["SpatialEntity"]
+    object_types: ["SpatialEntity"]
+    examples: ["(河流A, spatiallyRelatedTo, 流域B)"]
+
+  # 方向关系
+  isNorthOf:
+    description: "位于北面"
+    subject_types: ["SpatialEntity", "MonitoringStation"]
+    object_types: ["SpatialEntity", "MonitoringStation"]
+    examples: ["(监测站A, isNorthOf, 监测站B)"]
+
+  isUpstreamOf:
+    description: "位于上游"
+    subject_types: ["SpatialEntity", "MonitoringStation"]
+    object_types: ["SpatialEntity", "MonitoringStation"]
+    examples: ["(河段A, isUpstreamOf, 河段B)"]
+
+  isDownstreamOf:
+    description: "位于下游"
+    subject_types: ["SpatialEntity", "MonitoringStation"]
+    object_types: ["SpatialEntity", "MonitoringStation"]
+    examples: ["(河段B, isDownstreamOf, 河段A)"]
+
+  # 拓扑关系
+  sfContains:
+    description: "包含关系"
+    subject_types: ["SpatialEntity"]
+    object_types: ["SpatialEntity", "MonitoringStation", "Event"]
+    examples: ["(流域, sfContains, 河流)", "(流域, sfContains, 监测站)"]
+
+  sfWithin:
+    description: "位于内部"
+    subject_types: ["SpatialEntity", "MonitoringStation", "Event"]
+    object_types: ["SpatialEntity"]
+    examples: ["(监测站, sfWithin, 流域)", "(河流, sfWithin, 流域)"]
+
+  sfIntersects:
+    description: "相交关系"
+    subject_types: ["SpatialEntity"]
+    object_types: ["SpatialEntity"]
+    examples: ["(河流A, sfIntersects, 河流B)"]
+
+  # DO-DA-F 核心关系
+  hasCondition:
+    description: "动作具有条件关系"
+    subject_types: ["Action"]
+    object_types: ["Condition"]
+    examples: ["(执行命令, hasCondition, 授权条件)"]
+
+  causes:
+    description: "因果关系，动作导致结果"
+    subject_types: ["Action", "Event", "Condition"]
+    object_types: ["Outcome", "Event"]
+    examples: ["(执行操作, causes, 系统响应)"]
+
+  leadsTo:
+    description: "导致关系"
+    subject_types: ["Condition", "Action", "Event"]
+    object_types: ["Outcome", "Action", "Event"]
+    examples: ["(监测条件, leadsTo, 告警生成)"]
+
+  resultsIn:
+    description: "结果关系"
+    subject_types: ["Action", "Event"]
+    object_types: ["Outcome"]
+    examples: ["(部署操作, resultsIn, 系统运行)"]
+
+  # 传统关系
+  contains:
+    description: "包含关系"
+    subject_types: ["Architecture", "View"]
+    object_types: ["View", "Model"]
+    examples: ["(企业架构, contains, 操作视图)"]
+
+  supports:
+    description: "支持关系"
+    subject_types: ["Model", "View"]
+    object_types: ["Action", "Event"]
+    examples: ["(OV-1, supports, 系统架构师)"]
+
+  # 监测关系
+  monitors:
+    description: "监测关系"
+    subject_types: ["MonitoringStation"]
+    object_types: ["SpatialEntity", "Event"]
+    examples: ["(监测站, monitors, 河流)", "(监测站, monitors, 洪水事件)"]
+
+  hasMeasurement:
+    description: "具有测量值"
+    subject_types: ["MonitoringStation", "Event"]
+    object_types: ["MonitoringData"]
+    examples: ["(监测站, hasMeasurement, 水位值)", "(洪水事件, hasMeasurement, 水位数据)"]
+
+  measuredAt:
+    description: "测量时间"
+    subject_types: ["MonitoringData"]
+    object_types: ["TemporalEntity"]
+    examples: ["(水位值, measuredAt, 2024-10-23 08:00)"]
+
+  measuredAtLocation:
+    description: "测量地点"
+    subject_types: ["MonitoringData"]
+    object_types: ["SpatialEntity", "MonitoringStation"]
+    examples: ["(水位值, measuredAtLocation, 监测站)"]
+
+  is_instance_of:
+    description: "实例关系"
+    subject_types: ["*"]
+    object_types: ["*"]
+    examples: ["(DoDAF, is_instance_of, Architecture)"]
+
+# LLM提示词配置
+llm_prompts:
+  system_prompt: |
+    你是一个专业的时空本体知识抽取专家。请从给定文本中抽取符合时空本体的三元组。
+    
+    时空本体基于以下核心概念：
+    1. 时间主体系：时间实体、事件的时间属性（开始时间、结束时间、持续时间）
+    2. 空间关系：空间实体、地理位置、空间相关性
+    3. DO-DA-F结构：动作(DO) - 条件(DA) - 结果(F)
+    
+    主要实体类型：
+    - TemporalEntity: 时间实体
+    - SpatialEntity: 空间实体  
+    - Event: 事件实体
+    - Action: 动作实体
+    - Condition: 条件实体
+    - Outcome: 结果实体
+    - Architecture/View/Model: 架构相关实体
+
+  user_prompt_template: |
+    请从以下文本中抽取时空本体相关的知识三元组：
+
+    文本内容：
+    {text}
+
+    请抽取符合以下格式的三元组：
+    (主语, 关系, 宾语)
+
+    重点关注：
+    1. 事件的时间属性 (hasStartTime, hasEndTime, hasDuration)
+    2. 事件的空间位置 (locatedAt)
+    3. 事件间的时序关系 (before, after)
+    4. DO-DA-F结构关系 (hasCondition, causes, leadsTo, resultsIn)
+    5. 架构组件关系 (contains, supports)
+    6. 实体类型关系 (is_instance_of)
+
+    请确保抽取的三元组准确反映时空本体的语义结构。

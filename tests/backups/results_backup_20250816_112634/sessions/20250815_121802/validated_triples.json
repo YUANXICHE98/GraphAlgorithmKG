@@ -1,0 +1,95 @@
+{
+  "stage_name": "validated_triples",
+  "timestamp": "2025-08-15T12:18:11.877394",
+  "session_id": "20250815_121802",
+  "data": [
+    {
+      "subject": "DoDAF",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.9,
+      "evidence": "The Department of Defense Architecture Framework (DoDAF) provides a comprehensive approach to enterprise architecture development.",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "Operational View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "evidence": "The Operational View captures the operational aspects of the enterprise, including: OV-1: High Level Operational Concept Graphic",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "System View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "evidence": "The System View describes the systems and interconnections supporting operational activities: SV-1: Systems Interface Description",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "Technical View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "evidence": "The Technical View provides the technical standards and rules governing the implementation: TV-1: Technical Standards Profile",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "Command and Control",
+      "predicate": "is_instance_of",
+      "object": "Task",
+      "confidence": 0.7,
+      "evidence": "The enterprise architecture must support various capabilities: Command and Control: Decision-making and coordination",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "Intelligence Gathering",
+      "predicate": "is_instance_of",
+      "object": "Task",
+      "confidence": 0.7,
+      "evidence": "The enterprise architecture must support various capabilities: Intelligence Gathering: Information collection and analysis",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "Logistics Operations",
+      "predicate": "is_instance_of",
+      "object": "Task",
+      "confidence": 0.7,
+      "evidence": "The enterprise architecture must support various capabilities: Logistics Operations: Resource management and distribution",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "Communication Systems",
+      "predicate": "is_instance_of",
+      "object": "Task",
+      "confidence": 0.7,
+      "evidence": "The enterprise architecture must support various capabilities: Communication Systems: Information exchange",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "Surveillance and Reconnaissance",
+      "predicate": "is_instance_of",
+      "object": "Task",
+      "confidence": 0.7,
+      "evidence": "The enterprise architecture must support various capabilities: Surveillance and Reconnaissance: Monitoring and detection",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    }
+  ],
+  "metadata": {
+    "original_count": 9,
+    "validated_count": 9,
+    "validation_rate": 1.0,
+    "chunk_id": ""
+  },
+  "data_count": 9
+}

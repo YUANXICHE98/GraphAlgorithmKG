@@ -1,0 +1,2277 @@
+[
+  {
+    "entity_name": "Level",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 7.700920104980469e-05,
+      "original_name": "Level"
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "Profile",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.2928924560546875e-05,
+      "original_name": "Profile"
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "OV",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.793571472167969e-05,
+      "original_name": "OV"
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "Technical",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 5.030632019042969e-05,
+      "original_name": "Technical",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "specific",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 6.127357482910156e-05,
+      "original_name": "specific"
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "Systems",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 2.6941299438476562e-05,
+      "original_name": "Systems",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "Graphic",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1975250244140625e-05,
+      "original_name": "Graphic"
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "The",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 4.9114227294921875e-05,
+      "original_name": "The"
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "Concept",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.125999450683594e-05,
+      "original_name": "Concept"
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "System",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.4066696166992188e-05,
+      "original_name": "System",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "Resource",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.125999450683594e-05,
+      "original_name": "Resource"
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "View",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.4066696166992188e-05,
+      "original_name": "View",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "TV",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 4.9114227294921875e-05,
+      "original_name": "TV"
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "High",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.0067901611328125e-05,
+      "original_name": "High"
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "Operational",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.5020370483398438e-05,
+      "original_name": "Operational",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "view",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.3828277587890625e-05,
+      "original_name": "view",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "Description",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.316734313964844e-05,
+      "original_name": "Description"
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "SV",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 4.982948303222656e-05,
+      "original_name": "SV"
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "Standards",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.316734313964844e-05,
+      "original_name": "Standards"
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "Flow",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 4.9114227294921875e-05,
+      "original_name": "Flow"
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "Interface",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1021575927734375e-05,
+      "original_name": "Interface"
+    },
+    "session_id": "20250816_113201"
+  },
+  {
+    "entity_name": "TV",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 7.724761962890625e-05,
+      "original_name": "TV"
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "System",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.5974044799804688e-05,
+      "original_name": "System",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "Graphic",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.412101745605469e-05,
+      "original_name": "Graphic"
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "High",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1021575927734375e-05,
+      "original_name": "High"
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "Resource",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.3882598876953125e-05,
+      "original_name": "Resource"
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "OV",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1021575927734375e-05,
+      "original_name": "OV"
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "Concept",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.2928924560546875e-05,
+      "original_name": "Concept"
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "Description",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.3882598876953125e-05,
+      "original_name": "Description"
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "Level",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1975250244140625e-05,
+      "original_name": "Level"
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "Flow",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1021575927734375e-05,
+      "original_name": "Flow"
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "view",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.4781951904296875e-05,
+      "original_name": "view",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "The",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1021575927734375e-05,
+      "original_name": "The"
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "Technical",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.4781951904296875e-05,
+      "original_name": "Technical",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "SV",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 4.982948303222656e-05,
+      "original_name": "SV"
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "Profile",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1975250244140625e-05,
+      "original_name": "Profile"
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "Interface",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.3882598876953125e-05,
+      "original_name": "Interface"
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "specific",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1975250244140625e-05,
+      "original_name": "specific"
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "Standards",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1975250244140625e-05,
+      "original_name": "Standards"
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "View",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.3828277587890625e-05,
+      "original_name": "View",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "Operational",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.4781951904296875e-05,
+      "original_name": "Operational",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "Systems",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.4066696166992188e-05,
+      "original_name": "Systems",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_111802"
+  },
+  {
+    "entity_name": "4小",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.0002110004425048828,
+      "original_name": "4小"
+    },
+    "session_id": "20250816_111803"
+  },
+  {
+    "entity_name": "降水ID_005",
+    "entity_type": "MonitoringData",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 7.677078247070312e-05,
+      "original_name": "降水ID_005",
+      "type_description": "监测数据实体，表示各种监测值和测量结果",
+      "aliases": [
+        "监测数据",
+        "测量数据",
+        "传感器数据"
+      ]
+    },
+    "session_id": "20250816_111803"
+  },
+  {
+    "entity_name": "洪水事件ID_001",
+    "entity_type": "Event",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 2.193450927734375e-05,
+      "original_name": "洪水事件ID_001",
+      "type_description": "事件实体，具有时空属性的动态过程",
+      "aliases": [
+        "事件",
+        "过程"
+      ]
+    },
+    "session_id": "20250816_111803"
+  },
+  {
+    "entity_name": "DO",
+    "entity_type": "View",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 5.91278076171875e-05,
+      "original_name": "DO",
+      "type_description": "视图实体，表示不同的架构视角",
+      "aliases": [
+        "视图",
+        "视角"
+      ]
+    },
+    "session_id": "20250816_111803"
+  },
+  {
+    "entity_name": "执行水位监测（动作）",
+    "entity_type": "Action",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 2.5033950805664062e-05,
+      "original_name": "执行水位监测（动作）",
+      "type_description": "动作实体，表示系统中的行为或操作（DO）",
+      "aliases": [
+        "动作",
+        "操作",
+        "行为",
+        "系统动作"
+      ]
+    },
+    "session_id": "20250816_111803"
+  },
+  {
+    "entity_name": "F",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.00016307830810546875,
+      "original_name": "F"
+    },
+    "session_id": "20250816_111803"
+  },
+  {
+    "entity_name": "ID_001",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.00017189979553222656,
+      "original_name": "ID_001"
+    },
+    "session_id": "20250816_111803"
+  },
+  {
+    "entity_name": "DA",
+    "entity_type": "View",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 5.888938903808594e-05,
+      "original_name": "DA",
+      "type_description": "视图实体，表示不同的架构视角",
+      "aliases": [
+        "视图",
+        "视角"
+      ]
+    },
+    "session_id": "20250816_111803"
+  },
+  {
+    "entity_name": "00",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.0001647472381591797,
+      "original_name": "00"
+    },
+    "session_id": "20250816_111803"
+  },
+  {
+    "entity_name": "ID",
+    "entity_type": "View",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 5.793571472167969e-05,
+      "original_name": "ID",
+      "type_description": "视图实体，表示不同的架构视角",
+      "aliases": [
+        "视图",
+        "视角"
+      ]
+    },
+    "session_id": "20250816_111803"
+  },
+  {
+    "entity_name": "时空概念在水利领域中是用于描述水利事件及其相关实体在时间和空间维度上分布与动态变化的核心理论基础",
+    "entity_type": "TemporalEntity",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 2.1457672119140625e-06,
+      "original_name": "时空概念在水利领域中是用于描述水利事件及其相关实体在时间和空间维度上分布与动态变化的核心理论基础",
+      "type_description": "时间实体，表示时间点、时间段等时间概念",
+      "aliases": [
+        "时间实体",
+        "时间概念",
+        "确切时间",
+        "不确定时间",
+        "大致时间"
+      ]
+    },
+    "session_id": "20250816_111803"
+  },
+  {
+    "entity_name": "2024-10-23 08:00",
+    "entity_type": "TemporalEntity",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 7.152557373046875e-06,
+      "original_name": "2024-10-23 08:00",
+      "type_description": "时间实体，表示时间点、时间段等时间概念",
+      "aliases": [
+        "时间实体",
+        "时间概念",
+        "确切时间",
+        "不确定时间",
+        "大致时间"
+      ]
+    },
+    "session_id": "20250816_111803"
+  },
+  {
+    "entity_name": "specific",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 8.0108642578125e-05,
+      "original_name": "specific"
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "Level",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.3882598876953125e-05,
+      "original_name": "Level"
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "View",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.4781951904296875e-05,
+      "original_name": "View",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "High",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1975250244140625e-05,
+      "original_name": "High"
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "Resource",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.3882598876953125e-05,
+      "original_name": "Resource"
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "Operational",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.621246337890625e-05,
+      "original_name": "Operational",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "Graphic",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.2928924560546875e-05,
+      "original_name": "Graphic"
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "TV",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1021575927734375e-05,
+      "original_name": "TV"
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "Technical",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.4781951904296875e-05,
+      "original_name": "Technical",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "System",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.2874603271484375e-05,
+      "original_name": "System",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "Standards",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.3882598876953125e-05,
+      "original_name": "Standards"
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "view",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.5020370483398438e-05,
+      "original_name": "view",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "Flow",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1021575927734375e-05,
+      "original_name": "Flow"
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "SV",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 4.982948303222656e-05,
+      "original_name": "SV"
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "OV",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.078315734863281e-05,
+      "original_name": "OV"
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "Description",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.459785461425781e-05,
+      "original_name": "Description"
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "The",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1021575927734375e-05,
+      "original_name": "The"
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "Systems",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.4066696166992188e-05,
+      "original_name": "Systems",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "Concept",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.316734313964844e-05,
+      "original_name": "Concept"
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "Profile",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1975250244140625e-05,
+      "original_name": "Profile"
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "Interface",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.3882598876953125e-05,
+      "original_name": "Interface"
+    },
+    "session_id": "20250816_113155"
+  },
+  {
+    "entity_name": "降水ID_005",
+    "entity_type": "MonitoringData",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 0.0001201629638671875,
+      "original_name": "降水ID_005",
+      "type_description": "监测数据实体，表示各种监测值和测量结果",
+      "aliases": [
+        "监测数据",
+        "测量数据",
+        "传感器数据"
+      ]
+    },
+    "session_id": "20250816_110516"
+  },
+  {
+    "entity_name": "ID",
+    "entity_type": "View",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 6.4849853515625e-05,
+      "original_name": "ID",
+      "type_description": "视图实体，表示不同的架构视角",
+      "aliases": [
+        "视图",
+        "视角"
+      ]
+    },
+    "session_id": "20250816_110516"
+  },
+  {
+    "entity_name": "DO",
+    "entity_type": "View",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 6.103515625e-05,
+      "original_name": "DO",
+      "type_description": "视图实体，表示不同的架构视角",
+      "aliases": [
+        "视图",
+        "视角"
+      ]
+    },
+    "session_id": "20250816_110516"
+  },
+  {
+    "entity_name": "时空概念在水利领域中是用于描述水利事件及其相关实体在时间和空间维度上分布与动态变化的核心理论基础",
+    "entity_type": "TemporalEntity",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 7.867813110351562e-06,
+      "original_name": "时空概念在水利领域中是用于描述水利事件及其相关实体在时间和空间维度上分布与动态变化的核心理论基础",
+      "type_description": "时间实体，表示时间点、时间段等时间概念",
+      "aliases": [
+        "时间实体",
+        "时间概念",
+        "确切时间",
+        "不确定时间",
+        "大致时间"
+      ]
+    },
+    "session_id": "20250816_110516"
+  },
+  {
+    "entity_name": "00",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.00025916099548339844,
+      "original_name": "00"
+    },
+    "session_id": "20250816_110516"
+  },
+  {
+    "entity_name": "2024-10-23 08:00",
+    "entity_type": "TemporalEntity",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.0967254638671875e-05,
+      "original_name": "2024-10-23 08:00",
+      "type_description": "时间实体，表示时间点、时间段等时间概念",
+      "aliases": [
+        "时间实体",
+        "时间概念",
+        "确切时间",
+        "不确定时间",
+        "大致时间"
+      ]
+    },
+    "session_id": "20250816_110516"
+  },
+  {
+    "entity_name": "4小",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.00017571449279785156,
+      "original_name": "4小"
+    },
+    "session_id": "20250816_110516"
+  },
+  {
+    "entity_name": "执行水位监测（动作）",
+    "entity_type": "Action",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 2.7179718017578125e-05,
+      "original_name": "执行水位监测（动作）",
+      "type_description": "动作实体，表示系统中的行为或操作（DO）",
+      "aliases": [
+        "动作",
+        "操作",
+        "行为",
+        "系统动作"
+      ]
+    },
+    "session_id": "20250816_110516"
+  },
+  {
+    "entity_name": "洪水事件ID_001",
+    "entity_type": "Event",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 2.002716064453125e-05,
+      "original_name": "洪水事件ID_001",
+      "type_description": "事件实体，具有时空属性的动态过程",
+      "aliases": [
+        "事件",
+        "过程"
+      ]
+    },
+    "session_id": "20250816_110516"
+  },
+  {
+    "entity_name": "ID_001",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.0001709461212158203,
+      "original_name": "ID_001"
+    },
+    "session_id": "20250816_110516"
+  },
+  {
+    "entity_name": "F",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.0001609325408935547,
+      "original_name": "F"
+    },
+    "session_id": "20250816_110516"
+  },
+  {
+    "entity_name": "DA",
+    "entity_type": "View",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 5.817413330078125e-05,
+      "original_name": "DA",
+      "type_description": "视图实体，表示不同的架构视角",
+      "aliases": [
+        "视图",
+        "视角"
+      ]
+    },
+    "session_id": "20250816_110516"
+  },
+  {
+    "entity_name": "00",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.00020503997802734375,
+      "original_name": "00"
+    },
+    "session_id": "20250816_113159"
+  },
+  {
+    "entity_name": "执行水位监测（动作）",
+    "entity_type": "Action",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 2.6941299438476562e-05,
+      "original_name": "执行水位监测（动作）",
+      "type_description": "动作实体，表示系统中的行为或操作（DO）",
+      "aliases": [
+        "动作",
+        "操作",
+        "行为",
+        "系统动作"
+      ]
+    },
+    "session_id": "20250816_113159"
+  },
+  {
+    "entity_name": "时空概念在水利领域中是用于描述水利事件及其相关实体在时间和空间维度上分布与动态变化的核心理论基础",
+    "entity_type": "TemporalEntity",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 3.0994415283203125e-06,
+      "original_name": "时空概念在水利领域中是用于描述水利事件及其相关实体在时间和空间维度上分布与动态变化的核心理论基础",
+      "type_description": "时间实体，表示时间点、时间段等时间概念",
+      "aliases": [
+        "时间实体",
+        "时间概念",
+        "确切时间",
+        "不确定时间",
+        "大致时间"
+      ]
+    },
+    "session_id": "20250816_113159"
+  },
+  {
+    "entity_name": "ID_001",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.00016832351684570312,
+      "original_name": "ID_001"
+    },
+    "session_id": "20250816_113159"
+  },
+  {
+    "entity_name": "降水ID_005",
+    "entity_type": "MonitoringData",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 7.295608520507812e-05,
+      "original_name": "降水ID_005",
+      "type_description": "监测数据实体，表示各种监测值和测量结果",
+      "aliases": [
+        "监测数据",
+        "测量数据",
+        "传感器数据"
+      ]
+    },
+    "session_id": "20250816_113159"
+  },
+  {
+    "entity_name": "ID",
+    "entity_type": "View",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 5.698204040527344e-05,
+      "original_name": "ID",
+      "type_description": "视图实体，表示不同的架构视角",
+      "aliases": [
+        "视图",
+        "视角"
+      ]
+    },
+    "session_id": "20250816_113159"
+  },
+  {
+    "entity_name": "DO",
+    "entity_type": "View",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 5.602836608886719e-05,
+      "original_name": "DO",
+      "type_description": "视图实体，表示不同的架构视角",
+      "aliases": [
+        "视图",
+        "视角"
+      ]
+    },
+    "session_id": "20250816_113159"
+  },
+  {
+    "entity_name": "2024-10-23 08:00",
+    "entity_type": "TemporalEntity",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 7.867813110351562e-06,
+      "original_name": "2024-10-23 08:00",
+      "type_description": "时间实体，表示时间点、时间段等时间概念",
+      "aliases": [
+        "时间实体",
+        "时间概念",
+        "确切时间",
+        "不确定时间",
+        "大致时间"
+      ]
+    },
+    "session_id": "20250816_113159"
+  },
+  {
+    "entity_name": "F",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.00019693374633789062,
+      "original_name": "F"
+    },
+    "session_id": "20250816_113159"
+  },
+  {
+    "entity_name": "洪水事件ID_001",
+    "entity_type": "Event",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 9.989738464355469e-05,
+      "original_name": "洪水事件ID_001",
+      "type_description": "事件实体，具有时空属性的动态过程",
+      "aliases": [
+        "事件",
+        "过程"
+      ]
+    },
+    "session_id": "20250816_113159"
+  },
+  {
+    "entity_name": "4小",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.0001690387725830078,
+      "original_name": "4小"
+    },
+    "session_id": "20250816_113159"
+  },
+  {
+    "entity_name": "DA",
+    "entity_type": "View",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 5.888938903808594e-05,
+      "original_name": "DA",
+      "type_description": "视图实体，表示不同的架构视角",
+      "aliases": [
+        "视图",
+        "视角"
+      ]
+    },
+    "session_id": "20250816_113159"
+  },
+  {
+    "entity_name": "Interface",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 7.200241088867188e-05,
+      "original_name": "Interface"
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "Operational",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.621246337890625e-05,
+      "original_name": "Operational",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "Systems",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.4066696166992188e-05,
+      "original_name": "Systems",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "Level",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1975250244140625e-05,
+      "original_name": "Level"
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "TV",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 4.982948303222656e-05,
+      "original_name": "TV"
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "Standards",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.2928924560546875e-05,
+      "original_name": "Standards"
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "Profile",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1975250244140625e-05,
+      "original_name": "Profile"
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "Resource",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1975250244140625e-05,
+      "original_name": "Resource"
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "Description",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.2928924560546875e-05,
+      "original_name": "Description"
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "OV",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 4.887580871582031e-05,
+      "original_name": "OV"
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "Concept",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1975250244140625e-05,
+      "original_name": "Concept"
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "Technical",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.5020370483398438e-05,
+      "original_name": "Technical",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "System",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.2874603271484375e-05,
+      "original_name": "System",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "Graphic",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1975250244140625e-05,
+      "original_name": "Graphic"
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "specific",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.078315734863281e-05,
+      "original_name": "specific"
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "view",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.3113021850585938e-05,
+      "original_name": "view",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "View",
+    "entity_type": "Framework",
+    "confidence": 0.9,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 1.2874603271484375e-05,
+      "original_name": "View",
+      "type_description": "结合多种组件的体系/方法论",
+      "aliases": [
+        "框架",
+        "系统",
+        "体系",
+        "架构",
+        "视图"
+      ]
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "High",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 5.1021575927734375e-05,
+      "original_name": "High"
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "The",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 4.792213439941406e-05,
+      "original_name": "The"
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "Flow",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 4.887580871582031e-05,
+      "original_name": "Flow"
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "SV",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "../schema_config.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 4.8160552978515625e-05,
+      "original_name": "SV"
+    },
+    "session_id": "20250816_113157"
+  },
+  {
+    "entity_name": "降水ID_005",
+    "entity_type": "MonitoringData",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 0.00010919570922851562,
+      "original_name": "降水ID_005",
+      "type_description": "监测数据实体，表示各种监测值和测量结果",
+      "aliases": [
+        "监测数据",
+        "测量数据",
+        "传感器数据"
+      ]
+    },
+    "session_id": "20250816_113156"
+  },
+  {
+    "entity_name": "ID_001",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.0001850128173828125,
+      "original_name": "ID_001"
+    },
+    "session_id": "20250816_113156"
+  },
+  {
+    "entity_name": "2024-10-23 08:00",
+    "entity_type": "TemporalEntity",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 9.298324584960938e-06,
+      "original_name": "2024-10-23 08:00",
+      "type_description": "时间实体，表示时间点、时间段等时间概念",
+      "aliases": [
+        "时间实体",
+        "时间概念",
+        "确切时间",
+        "不确定时间",
+        "大致时间"
+      ]
+    },
+    "session_id": "20250816_113156"
+  },
+  {
+    "entity_name": "ID",
+    "entity_type": "View",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 5.817413330078125e-05,
+      "original_name": "ID",
+      "type_description": "视图实体，表示不同的架构视角",
+      "aliases": [
+        "视图",
+        "视角"
+      ]
+    },
+    "session_id": "20250816_113156"
+  },
+  {
+    "entity_name": "00",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.00016117095947265625,
+      "original_name": "00"
+    },
+    "session_id": "20250816_113156"
+  },
+  {
+    "entity_name": "时空概念在水利领域中是用于描述水利事件及其相关实体在时间和空间维度上分布与动态变化的核心理论基础",
+    "entity_type": "TemporalEntity",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 3.0994415283203125e-06,
+      "original_name": "时空概念在水利领域中是用于描述水利事件及其相关实体在时间和空间维度上分布与动态变化的核心理论基础",
+      "type_description": "时间实体，表示时间点、时间段等时间概念",
+      "aliases": [
+        "时间实体",
+        "时间概念",
+        "确切时间",
+        "不确定时间",
+        "大致时间"
+      ]
+    },
+    "session_id": "20250816_113156"
+  },
+  {
+    "entity_name": "F",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.00015997886657714844,
+      "original_name": "F"
+    },
+    "session_id": "20250816_113156"
+  },
+  {
+    "entity_name": "洪水事件ID_001",
+    "entity_type": "Event",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 2.09808349609375e-05,
+      "original_name": "洪水事件ID_001",
+      "type_description": "事件实体，具有时空属性的动态过程",
+      "aliases": [
+        "事件",
+        "过程"
+      ]
+    },
+    "session_id": "20250816_113156"
+  },
+  {
+    "entity_name": "DA",
+    "entity_type": "View",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 5.6743621826171875e-05,
+      "original_name": "DA",
+      "type_description": "视图实体，表示不同的架构视角",
+      "aliases": [
+        "视图",
+        "视角"
+      ]
+    },
+    "session_id": "20250816_113156"
+  },
+  {
+    "entity_name": "4小",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.00016689300537109375,
+      "original_name": "4小"
+    },
+    "session_id": "20250816_113156"
+  },
+  {
+    "entity_name": "DO",
+    "entity_type": "View",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 5.793571472167969e-05,
+      "original_name": "DO",
+      "type_description": "视图实体，表示不同的架构视角",
+      "aliases": [
+        "视图",
+        "视角"
+      ]
+    },
+    "session_id": "20250816_113156"
+  },
+  {
+    "entity_name": "执行水位监测（动作）",
+    "entity_type": "Action",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 2.4080276489257812e-05,
+      "original_name": "执行水位监测（动作）",
+      "type_description": "动作实体，表示系统中的行为或操作（DO）",
+      "aliases": [
+        "动作",
+        "操作",
+        "行为",
+        "系统动作"
+      ]
+    },
+    "session_id": "20250816_113156"
+  },
+  {
+    "entity_name": "DO",
+    "entity_type": "View",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 0.0001010894775390625,
+      "original_name": "DO",
+      "type_description": "视图实体，表示不同的架构视角",
+      "aliases": [
+        "视图",
+        "视角"
+      ]
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "WaterLevel",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.00024008750915527344,
+      "original_name": "WaterLevel"
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "EmergencyResponse",
+    "entity_type": "Outcome",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 4.792213439941406e-05,
+      "original_name": "EmergencyResponse",
+      "type_description": "结果实体，表示动作执行后的结果或输出（F）",
+      "aliases": [
+        "结果",
+        "输出",
+        "执行结果",
+        "系统响应"
+      ]
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "generateWaterLevelReport",
+    "entity_type": "Outcome",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 4.792213439941406e-05,
+      "original_name": "generateWaterLevelReport",
+      "type_description": "结果实体，表示动作执行后的结果或输出（F）",
+      "aliases": [
+        "结果",
+        "输出",
+        "执行结果",
+        "系统响应"
+      ]
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "The",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.00016164779663085938,
+      "original_name": "The"
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "DA",
+    "entity_type": "View",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 5.6743621826171875e-05,
+      "original_name": "DA",
+      "type_description": "视图实体，表示不同的架构视角",
+      "aliases": [
+        "视图",
+        "视角"
+      ]
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "WaterLevelReport",
+    "entity_type": "Outcome",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 4.601478576660156e-05,
+      "original_name": "WaterLevelReport",
+      "type_description": "结果实体，表示动作执行后的结果或输出（F）",
+      "aliases": [
+        "结果",
+        "输出",
+        "执行结果",
+        "系统响应"
+      ]
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "Temperature",
+    "entity_type": "Condition",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 3.218650817871094e-05,
+      "original_name": "Temperature",
+      "type_description": "条件实体，表示系统运行的前提条件或环境状态（DA）",
+      "aliases": [
+        "条件",
+        "状态",
+        "判断条件",
+        "阈值条件"
+      ]
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "executeFloodWarning",
+    "entity_type": "Action",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 2.4080276489257812e-05,
+      "original_name": "executeFloodWarning",
+      "type_description": "动作实体，表示系统中的行为或操作（DO）",
+      "aliases": [
+        "动作",
+        "操作",
+        "行为",
+        "系统动作"
+      ]
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "checkTemperature",
+    "entity_type": "Action",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 2.4080276489257812e-05,
+      "original_name": "checkTemperature",
+      "type_description": "动作实体，表示系统中的行为或操作（DO）",
+      "aliases": [
+        "动作",
+        "操作",
+        "行为",
+        "系统动作"
+      ]
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "s",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.00015807151794433594,
+      "original_name": "s"
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "turnOnAirConditioner",
+    "entity_type": "Condition",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 3.2901763916015625e-05,
+      "original_name": "turnOnAirConditioner",
+      "type_description": "条件实体，表示系统运行的前提条件或环境状态（DA）",
+      "aliases": [
+        "条件",
+        "状态",
+        "判断条件",
+        "阈值条件"
+      ]
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "FloodWarning",
+    "entity_type": "Action",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 2.4080276489257812e-05,
+      "original_name": "FloodWarning",
+      "type_description": "动作实体，表示系统中的行为或操作（DO）",
+      "aliases": [
+        "动作",
+        "操作",
+        "行为",
+        "系统动作"
+      ]
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "cluding",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.0001690387725830078,
+      "original_name": "cluding"
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "monitorWaterLevel",
+    "entity_type": "Action",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 2.6226043701171875e-05,
+      "original_name": "monitorWaterLevel",
+      "type_description": "动作实体，表示系统中的行为或操作（DO）",
+      "aliases": [
+        "动作",
+        "操作",
+        "行为",
+        "系统动作"
+      ]
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "OnAirConditioner",
+    "entity_type": "Condition",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 3.218650817871094e-05,
+      "original_name": "OnAirConditioner",
+      "type_description": "条件实体，表示系统运行的前提条件或环境状态（DA）",
+      "aliases": [
+        "条件",
+        "状态",
+        "判断条件",
+        "阈值条件"
+      ]
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "activateEmergencyResponse",
+    "entity_type": "Outcome",
+    "confidence": 0.9,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "schema",
+      "inference_time": 4.8160552978515625e-05,
+      "original_name": "activateEmergencyResponse",
+      "type_description": "结果实体，表示动作执行后的结果或输出（F）",
+      "aliases": [
+        "结果",
+        "输出",
+        "执行结果",
+        "系统响应"
+      ]
+    },
+    "session_id": "20250816_113158"
+  },
+  {
+    "entity_name": "represents",
+    "entity_type": "Unknown",
+    "confidence": 0.0,
+    "schema": "spatiotemporal_schema.yaml",
+    "properties": {
+      "inference_method": "unknown",
+      "inference_time": 0.00017404556274414062,
+      "original_name": "represents"
+    },
+    "session_id": "20250816_113158"
+  }
+]

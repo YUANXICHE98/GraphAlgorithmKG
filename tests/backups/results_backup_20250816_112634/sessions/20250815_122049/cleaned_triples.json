@@ -1,0 +1,41 @@
+{
+  "stage_name": "cleaned_triples",
+  "timestamp": "2025-08-15T12:20:57.260119",
+  "session_id": "20250815_122049",
+  "data": [
+    {
+      "subject": "Dodaf",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.9,
+      "source": "unknown"
+    },
+    {
+      "subject": "Operational_View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "source": "unknown"
+    },
+    {
+      "subject": "System_View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "source": "unknown"
+    },
+    {
+      "subject": "Technical_View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "source": "unknown"
+    }
+  ],
+  "metadata": {
+    "original_count": 4,
+    "cleaned_count": 4,
+    "clean_rate": 1.0
+  },
+  "data_count": 4
+}

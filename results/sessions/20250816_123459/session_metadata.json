@@ -1,0 +1,24 @@
+{
+  "session_id": "20250816_123459",
+  "start_time": "2025-08-16T12:34:59.961292",
+  "end_time": "2025-08-16T12:35:00.052937",
+  "document_path": "test_llm_document.json",
+  "schema_used": "",
+  "total_processing_time": 0.091645,
+  "stages_completed": [
+    "document_input",
+    "schema_detection",
+    "triple_extraction",
+    "entity_inference",
+    "final_kg"
+  ],
+  "final_stats": {
+    "total_entities": 3,
+    "total_relations": 3,
+    "processing_time": 0.09087586402893066,
+    "schema_used": "../schemas/general/schema_config.yaml",
+    "extraction_methods": [
+      "rule_extraction"
+    ]
+  }
+}

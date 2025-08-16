@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "schema": "../schema_config.yaml",
+    "source_document": "data/test_documents/dodaf_enterprise_architecture.json",
+    "created_at": "2025-08-15T13:58:04.151148",
+    "processing_time": 0.3189828395843506,
+    "builder_version": "3.0.0"
+  },
+  "entities": [
+    {
+      "id": "entity_873ce1c5",
+      "name": "Operational View",
+      "type": "Framework",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 2.9087066650390625e-05,
+        "original_name": "Operational View",
+        "type_description": "结合多种组件的体系/方法论",
+        "aliases": [
+          "框架",
+          "系统",
+          "体系",
+          "架构",
+          "视图"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/dodaf_enterprise_architecture.json",
+      "created_at": "2025-08-15T13:58:04.148441",
+      "schema": "../schema_config.yaml"
+    },
+    {
+      "id": "entity_b7fbfae6",
+      "name": "DoDAF",
+      "type": "Framework",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 1.5020370483398438e-05,
+        "original_name": "DoDAF",
+        "type_description": "结合多种组件的体系/方法论",
+        "aliases": [
+          "框架",
+          "系统",
+          "体系",
+          "架构",
+          "视图"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/dodaf_enterprise_architecture.json",
+      "created_at": "2025-08-15T13:58:04.148441",
+      "schema": "../schema_config.yaml"
+    },
+    {
+      "id": "entity_07782c22",
+      "name": "Framework",
+      "type": "Paradigm",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 2.1457672119140625e-06,
+        "original_name": "Framework",
+        "type_description": "解决问题的通用范式或决策框架",
+        "aliases": [
+          "范式",
+          "方法",
+          "策略",
+          "角色",
+          "利益相关者"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/dodaf_enterprise_architecture.json",
+      "created_at": "2025-08-15T13:58:04.148441",
+      "schema": "../schema_config.yaml"
+    },
+    {
+      "id": "entity_217816f6",
+      "name": "OV-1",
+      "type": "Algorithm",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 1.0967254638671875e-05,
+        "original_name": "OV-1",
+        "type_description": "具体算法或算法家族",
+        "aliases": [
+          "算法",
+          "算法族",
+          "模型",
+          "图表"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/dodaf_enterprise_architecture.json",
+      "created_at": "2025-08-15T13:58:04.148441",
+      "schema": "../schema_config.yaml"
+    },
+    {
+      "id": "entity_4afa80e7",
+      "name": "Algorithm",
+      "type": "Algorithm",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 6.9141387939453125e-06,
+        "original_name": "Algorithm",
+        "type_description": "具体算法或算法家族",
+        "aliases": [
+          "算法",
+          "算法族",
+          "模型",
+          "图表"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/dodaf_enterprise_architecture.json",
+      "created_at": "2025-08-15T13:58:04.148441",
+      "schema": "../schema_config.yaml"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_f36dc037",
+      "subject_id": "entity_b7fbfae6",
+      "subject_name": "DoDAF",
+      "predicate": "is_instance_of",
+      "object_id": "entity_07782c22",
+      "object_name": "Framework",
+      "properties": {
+        "extraction_confidence": 0.9,
+        "triple_index": 0,
+        "relation_description": "实例关系",
+        "expected_subject_types": [
+          "*"
+        ],
+        "expected_object_types": [
+          "Paradigm",
+          "Algorithm",
+          "Technique",
+          "Framework",
+          "Task",
+          "Metric"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/dodaf_enterprise_architecture.json",
+      "created_at": "2025-08-15T13:58:04.148441",
+      "schema": "../schema_config.yaml"
+    },
+    {
+      "id": "rel_2178c079",
+      "subject_id": "entity_873ce1c5",
+      "subject_name": "Operational View",
+      "predicate": "is_instance_of",
+      "object_id": "entity_07782c22",
+      "object_name": "Framework",
+      "properties": {
+        "extraction_confidence": 0.85,
+        "triple_index": 1,
+        "relation_description": "实例关系",
+        "expected_subject_types": [
+          "*"
+        ],
+        "expected_object_types": [
+          "Paradigm",
+          "Algorithm",
+          "Technique",
+          "Framework",
+          "Task",
+          "Metric"
+        ]
+      },
+      "confidence": 0.85,
+      "source": "data/test_documents/dodaf_enterprise_architecture.json",
+      "created_at": "2025-08-15T13:58:04.148441",
+      "schema": "../schema_config.yaml"
+    },
+    {
+      "id": "rel_94b0fbc1",
+      "subject_id": "entity_217816f6",
+      "subject_name": "OV-1",
+      "predicate": "is_instance_of",
+      "object_id": "entity_4afa80e7",
+      "object_name": "Algorithm",
+      "properties": {
+        "extraction_confidence": 0.8,
+        "triple_index": 2,
+        "relation_description": "实例关系",
+        "expected_subject_types": [
+          "*"
+        ],
+        "expected_object_types": [
+          "Paradigm",
+          "Algorithm",
+          "Technique",
+          "Framework",
+          "Task",
+          "Metric"
+        ]
+      },
+      "confidence": 0.8,
+      "source": "data/test_documents/dodaf_enterprise_architecture.json",
+      "created_at": "2025-08-15T13:58:04.148441",
+      "schema": "../schema_config.yaml"
+    }
+  ],
+  "statistics": {
+    "total_entities": 5,
+    "total_relations": 3,
+    "entity_type_distribution": {
+      "Framework": 2,
+      "Paradigm": 1,
+      "Algorithm": 2
+    },
+    "relation_type_distribution": {
+      "is_instance_of": 3
+    },
+    "average_entity_confidence": 0.9,
+    "average_relation_confidence": 0.85
+  }
+}

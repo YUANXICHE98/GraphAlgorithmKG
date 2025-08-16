@@ -1,0 +1,104 @@
+{
+  "document_info": {
+    "title": "Enterprise Architecture Framework Implementation Guide",
+    "domain": "general",
+    "description": "DoDAF (Department of Defense Architecture Framework) implementation guide covering operational, system, and technical views",
+    "source": "DoD Architecture Framework Working Group",
+    "version": "2.02",
+    "date": "2024-01-15"
+  },
+  "text_content": "The Department of Defense Architecture Framework (DoDAF) provides a comprehensive approach to enterprise architecture development. The framework defines multiple architectural views that support different stakeholder perspectives. The Operational View (OV) captures the operational aspects of the enterprise, including OV-1 High Level Operational Concept Graphic and OV-2 Operational Resource Flow Description. The System View (SV) describes the systems and interconnections supporting operational activities, with SV-1 Systems Interface Description and SV-2 Systems Resource Flow Description being fundamental models. The Technical View (TV) provides the technical standards and rules governing the implementation, including TV-1 Technical Standards Profile. Each architectural view contains specific models that address particular stakeholder concerns. The enterprise architecture must support various capabilities including command and control, intelligence gathering, and logistics operations. System architects and operational planners collaborate to ensure that the architecture meets user requirements and supports mission objectives. The framework emphasizes the importance of stakeholder engagement throughout the architecture development process.",
+  "expected_schema": "ontology/schema_config.yaml",
+  "expected_triples": [
+    {
+      "subject": "Department of Defense Architecture Framework",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.95
+    },
+    {
+      "subject": "DoDAF",
+      "predicate": "is_instance_of", 
+      "object": "Framework",
+      "confidence": 0.90
+    },
+    {
+      "subject": "Operational View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.95
+    },
+    {
+      "subject": "OV",
+      "predicate": "is_instance_of",
+      "object": "Framework", 
+      "confidence": 0.85
+    },
+    {
+      "subject": "System View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.95
+    },
+    {
+      "subject": "SV",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.85
+    },
+    {
+      "subject": "Technical View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.95
+    },
+    {
+      "subject": "TV",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.85
+    },
+    {
+      "subject": "OV-1",
+      "predicate": "is_instance_of",
+      "object": "Algorithm",
+      "confidence": 0.80
+    },
+    {
+      "subject": "OV-2",
+      "predicate": "is_instance_of",
+      "object": "Algorithm",
+      "confidence": 0.80
+    },
+    {
+      "subject": "SV-1",
+      "predicate": "is_instance_of",
+      "object": "Algorithm",
+      "confidence": 0.80
+    },
+    {
+      "subject": "SV-2",
+      "predicate": "is_instance_of",
+      "object": "Algorithm",
+      "confidence": 0.80
+    },
+    {
+      "subject": "TV-1",
+      "predicate": "is_instance_of",
+      "object": "Algorithm",
+      "confidence": 0.80
+    },
+    {
+      "subject": "System Architect",
+      "predicate": "is_instance_of",
+      "object": "Paradigm",
+      "confidence": 0.75
+    },
+    {
+      "subject": "Operational Planner",
+      "predicate": "is_instance_of",
+      "object": "Paradigm",
+      "confidence": 0.75
+    }
+  ]
+}

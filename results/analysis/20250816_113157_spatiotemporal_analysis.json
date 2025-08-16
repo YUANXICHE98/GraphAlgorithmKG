@@ -1,0 +1,15 @@
+{
+  "processing_summary": {
+    "total_time": 0.13969779014587402,
+    "schema_used": "spatiotemporal_schema.yaml",
+    "extraction_methods": [
+      "rule_extraction"
+    ],
+    "quality_metrics": {
+      "entity_count": 12,
+      "relation_count": 10,
+      "avg_entity_confidence": 0.6000000000000001,
+      "avg_relation_confidence": 0.7
+    }
+  }
+}

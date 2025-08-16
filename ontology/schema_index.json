@@ -1,0 +1,99 @@
+{
+  "schemas": {
+    "general": {
+      "name": "通用知识图谱Schema",
+      "file": "schemas/general/schema_config.yaml",
+      "description": "企业架构、算法、框架等通用概念",
+      "version": "2.0.0",
+      "entity_types": [
+        "Paradigm",
+        "Algorithm",
+        "Framework",
+        "Task",
+        "Technique"
+      ],
+      "relation_types": [
+        "is_instance_of",
+        "implements",
+        "uses_paradigm",
+        "has_algorithm"
+      ],
+      "use_cases": [
+        "企业架构建模",
+        "算法框架分析",
+        "技术栈管理"
+      ]
+    },
+    "spatiotemporal": {
+      "name": "时空知识图谱Schema",
+      "file": "schemas/spatiotemporal/spatiotemporal_schema.yaml",
+      "description": "时空概念、事件、DO-DA-F结构",
+      "version": "1.0.0",
+      "entity_types": [
+        "TemporalEntity",
+        "SpatialEntity",
+        "Event",
+        "Action",
+        "Condition",
+        "Outcome"
+      ],
+      "relation_types": [
+        "hasStartTime",
+        "hasEndTime",
+        "locatedAt",
+        "hasCondition",
+        "resultsIn"
+      ],
+      "use_cases": [
+        "时空事件建模",
+        "DO-DA-F架构",
+        "水利系统管理"
+      ]
+    }
+  },
+  "managers": {
+    "dynamic_schema": {
+      "file": "managers/dynamic_schema.py",
+      "description": "动态Schema管理和本体操作",
+      "functions": [
+        "load_schema",
+        "add_entity_type",
+        "add_relation_type",
+        "validate_schema"
+      ]
+    },
+    "schema_detector": {
+      "file": "managers/schema_detector.py",
+      "description": "自动Schema检测和选择",
+      "functions": [
+        "detect_schema",
+        "get_best_schema",
+        "analyze_document"
+      ]
+    }
+  },
+  "detection_rules": {
+    "general_keywords": [
+      "framework",
+      "algorithm",
+      "paradigm",
+      "technique",
+      "architecture"
+    ],
+    "spatiotemporal_keywords": [
+      "time",
+      "space",
+      "event",
+      "action",
+      "condition",
+      "outcome",
+      "temporal",
+      "spatial"
+    ],
+    "confidence_thresholds": {
+      "high": 0.8,
+      "medium": 0.6,
+      "low": 0.4
+    }
+  }
+}

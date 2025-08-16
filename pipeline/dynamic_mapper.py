@@ -7,7 +7,7 @@ from typing import List, Dict, Optional, Set
 from dataclasses import dataclass
 from difflib import SequenceMatcher
 
-from ontology.dynamic_schema import (
+from ontology.managers.dynamic_schema import (
     DynamicOntologyManager, EntityTypeConfig, RelationTypeConfig,
     DYNAMIC_ONTOLOGY
 )

@@ -1,0 +1,23 @@
+{
+  "stage_name": "schema_detection",
+  "stage_number": 2,
+  "timestamp": "2025-08-16T12:36:11.235465",
+  "description": "Schema检测和选择，最终选择: ../schemas/general/schema_config.yaml",
+  "data": {
+    "candidates": [
+      {
+        "schema_file": "../schemas/general/schema_config.yaml",
+        "confidence": 0.0761904761904762,
+        "method": "hybrid",
+        "evidence": [
+          "Paradigm:paradigm",
+          "Paradigm:framework",
+          "Algorithm:algorithm",
+          "Algorithm:algo",
+          "Algorithm:optimization"
+        ]
+      }
+    ],
+    "selected_schema": "../schemas/general/schema_config.yaml"
+  }
+}

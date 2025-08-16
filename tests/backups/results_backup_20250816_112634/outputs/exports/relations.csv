@@ -1,0 +1,5 @@
+subject,predicate,object,confidence,source
+Dodaf,is_instance_of,Framework,0.9,unknown
+Operational_View,is_instance_of,Framework,0.7544600578097613,unknown
+System_View,is_instance_of,Framework,0.8738851890731821,unknown
+Technical_View,is_instance_of,Framework,0.7544600578097613,unknown

@@ -1,0 +1,129 @@
+{
+  "stage_name": "entity_inference",
+  "stage_number": 4,
+  "timestamp": "2025-08-16T12:35:00.050617",
+  "description": "实体推断和关系构建，生成3个实体，3个关系",
+  "data": {
+    "entities": [
+      {
+        "id": "entity_c21f94bd",
+        "name": "Monte",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 8.0108642578125e-05,
+          "original_name": "Monte"
+        },
+        "confidence": 0.0,
+        "source": "test_llm_document.json",
+        "created_at": "2025-08-16T12:35:00.050087",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_2a5a93ca",
+        "name": "Carlo",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 5.1975250244140625e-05,
+          "original_name": "Carlo"
+        },
+        "confidence": 0.0,
+        "source": "test_llm_document.json",
+        "created_at": "2025-08-16T12:35:00.050087",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_a4704fd3",
+        "name": "The",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 5.0067901611328125e-05,
+          "original_name": "The"
+        },
+        "confidence": 0.0,
+        "source": "test_llm_document.json",
+        "created_at": "2025-08-16T12:35:00.050087",
+        "schema": "../schemas/general/schema_config.yaml"
+      }
+    ],
+    "relations": [
+      {
+        "id": "rel_878c2d2e",
+        "subject_id": "entity_c21f94bd",
+        "subject_name": "Monte",
+        "predicate": "used_in",
+        "object_id": "entity_2a5a93ca",
+        "object_name": "Carlo",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 0,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "test_llm_document.json",
+        "created_at": "2025-08-16T12:35:00.050087",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_486bbe22",
+        "subject_id": "entity_c21f94bd",
+        "subject_name": "Monte",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 1,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "test_llm_document.json",
+        "created_at": "2025-08-16T12:35:00.050087",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_e8b7a312",
+        "subject_id": "entity_2a5a93ca",
+        "subject_name": "Carlo",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 2,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "test_llm_document.json",
+        "created_at": "2025-08-16T12:35:00.050087",
+        "schema": "../schemas/general/schema_config.yaml"
+      }
+    ],
+    "entity_type_distribution": {
+      "Unknown": 3
+    }
+  }
+}

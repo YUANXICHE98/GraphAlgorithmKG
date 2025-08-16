@@ -1,0 +1,24 @@
+{
+  "session_id": "20250816_113156",
+  "start_time": "2025-08-16T11:31:56.592431",
+  "end_time": "2025-08-16T11:31:56.814917",
+  "document_path": "data/test_documents/pure_dodaf_structure.json",
+  "schema_used": "",
+  "total_processing_time": 0.222486,
+  "stages_completed": [
+    "document_input",
+    "schema_detection",
+    "triple_extraction",
+    "entity_inference",
+    "final_kg"
+  ],
+  "final_stats": {
+    "total_entities": 18,
+    "total_relations": 53,
+    "processing_time": 0.21877598762512207,
+    "schema_used": "spatiotemporal_schema.yaml",
+    "extraction_methods": [
+      "rule_extraction"
+    ]
+  }
+}

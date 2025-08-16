@@ -8,7 +8,7 @@ import time
 from typing import List, Dict, Any, Optional
 from dataclasses import dataclass
 
-from ontology.dynamic_schema import DynamicOntologyManager
+from ontology.managers.dynamic_schema import DynamicOntologyManager
 from pipeline.llm_validator import LLMSemanticValidator
 from pipeline.stage_saver import stage_saver
 

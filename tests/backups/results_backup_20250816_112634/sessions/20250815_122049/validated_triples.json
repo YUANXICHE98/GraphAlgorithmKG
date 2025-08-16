@@ -1,0 +1,50 @@
+{
+  "stage_name": "validated_triples",
+  "timestamp": "2025-08-15T12:20:54.894491",
+  "session_id": "20250815_122049",
+  "data": [
+    {
+      "subject": "DoDAF",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.9,
+      "evidence": "The Department of Defense Architecture Framework (DoDAF) provides a comprehensive approach to enterprise architecture development.",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "Operational View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "evidence": "The Operational View captures the operational aspects of the enterprise.",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "System View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "evidence": "The System View describes the systems and interconnections supporting operational activities.",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    },
+    {
+      "subject": "Technical View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "evidence": "The Technical View provides the technical standards and rules governing the implementation.",
+      "validation_confidence": 1.0,
+      "validation_method": "rule"
+    }
+  ],
+  "metadata": {
+    "original_count": 4,
+    "validated_count": 4,
+    "validation_rate": 1.0,
+    "chunk_id": ""
+  },
+  "data_count": 4
+}

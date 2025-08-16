@@ -1,0 +1,139 @@
+{
+  "document_info": {
+    "title": "Pure DO-DA-F Structure Test",
+    "domain": "spatiotemporal",
+    "description": "Pure DO-DA-F (Action-Condition-Result) structure for testing spatiotemporal schema detection",
+    "source": "DO-DA-F Framework Test",
+    "version": "1.0",
+    "date": "2024-01-15"
+  },
+  "do_da_f_examples": [
+    {
+      "do": "checkTemperature",
+      "da": {
+        "condition": "temperature > 30",
+        "description": "If the temperature is greater than 30°C"
+      },
+      "f": {
+        "action": "turnOnAirConditioner",
+        "result": "Air conditioner is turned on"
+      }
+    },
+    {
+      "do": "monitorWaterLevel",
+      "da": {
+        "condition": "sensor_status == normal",
+        "description": "When the water level sensor is functioning normally"
+      },
+      "f": {
+        "action": "generateWaterLevelReport",
+        "result": "Water level monitoring data is recorded with timestamp and location"
+      }
+    },
+    {
+      "do": "executeFloodWarning",
+      "da": {
+        "condition": "water_level > warning_threshold",
+        "description": "When water level exceeds the warning threshold"
+      },
+      "f": {
+        "action": "activateEmergencyResponse",
+        "result": "Emergency response mechanism is triggered"
+      }
+    }
+  ],
+  "text_content": "The system implements DO-DA-F structure where DO represents actions like checkTemperature, monitorWaterLevel, and executeFloodWarning. DA represents conditions such as temperature thresholds, sensor status, and water level limits. F represents results including turnOnAirConditioner, generateWaterLevelReport, and activateEmergencyResponse. Each action has specific conditions that must be met, and when those conditions are satisfied, specific results are produced. The monitoring system continuously checks these conditions and executes the corresponding actions to produce the desired outcomes.",
+  "expected_schema": "ontology/config/spatiotemporal_schema.yaml",
+  "expected_triples": [
+    {
+      "subject": "checkTemperature",
+      "predicate": "is_instance_of",
+      "object": "Action",
+      "confidence": 0.95
+    },
+    {
+      "subject": "monitorWaterLevel",
+      "predicate": "is_instance_of",
+      "object": "Action",
+      "confidence": 0.95
+    },
+    {
+      "subject": "executeFloodWarning",
+      "predicate": "is_instance_of",
+      "object": "Action",
+      "confidence": 0.95
+    },
+    {
+      "subject": "temperature > 30",
+      "predicate": "is_instance_of",
+      "object": "Condition",
+      "confidence": 0.90
+    },
+    {
+      "subject": "sensor_status == normal",
+      "predicate": "is_instance_of",
+      "object": "Condition",
+      "confidence": 0.90
+    },
+    {
+      "subject": "water_level > warning_threshold",
+      "predicate": "is_instance_of",
+      "object": "Condition",
+      "confidence": 0.90
+    },
+    {
+      "subject": "turnOnAirConditioner",
+      "predicate": "is_instance_of",
+      "object": "Outcome",
+      "confidence": 0.90
+    },
+    {
+      "subject": "generateWaterLevelReport",
+      "predicate": "is_instance_of",
+      "object": "Outcome",
+      "confidence": 0.90
+    },
+    {
+      "subject": "activateEmergencyResponse",
+      "predicate": "is_instance_of",
+      "object": "Outcome",
+      "confidence": 0.90
+    },
+    {
+      "subject": "checkTemperature",
+      "predicate": "hasCondition",
+      "object": "temperature > 30",
+      "confidence": 0.85
+    },
+    {
+      "subject": "monitorWaterLevel",
+      "predicate": "hasCondition",
+      "object": "sensor_status == normal",
+      "confidence": 0.85
+    },
+    {
+      "subject": "executeFloodWarning",
+      "predicate": "hasCondition",
+      "object": "water_level > warning_threshold",
+      "confidence": 0.85
+    },
+    {
+      "subject": "checkTemperature",
+      "predicate": "resultsIn",
+      "object": "turnOnAirConditioner",
+      "confidence": 0.85
+    },
+    {
+      "subject": "monitorWaterLevel",
+      "predicate": "resultsIn",
+      "object": "generateWaterLevelReport",
+      "confidence": 0.85
+    },
+    {
+      "subject": "executeFloodWarning",
+      "predicate": "resultsIn",
+      "object": "activateEmergencyResponse",
+      "confidence": 0.85
+    }
+  ]
+}

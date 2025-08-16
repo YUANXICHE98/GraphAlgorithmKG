@@ -1,0 +1,23 @@
+{
+  "stage_name": "schema_detection",
+  "stage_number": 2,
+  "timestamp": "2025-08-16T12:19:41.547571",
+  "description": "Schema检测和选择，最终选择: spatiotemporal_schema.yaml",
+  "data": {
+    "candidates": [
+      {
+        "schema_file": "spatiotemporal_schema.yaml",
+        "confidence": 0.27888888888888885,
+        "method": "hybrid",
+        "evidence": [
+          "TemporalEntity:2024-10-23 08:00",
+          "TemporalEntity:4小时",
+          "SpatialEntity:长江流域",
+          "SpatialEntity:流域",
+          "Event:水利事件"
+        ]
+      }
+    ],
+    "selected_schema": "spatiotemporal_schema.yaml"
+  }
+}

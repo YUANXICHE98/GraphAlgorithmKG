@@ -11,7 +11,7 @@ from typing import List, Dict, Any, Optional
 from datetime import datetime
 
 # 核心模块
-from ontology.dynamic_schema import DynamicOntologyManager
+from ontology.managers.dynamic_schema import DynamicOntologyManager
 from pipeline.document_processor import DocumentProcessor
 from pipeline.text_splitter import TextSplitter
 from pipeline.llm_extractor import LLMKGExtractor
@@ -30,8 +30,8 @@ class KnowledgeGraphBuilder:
     def __init__(self, config: Optional[Dict] = None):
         self.config = config or self._load_default_config()
         
-        # 统一使用动态存储路径
-        storage_path = self.config.get('storage_path', 'dynamic_kg_storage')
+        # 统一使用标准存储路径
+        storage_path = self.config.get('storage_path', 'storage/current')
         
         # 初始化核心组件
         self.ontology = DynamicOntologyManager()

@@ -1,0 +1,18 @@
+{
+  "schema_type": "general",
+  "total_files": 5,
+  "total_entities": 26,
+  "total_relations": 99,
+  "entity_types": [
+    "Algorithm",
+    "Paradigm",
+    "Framework",
+    "Unknown"
+  ],
+  "relation_types": [
+    "is_instance_of",
+    "used_in",
+    "implements"
+  ],
+  "generated_time": "2025-08-16T11:26:34.774340"
+}

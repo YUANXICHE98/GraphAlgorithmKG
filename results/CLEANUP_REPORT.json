@@ -1,0 +1,38 @@
+{
+  "cleanup_time": "2025-08-16T11:26:34.803245",
+  "directory_structure": {},
+  "file_statistics": {
+    "README.md": {
+      "count": 1,
+      "total_size": 1993
+    },
+    "SCHEMA_BOUNDARIES.md": {
+      "count": 1,
+      "total_size": 2046
+    },
+    "analysis": {
+      "count": 2,
+      "total_size": 821
+    },
+    "knowledge_graphs": {
+      "count": 10,
+      "total_size": 262416
+    },
+    "exports": {
+      "count": 4,
+      "total_size": 29079
+    },
+    "sessions": {
+      "count": 70,
+      "total_size": 618803
+    },
+    "backups": {
+      "count": 10,
+      "total_size": 96326
+    }
+  },
+  "schema_distribution": {
+    "general": 5,
+    "spatiotemporal": 5
+  }
+}

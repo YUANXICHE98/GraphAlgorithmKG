@@ -1,0 +1,30 @@
+{
+  "nodes": [],
+  "edges": [],
+  "categories": {
+    "Paradigm": {
+      "color": "#FF6B6B",
+      "description": "Paradigm entities"
+    },
+    "Algorithm": {
+      "color": "#4ECDC4",
+      "description": "Algorithm entities"
+    },
+    "Technique": {
+      "color": "#45B7D1",
+      "description": "Technique entities"
+    },
+    "Framework": {
+      "color": "#96CEB4",
+      "description": "Framework entities"
+    },
+    "Task": {
+      "color": "#FFEAA7",
+      "description": "Task entities"
+    },
+    "Metric": {
+      "color": "#DDA0DD",
+      "description": "Metric entities"
+    }
+  }
+}

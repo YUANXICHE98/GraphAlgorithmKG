@@ -1,0 +1,11 @@
+{
+  "stage_name": "document_input",
+  "stage_number": 6,
+  "timestamp": "2025-08-16T11:31:56.592817",
+  "description": "原始文档输入和内容解析",
+  "data": {
+    "document_path": "data/test_documents/pure_dodaf_structure.json",
+    "content": "The system implements DO-DA-F structure where DO represents actions like checkTemperature, monitorWaterLevel, and executeFloodWarning. DA represents conditions such as temperature thresholds, sensor status, and water level limits. F represents results including turnOnAirConditioner, generateWaterLevelReport, and activateEmergencyResponse. Each action has specific conditions that must be met, and when those conditions are satisfied, specific results are produced. The monitoring system continuously checks these conditions and executes the corresponding actions to produce the desired outcomes.",
+    "content_length": 597
+  }
+}

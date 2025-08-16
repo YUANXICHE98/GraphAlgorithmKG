@@ -1,0 +1,11 @@
+{
+  "stage_name": "entity_inference",
+  "stage_number": 4,
+  "timestamp": "2025-08-16T11:05:16.243159",
+  "description": "实体推断和关系构建，生成0个实体，0个关系",
+  "data": {
+    "entities": [],
+    "relations": [],
+    "entity_type_distribution": {}
+  }
+}

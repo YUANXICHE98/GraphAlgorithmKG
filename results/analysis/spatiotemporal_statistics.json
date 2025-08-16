@@ -1,0 +1,28 @@
+{
+  "schema_type": "spatiotemporal",
+  "total_files": 5,
+  "total_entities": 71,
+  "total_relations": 172,
+  "entity_types": [
+    "Algorithm",
+    "TemporalEntity",
+    "Unknown",
+    "MonitoringData",
+    "Model",
+    "Condition",
+    "Architecture",
+    "Outcome",
+    "Event",
+    "Action",
+    "View"
+  ],
+  "relation_types": [
+    "hasCondition",
+    "hasDuration",
+    "is_instance_of",
+    "hasStartTime",
+    "resultsIn",
+    "locatedAt"
+  ],
+  "generated_time": "2025-08-16T11:26:34.783711"
+}

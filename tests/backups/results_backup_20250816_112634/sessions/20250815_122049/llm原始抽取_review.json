@@ -1,0 +1,58 @@
+{
+  "review_info": {
+    "stage_name": "LLM原始抽取",
+    "created_at": "2025-08-15T12:20:54.892969",
+    "total_items": 4,
+    "instructions": "请审核以下数据项，将approved字段设为true/false"
+  },
+  "items": [
+    {
+      "id": 1,
+      "approved": null,
+      "comments": "",
+      "data": {
+        "subject": "DoDAF",
+        "predicate": "is_instance_of",
+        "object": "Framework",
+        "confidence": 0.9,
+        "evidence": "The Department of Defense Architecture Framework (DoDAF) provides a comprehensive approach to enterprise architecture development."
+      }
+    },
+    {
+      "id": 2,
+      "approved": null,
+      "comments": "",
+      "data": {
+        "subject": "Operational View",
+        "predicate": "is_instance_of",
+        "object": "Framework",
+        "confidence": 0.8,
+        "evidence": "The Operational View captures the operational aspects of the enterprise."
+      }
+    },
+    {
+      "id": 3,
+      "approved": null,
+      "comments": "",
+      "data": {
+        "subject": "System View",
+        "predicate": "is_instance_of",
+        "object": "Framework",
+        "confidence": 0.8,
+        "evidence": "The System View describes the systems and interconnections supporting operational activities."
+      }
+    },
+    {
+      "id": 4,
+      "approved": null,
+      "comments": "",
+      "data": {
+        "subject": "Technical View",
+        "predicate": "is_instance_of",
+        "object": "Framework",
+        "confidence": 0.8,
+        "evidence": "The Technical View provides the technical standards and rules governing the implementation."
+      }
+    }
+  ]
+}

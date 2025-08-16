@@ -1,0 +1,42 @@
+{
+  "stage_name": "raw_extraction",
+  "timestamp": "2025-08-15T12:20:54.892611",
+  "session_id": "20250815_122049",
+  "data": [
+    {
+      "subject": "DoDAF",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.9,
+      "evidence": "The Department of Defense Architecture Framework (DoDAF) provides a comprehensive approach to enterprise architecture development."
+    },
+    {
+      "subject": "Operational View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "evidence": "The Operational View captures the operational aspects of the enterprise."
+    },
+    {
+      "subject": "System View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "evidence": "The System View describes the systems and interconnections supporting operational activities."
+    },
+    {
+      "subject": "Technical View",
+      "predicate": "is_instance_of",
+      "object": "Framework",
+      "confidence": 0.8,
+      "evidence": "The Technical View provides the technical standards and rules governing the implementation."
+    }
+  ],
+  "metadata": {
+    "text_length": 1991,
+    "chunk_id": "",
+    "model": "gpt-3.5-turbo",
+    "llm_response_time": 5.088064908981323
+  },
+  "data_count": 4
+}

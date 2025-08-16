@@ -1,0 +1,27 @@
+id,name,type,schema,confidence,source_file
+entity_271ddf82,TV,Unknown,general,0.0,20250816_111802_general_kg.json
+entity_a45da96d,System,Framework,general,0.9,20250816_111802_general_kg.json
+entity_aabf4342,Graphic,Unknown,general,0.0,20250816_111802_general_kg.json
+entity_655d20c1,High,Unknown,general,0.0,20250816_111802_general_kg.json
+entity_be8545ae,Resource,Unknown,general,0.0,20250816_111802_general_kg.json
+entity_2e9413b5,OV,Unknown,general,0.0,20250816_111802_general_kg.json
+entity_d99a604c,Concept,Unknown,general,0.0,20250816_111802_general_kg.json
+entity_b5a7adde,Description,Unknown,general,0.0,20250816_111802_general_kg.json
+entity_a0db49ba,Level,Unknown,general,0.0,20250816_111802_general_kg.json
+entity_f1a76f66,Flow,Unknown,general,0.0,20250816_111802_general_kg.json
+entity_1bda80f2,view,Framework,general,0.9,20250816_111802_general_kg.json
+entity_a4704fd3,The,Unknown,general,0.0,20250816_111802_general_kg.json
+entity_ad1ec60c,Technical,Framework,general,0.9,20250816_111802_general_kg.json
+entity_d38212a0,SV,Unknown,general,0.0,20250816_111802_general_kg.json
+entity_cce99c59,Profile,Unknown,general,0.0,20250816_111802_general_kg.json
+entity_3c1aac82,Interface,Unknown,general,0.0,20250816_111802_general_kg.json
+entity_2067d966,specific,Unknown,general,0.0,20250816_111802_general_kg.json
+entity_3bacfbd5,Standards,Unknown,general,0.0,20250816_111802_general_kg.json
+entity_4351cfeb,View,Framework,general,0.9,20250816_111802_general_kg.json
+entity_431accab,Operational,Framework,general,0.9,20250816_111802_general_kg.json
+entity_d6856404,Systems,Framework,general,0.9,20250816_111802_general_kg.json
+entity_873ce1c5,Operational View,Framework,general,0.9,kg_general_kg.json
+entity_b7fbfae6,DoDAF,Framework,general,0.9,kg_general_kg.json
+entity_07782c22,Framework,Paradigm,general,0.9,kg_general_kg.json
+entity_217816f6,OV-1,Algorithm,general,0.9,kg_general_kg.json
+entity_4afa80e7,Algorithm,Algorithm,general,0.9,kg_general_kg.json

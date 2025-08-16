@@ -1,0 +1,32 @@
+{
+  "stage_name": "final_kg",
+  "stage_number": 5,
+  "timestamp": "2025-08-16T10:51:18.929278",
+  "description": "最终知识图谱，包含0个实体，0个关系",
+  "data": {
+    "metadata": {
+      "schema": "../schema_config.yaml",
+      "source_document": "data/test_documents/dodaf_enterprise_architecture.json",
+      "created_at": "2025-08-16T10:51:18.929192",
+      "processing_time": 0.6891520023345947,
+      "builder_version": "3.0.0"
+    },
+    "entities": [],
+    "relations": [],
+    "statistics": {
+      "total_entities": 0,
+      "total_relations": 0,
+      "entity_type_distribution": {},
+      "relation_type_distribution": {},
+      "average_entity_confidence": 0,
+      "average_relation_confidence": 0,
+      "extraction_method_breakdown": {},
+      "rule_extraction_count": 107,
+      "llm_extraction_count": 0,
+      "extraction_methods_used": [
+        "rule_extraction"
+      ],
+      "triple_extraction_time": 0.05194807052612305
+    }
+  }
+}

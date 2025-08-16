@@ -1,0 +1,97 @@
+{
+  "stage_name": "triple_extraction",
+  "stage_number": 3,
+  "timestamp": "2025-08-16T12:17:34.562659",
+  "description": "混合三元组抽取，规则:12个，LLM:0个",
+  "data": {
+    "extraction_method": "hybrid",
+    "rule_extraction_count": 12,
+    "llm_extraction_count": 0,
+    "methods_used": [
+      "rule_extraction"
+    ],
+    "extraction_time": 0.029054880142211914,
+    "triples": [
+      {
+        "subject": "洪水事件ID_001",
+        "predicate": "hasStartTime",
+        "object": "2024-10-23 08:00",
+        "confidence": 0.8,
+        "method": "temporal_pattern",
+        "evidence": "Time pattern: (\\w+)[^0-9]*开始时间[^0-9]*([0-9\\-:\\s]+)"
+      },
+      {
+        "subject": "00",
+        "predicate": "hasDuration",
+        "object": "4小",
+        "confidence": 0.8,
+        "method": "temporal_pattern",
+        "evidence": "Duration pattern: (\\w+)[^0-9]*持续时间[^0-9]*([0-9]+[小时天分钟])"
+      },
+      {
+        "subject": "降水ID_005",
+        "predicate": "locatedAt",
+        "object": "DO",
+        "confidence": 0.8,
+        "method": "spatial_pattern",
+        "evidence": "Location pattern: (\\w+)[^a-zA-Z]*位于[^a-zA-Z]*(\\w+)"
+      },
+      {
+        "subject": "时空概念在水利领域中是用于描述水利事件及其相关实体在时间和空间维度上分布与动态变化的核心理论基础",
+        "predicate": "locatedAt",
+        "object": "ID_001",
+        "confidence": 0.8,
+        "method": "spatial_pattern",
+        "evidence": "Location pattern: (\\w+)[^a-zA-Z]*在[^a-zA-Z]*(\\w+)"
+      },
+      {
+        "subject": "时空概念在水利领域中是用于描述水利事件及其相关实体在时间和空间维度上分布与动态变化的核心理论基础",
+        "predicate": "hasCondition",
+        "object": "执行水位监测（动作）",
+        "confidence": 0.7,
+        "method": "dodaf_pattern",
+        "evidence": "Condition pattern: (\\w+)[^>]*条件[^>]*[:：]\\s*([^,，。.]+)"
+      },
+      {
+        "subject": "F",
+        "predicate": "resultsIn",
+        "object": "执行水位监测（动作）",
+        "confidence": 0.7,
+        "method": "dodaf_pattern",
+        "evidence": "Result pattern: (\\w+)[^a-zA-Z]*结果[^a-zA-Z]*[:：]\\s*([^,，。.]+)"
+      },
+      {
+        "subject": "ID",
+        "predicate": "locatedAt",
+        "object": "4小",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: 例如，对于一次洪水事件，时间主体系的具体表达如下：洪水事件ID_001 = {时间属性：开始时间=2..."
+      },
+      {
+        "subject": "ID",
+        "predicate": "hasStartTime",
+        "object": "2024-10-23 08:00",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: 例如，对于一次洪水事件，时间主体系的具体表达如下：洪水事件ID_001 = {时间属性：开始时间=2..."
+      },
+      {
+        "subject": "4小",
+        "predicate": "hasStartTime",
+        "object": "2024-10-23 08:00",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: 例如，对于一次洪水事件，时间主体系的具体表达如下：洪水事件ID_001 = {时间属性：开始时间=2..."
+      },
+      {
+        "subject": "DA",
+        "predicate": "locatedAt",
+        "object": "DO",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: 在DO-DA-F架构映射中，动作（DO）映射到水利事件类型，条件（DA）映射到监测条件和环境状态，结..."
+      }
+    ]
+  }
+}

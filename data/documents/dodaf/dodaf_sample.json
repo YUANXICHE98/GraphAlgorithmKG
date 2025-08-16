@@ -1,0 +1,267 @@
+{
+  "document_info": {
+    "title": "Enterprise Architecture Framework Implementation Guide",
+    "domain": "dodaf",
+    "description": "DoDAF (Department of Defense Architecture Framework) implementation guide covering operational, system, and technical views",
+    "source": "DoD Architecture Framework Working Group",
+    "version": "2.02",
+    "date": "2024-01-15"
+  },
+  "text_content": "The Department of Defense Architecture Framework (DoDAF) provides a comprehensive approach to enterprise architecture development. The framework defines multiple architectural views that support different stakeholder perspectives. The Operational View (OV) captures the operational aspects of the enterprise, including OV-1 High Level Operational Concept Graphic and OV-2 Operational Resource Flow Description. The System View (SV) describes the systems and interconnections supporting operational activities, with SV-1 Systems Interface Description and SV-2 Systems Resource Flow Description being fundamental models. The Technical View (TV) provides the technical standards and rules governing the implementation, including TV-1 Technical Standards Profile. Each architectural view contains specific models that address particular stakeholder concerns. The enterprise architecture must support various capabilities including command and control, intelligence gathering, and logistics operations. System architects and operational planners collaborate to ensure that the architecture meets user requirements and supports mission objectives. The framework emphasizes the importance of stakeholder engagement throughout the architecture development process.",
+  "expected_triples": [
+    {
+      "subject": "Department of Defense Architecture Framework",
+      "predicate": "is_instance_of",
+      "object": "Architecture",
+      "confidence": 0.95
+    },
+    {
+      "subject": "DoDAF",
+      "predicate": "is_instance_of", 
+      "object": "Architecture",
+      "confidence": 0.90
+    },
+    {
+      "subject": "Operational View",
+      "predicate": "is_instance_of",
+      "object": "View",
+      "confidence": 0.95
+    },
+    {
+      "subject": "OV",
+      "predicate": "is_instance_of",
+      "object": "View", 
+      "confidence": 0.85
+    },
+    {
+      "subject": "System View",
+      "predicate": "is_instance_of",
+      "object": "View",
+      "confidence": 0.95
+    },
+    {
+      "subject": "SV",
+      "predicate": "is_instance_of",
+      "object": "View",
+      "confidence": 0.85
+    },
+    {
+      "subject": "Technical View",
+      "predicate": "is_instance_of",
+      "object": "View",
+      "confidence": 0.95
+    },
+    {
+      "subject": "TV",
+      "predicate": "is_instance_of",
+      "object": "View",
+      "confidence": 0.85
+    },
+    {
+      "subject": "OV-1",
+      "predicate": "is_instance_of",
+      "object": "Model",
+      "confidence": 0.95
+    },
+    {
+      "subject": "OV-2", 
+      "predicate": "is_instance_of",
+      "object": "Model",
+      "confidence": 0.95
+    },
+    {
+      "subject": "SV-1",
+      "predicate": "is_instance_of",
+      "object": "Model",
+      "confidence": 0.95
+    },
+    {
+      "subject": "SV-2",
+      "predicate": "is_instance_of",
+      "object": "Model",
+      "confidence": 0.95
+    },
+    {
+      "subject": "TV-1",
+      "predicate": "is_instance_of",
+      "object": "Model",
+      "confidence": 0.95
+    },
+    {
+      "subject": "System Architect",
+      "predicate": "is_instance_of",
+      "object": "Stakeholder",
+      "confidence": 0.90
+    },
+    {
+      "subject": "Operational Planner",
+      "predicate": "is_instance_of",
+      "object": "Stakeholder",
+      "confidence": 0.90
+    },
+    {
+      "subject": "User",
+      "predicate": "is_instance_of",
+      "object": "Stakeholder",
+      "confidence": 0.85
+    },
+    {
+      "subject": "Command and Control",
+      "predicate": "is_instance_of",
+      "object": "Capability",
+      "confidence": 0.90
+    },
+    {
+      "subject": "Intelligence Gathering",
+      "predicate": "is_instance_of",
+      "object": "Capability",
+      "confidence": 0.90
+    },
+    {
+      "subject": "Logistics Operations",
+      "predicate": "is_instance_of",
+      "object": "Capability",
+      "confidence": 0.90
+    },
+    {
+      "subject": "DoDAF",
+      "predicate": "contains",
+      "object": "Operational View",
+      "confidence": 0.95
+    },
+    {
+      "subject": "DoDAF",
+      "predicate": "contains",
+      "object": "System View",
+      "confidence": 0.95
+    },
+    {
+      "subject": "DoDAF",
+      "predicate": "contains",
+      "object": "Technical View",
+      "confidence": 0.95
+    },
+    {
+      "subject": "Operational View",
+      "predicate": "contains",
+      "object": "OV-1",
+      "confidence": 0.90
+    },
+    {
+      "subject": "Operational View",
+      "predicate": "contains",
+      "object": "OV-2",
+      "confidence": 0.90
+    },
+    {
+      "subject": "System View",
+      "predicate": "contains",
+      "object": "SV-1",
+      "confidence": 0.90
+    },
+    {
+      "subject": "System View",
+      "predicate": "contains",
+      "object": "SV-2",
+      "confidence": 0.90
+    },
+    {
+      "subject": "Technical View",
+      "predicate": "contains",
+      "object": "TV-1",
+      "confidence": 0.90
+    },
+    {
+      "subject": "OV-1",
+      "predicate": "supports",
+      "object": "System Architect",
+      "confidence": 0.80
+    },
+    {
+      "subject": "OV-2",
+      "predicate": "supports",
+      "object": "Operational Planner",
+      "confidence": 0.80
+    },
+    {
+      "subject": "SV-1",
+      "predicate": "supports",
+      "object": "System Architect",
+      "confidence": 0.85
+    },
+    {
+      "subject": "SV-2",
+      "predicate": "supports",
+      "object": "System Architect",
+      "confidence": 0.85
+    },
+    {
+      "subject": "TV-1",
+      "predicate": "supports",
+      "object": "System Architect",
+      "confidence": 0.80
+    },
+    {
+      "subject": "Enterprise Architecture",
+      "predicate": "supports",
+      "object": "Command and Control",
+      "confidence": 0.85
+    },
+    {
+      "subject": "Enterprise Architecture",
+      "predicate": "supports",
+      "object": "Intelligence Gathering",
+      "confidence": 0.85
+    },
+    {
+      "subject": "Enterprise Architecture",
+      "predicate": "supports",
+      "object": "Logistics Operations",
+      "confidence": 0.85
+    },
+    {
+      "subject": "System Architect",
+      "predicate": "manages",
+      "object": "System View",
+      "confidence": 0.75
+    },
+    {
+      "subject": "Operational Planner",
+      "predicate": "manages",
+      "object": "Operational View",
+      "confidence": 0.75
+    }
+  ],
+  "domain_indicators": {
+    "keywords": [
+      "architecture", "framework", "enterprise", "operational", "system", 
+      "technical", "view", "model", "stakeholder", "capability"
+    ],
+    "patterns": [
+      "OV-1", "OV-2", "SV-1", "SV-2", "TV-1", "DoDAF"
+    ],
+    "context_indicators": [
+      "architectural views", "stakeholder perspectives", "enterprise architecture",
+      "operational activities", "technical standards", "mission objectives"
+    ]
+  },
+  "metadata": {
+    "expected_domain": "dodaf",
+    "expected_confidence": 0.85,
+    "total_entities": 19,
+    "total_relations": 17,
+    "entity_type_distribution": {
+      "Architecture": 2,
+      "View": 6, 
+      "Model": 5,
+      "Stakeholder": 3,
+      "Capability": 3
+    },
+    "relation_type_distribution": {
+      "is_instance_of": 19,
+      "contains": 8,
+      "supports": 8,
+      "manages": 2
+    }
+  }
+}

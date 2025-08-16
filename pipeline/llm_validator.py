@@ -7,7 +7,7 @@ import json
 import time
 from typing import Dict, List, Any, Optional
 from dataclasses import dataclass
-from ontology.dynamic_schema import DynamicOntologyManager
+from ontology.managers.dynamic_schema import DynamicOntologyManager
 
 @dataclass
 class ValidationResult:

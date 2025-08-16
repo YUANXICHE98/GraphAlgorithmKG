@@ -1,0 +1,13 @@
+{
+  "session_id": "20250816_121511",
+  "start_time": "2025-08-16T12:15:11.251264",
+  "end_time": null,
+  "document_path": "data/test_documents/pure_dodaf_structure.json",
+  "schema_used": "",
+  "total_processing_time": 0.0,
+  "stages_completed": [
+    "document_input",
+    "schema_detection"
+  ],
+  "final_stats": {}
+}

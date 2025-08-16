@@ -1,0 +1,11 @@
+{
+  "stage_name": "document_input",
+  "stage_number": 1,
+  "timestamp": "2025-08-16T10:51:18.240912",
+  "description": "原始文档输入和内容解析",
+  "data": {
+    "document_path": "data/test_documents/dodaf_enterprise_architecture.json",
+    "content": "The Department of Defense Architecture Framework (DoDAF) provides a comprehensive approach to enterprise architecture development. The framework defines multiple architectural views that support different stakeholder perspectives. The Operational View (OV) captures the operational aspects of the enterprise, including OV-1 High Level Operational Concept Graphic and OV-2 Operational Resource Flow Description. The System View (SV) describes the systems and interconnections supporting operational activities, with SV-1 Systems Interface Description and SV-2 Systems Resource Flow Description being fundamental models. The Technical View (TV) provides the technical standards and rules governing the implementation, including TV-1 Technical Standards Profile. Each architectural view contains specific models that address particular stakeholder concerns. The enterprise architecture must support various capabilities including command and control, intelligence gathering, and logistics operations. System architects and operational planners collaborate to ensure that the architecture meets user requirements and supports mission objectives. The framework emphasizes the importance of stakeholder engagement throughout the architecture development process.",
+    "content_length": 1256
+  }
+}

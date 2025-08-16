@@ -1,0 +1,6 @@
+name,entity_type,description,attributes
+Dodaf,Algorithm,实体类型: Algorithm,"{""created_from"": ""kg_update"", ""confidence"": 0.9, ""source"": ""unknown"", ""inferred_type"": ""Algorithm""}"
+Framework,Paradigm,实体类型: Paradigm,"{""created_from"": ""kg_update"", ""confidence"": 0.9, ""source"": ""unknown"", ""inferred_type"": ""Paradigm""}"
+Operational_View,,实体类型: None,"{""created_from"": ""kg_update"", ""confidence"": 0.7544600578097613, ""source"": ""unknown"", ""inferred_type"": null}"
+System_View,Framework,实体类型: Framework,"{""created_from"": ""kg_update"", ""confidence"": 0.8738851890731821, ""source"": ""unknown"", ""inferred_type"": ""Framework""}"
+Technical_View,,实体类型: None,"{""created_from"": ""kg_update"", ""confidence"": 0.7544600578097613, ""source"": ""unknown"", ""inferred_type"": null}"

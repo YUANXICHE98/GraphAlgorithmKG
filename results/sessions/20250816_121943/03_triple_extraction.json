@@ -1,0 +1,441 @@
+{
+  "stage_name": "triple_extraction",
+  "stage_number": 3,
+  "timestamp": "2025-08-16T12:19:43.260697",
+  "description": "混合三元组抽取，规则:53个，LLM:0个",
+  "data": {
+    "extraction_method": "hybrid",
+    "rule_extraction_count": 53,
+    "llm_extraction_count": 0,
+    "methods_used": [
+      "rule_extraction"
+    ],
+    "extraction_time": 0.023794889450073242,
+    "triples": [
+      {
+        "subject": "The",
+        "predicate": "hasCondition",
+        "object": "s",
+        "confidence": 0.7,
+        "method": "dodaf_pattern",
+        "evidence": "Condition pattern: (\\w+)[^>]*when[^>]*([^,，。.]+)"
+      },
+      {
+        "subject": "represents",
+        "predicate": "resultsIn",
+        "object": "cluding",
+        "confidence": 0.7,
+        "method": "dodaf_pattern",
+        "evidence": "Result pattern: (\\w+)[^a-zA-Z]*results\\s+in[^a-zA-Z]*(\\w+)"
+      },
+      {
+        "subject": "DO",
+        "predicate": "locatedAt",
+        "object": "monitorWaterLevel",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "DO",
+        "predicate": "locatedAt",
+        "object": "FloodWarning",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "DO",
+        "predicate": "locatedAt",
+        "object": "executeFloodWarning",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "DO",
+        "predicate": "locatedAt",
+        "object": "DA",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "DO",
+        "predicate": "locatedAt",
+        "object": "WaterLevel",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "DO",
+        "predicate": "locatedAt",
+        "object": "checkTemperature",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "DO",
+        "predicate": "locatedAt",
+        "object": "Temperature",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "DO",
+        "predicate": "locatedAt",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "monitorWaterLevel",
+        "predicate": "locatedAt",
+        "object": "FloodWarning",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "monitorWaterLevel",
+        "predicate": "locatedAt",
+        "object": "executeFloodWarning",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "monitorWaterLevel",
+        "predicate": "locatedAt",
+        "object": "DA",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "monitorWaterLevel",
+        "predicate": "locatedAt",
+        "object": "WaterLevel",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "monitorWaterLevel",
+        "predicate": "locatedAt",
+        "object": "checkTemperature",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "monitorWaterLevel",
+        "predicate": "locatedAt",
+        "object": "Temperature",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "monitorWaterLevel",
+        "predicate": "locatedAt",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "FloodWarning",
+        "predicate": "locatedAt",
+        "object": "executeFloodWarning",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "FloodWarning",
+        "predicate": "locatedAt",
+        "object": "DA",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "FloodWarning",
+        "predicate": "locatedAt",
+        "object": "WaterLevel",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "FloodWarning",
+        "predicate": "locatedAt",
+        "object": "checkTemperature",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "FloodWarning",
+        "predicate": "locatedAt",
+        "object": "Temperature",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "FloodWarning",
+        "predicate": "locatedAt",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "executeFloodWarning",
+        "predicate": "locatedAt",
+        "object": "DA",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "executeFloodWarning",
+        "predicate": "locatedAt",
+        "object": "WaterLevel",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "executeFloodWarning",
+        "predicate": "locatedAt",
+        "object": "checkTemperature",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "executeFloodWarning",
+        "predicate": "locatedAt",
+        "object": "Temperature",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "executeFloodWarning",
+        "predicate": "locatedAt",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "DA",
+        "predicate": "locatedAt",
+        "object": "WaterLevel",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "DA",
+        "predicate": "locatedAt",
+        "object": "checkTemperature",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "DA",
+        "predicate": "locatedAt",
+        "object": "Temperature",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "DA",
+        "predicate": "locatedAt",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "WaterLevel",
+        "predicate": "locatedAt",
+        "object": "checkTemperature",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "WaterLevel",
+        "predicate": "locatedAt",
+        "object": "Temperature",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "WaterLevel",
+        "predicate": "locatedAt",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "checkTemperature",
+        "predicate": "locatedAt",
+        "object": "Temperature",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "checkTemperature",
+        "predicate": "locatedAt",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "Temperature",
+        "predicate": "locatedAt",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context: The system implements DO-DA-F structure where DO r..."
+      },
+      {
+        "subject": "OnAirConditioner",
+        "predicate": "locatedAt",
+        "object": "turnOnAirConditioner",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  F represents results including turnOnAirCondition..."
+      },
+      {
+        "subject": "OnAirConditioner",
+        "predicate": "locatedAt",
+        "object": "WaterLevelReport",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  F represents results including turnOnAirCondition..."
+      },
+      {
+        "subject": "OnAirConditioner",
+        "predicate": "locatedAt",
+        "object": "EmergencyResponse",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  F represents results including turnOnAirCondition..."
+      },
+      {
+        "subject": "OnAirConditioner",
+        "predicate": "locatedAt",
+        "object": "generateWaterLevelReport",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  F represents results including turnOnAirCondition..."
+      },
+      {
+        "subject": "OnAirConditioner",
+        "predicate": "locatedAt",
+        "object": "activateEmergencyResponse",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  F represents results including turnOnAirCondition..."
+      },
+      {
+        "subject": "turnOnAirConditioner",
+        "predicate": "locatedAt",
+        "object": "WaterLevelReport",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  F represents results including turnOnAirCondition..."
+      },
+      {
+        "subject": "turnOnAirConditioner",
+        "predicate": "locatedAt",
+        "object": "EmergencyResponse",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  F represents results including turnOnAirCondition..."
+      },
+      {
+        "subject": "turnOnAirConditioner",
+        "predicate": "locatedAt",
+        "object": "generateWaterLevelReport",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  F represents results including turnOnAirCondition..."
+      },
+      {
+        "subject": "turnOnAirConditioner",
+        "predicate": "locatedAt",
+        "object": "activateEmergencyResponse",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  F represents results including turnOnAirCondition..."
+      },
+      {
+        "subject": "WaterLevelReport",
+        "predicate": "locatedAt",
+        "object": "EmergencyResponse",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  F represents results including turnOnAirCondition..."
+      },
+      {
+        "subject": "WaterLevelReport",
+        "predicate": "locatedAt",
+        "object": "generateWaterLevelReport",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  F represents results including turnOnAirCondition..."
+      },
+      {
+        "subject": "WaterLevelReport",
+        "predicate": "locatedAt",
+        "object": "activateEmergencyResponse",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  F represents results including turnOnAirCondition..."
+      },
+      {
+        "subject": "EmergencyResponse",
+        "predicate": "locatedAt",
+        "object": "generateWaterLevelReport",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  F represents results including turnOnAirCondition..."
+      },
+      {
+        "subject": "EmergencyResponse",
+        "predicate": "locatedAt",
+        "object": "activateEmergencyResponse",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  F represents results including turnOnAirCondition..."
+      },
+      {
+        "subject": "generateWaterLevelReport",
+        "predicate": "locatedAt",
+        "object": "activateEmergencyResponse",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  F represents results including turnOnAirCondition..."
+      }
+    ]
+  }
+}

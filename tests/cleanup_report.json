@@ -1,0 +1,62 @@
+{
+  "cleanup_time": "2025-08-16T11:28:32.712103",
+  "moved_files": [
+    {
+      "filename": "test_complete_pipeline.py",
+      "target_dir": "system",
+      "description": "完整Pipeline系统测试"
+    },
+    {
+      "filename": "test_kg_builder.py",
+      "target_dir": "unit",
+      "description": "KG构建器单元测试"
+    },
+    {
+      "filename": "test_multi_schema_kg.py",
+      "target_dir": "integration",
+      "description": "多Schema集成测试"
+    },
+    {
+      "filename": "test_schema_system.py",
+      "target_dir": "unit",
+      "description": "Schema系统单元测试"
+    },
+    {
+      "filename": "test_session_system.py",
+      "target_dir": "unit",
+      "description": "会话系统单元测试"
+    },
+    {
+      "filename": "cleanup_results.py",
+      "target_dir": "utils",
+      "description": "结果目录清理工具"
+    },
+    {
+      "filename": "reorganize_by_schema.py",
+      "target_dir": "utils",
+      "description": "Schema分类重组工具"
+    },
+    {
+      "filename": "reorganize_results.py",
+      "target_dir": "utils",
+      "description": "结果重组工具"
+    },
+    {
+      "filename": "quick_start.py",
+      "target_dir": "utils",
+      "description": "快速启动脚本"
+    }
+  ],
+  "tests_structure": {
+    "unit": "单元测试",
+    "integration": "集成测试",
+    "system": "系统测试",
+    "data": "测试数据",
+    "utils": "测试工具"
+  },
+  "summary": {
+    "total_moved": 9,
+    "tests_directory_created": true,
+    "main_test_suite_created": true
+  }
+}

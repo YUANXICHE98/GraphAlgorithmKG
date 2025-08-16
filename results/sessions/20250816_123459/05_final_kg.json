@@ -1,0 +1,157 @@
+{
+  "stage_name": "final_kg",
+  "stage_number": 5,
+  "timestamp": "2025-08-16T12:35:00.051439",
+  "description": "最终知识图谱，包含3个实体，3个关系",
+  "data": {
+    "metadata": {
+      "schema": "../schemas/general/schema_config.yaml",
+      "source_document": "test_llm_document.json",
+      "created_at": "2025-08-16T12:35:00.051176",
+      "processing_time": 0.09002089500427246,
+      "builder_version": "3.0.0"
+    },
+    "entities": [
+      {
+        "id": "entity_c21f94bd",
+        "name": "Monte",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 8.0108642578125e-05,
+          "original_name": "Monte"
+        },
+        "confidence": 0.0,
+        "source": "test_llm_document.json",
+        "created_at": "2025-08-16T12:35:00.050087",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_2a5a93ca",
+        "name": "Carlo",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 5.1975250244140625e-05,
+          "original_name": "Carlo"
+        },
+        "confidence": 0.0,
+        "source": "test_llm_document.json",
+        "created_at": "2025-08-16T12:35:00.050087",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "entity_a4704fd3",
+        "name": "The",
+        "type": "Unknown",
+        "properties": {
+          "inference_method": "unknown",
+          "inference_time": 5.0067901611328125e-05,
+          "original_name": "The"
+        },
+        "confidence": 0.0,
+        "source": "test_llm_document.json",
+        "created_at": "2025-08-16T12:35:00.050087",
+        "schema": "../schemas/general/schema_config.yaml"
+      }
+    ],
+    "relations": [
+      {
+        "id": "rel_878c2d2e",
+        "subject_id": "entity_c21f94bd",
+        "subject_name": "Monte",
+        "predicate": "used_in",
+        "object_id": "entity_2a5a93ca",
+        "object_name": "Carlo",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 0,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "test_llm_document.json",
+        "created_at": "2025-08-16T12:35:00.050087",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_486bbe22",
+        "subject_id": "entity_c21f94bd",
+        "subject_name": "Monte",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 1,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "test_llm_document.json",
+        "created_at": "2025-08-16T12:35:00.050087",
+        "schema": "../schemas/general/schema_config.yaml"
+      },
+      {
+        "id": "rel_e8b7a312",
+        "subject_id": "entity_2a5a93ca",
+        "subject_name": "Carlo",
+        "predicate": "used_in",
+        "object_id": "entity_a4704fd3",
+        "object_name": "The",
+        "properties": {
+          "extraction_confidence": 0.6,
+          "triple_index": 2,
+          "relation_description": "应用场景",
+          "expected_subject_types": [
+            "Algorithm",
+            "Technique"
+          ],
+          "expected_object_types": [
+            "Task"
+          ]
+        },
+        "confidence": 0.6,
+        "source": "test_llm_document.json",
+        "created_at": "2025-08-16T12:35:00.050087",
+        "schema": "../schemas/general/schema_config.yaml"
+      }
+    ],
+    "statistics": {
+      "total_entities": 3,
+      "total_relations": 3,
+      "entity_type_distribution": {
+        "Unknown": 3
+      },
+      "relation_type_distribution": {
+        "used_in": 3
+      },
+      "average_entity_confidence": 0.0,
+      "average_relation_confidence": 0.6,
+      "extraction_method_breakdown": {
+        "context_inference": {
+          "count": 3,
+          "avg_confidence": 0.6
+        }
+      },
+      "rule_extraction_count": 3,
+      "llm_extraction_count": 0,
+      "extraction_methods_used": [
+        "rule_extraction"
+      ],
+      "triple_extraction_time": 0.008437871932983398
+    }
+  }
+}

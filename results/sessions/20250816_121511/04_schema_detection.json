@@ -1,0 +1,23 @@
+{
+  "stage_name": "schema_detection",
+  "stage_number": 4,
+  "timestamp": "2025-08-16T12:15:11.377214",
+  "description": "Schema检测和选择，最终选择: spatiotemporal_schema.yaml",
+  "data": {
+    "candidates": [
+      {
+        "schema_file": "spatiotemporal_schema.yaml",
+        "confidence": 0.2544444444444445,
+        "method": "hybrid",
+        "evidence": [
+          "Action:checkTemperature",
+          "Action:monitorWaterLevel",
+          "Action:executeFloodWarning",
+          "Outcome:turnOnAirConditioner",
+          "Outcome:generateWaterLevelReport"
+        ]
+      }
+    ],
+    "selected_schema": "spatiotemporal_schema.yaml"
+  }
+}

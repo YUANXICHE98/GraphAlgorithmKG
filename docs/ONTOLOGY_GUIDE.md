@@ -1,18 +1,44 @@
-# 图算法知识图谱本体定义（更新版）
+# 多领域知识图谱本体指南
 
-基于三元组分析结果更新的完整本体定义。
+本指南介绍系统支持的多种本体Schema及其使用方法。
 
-## 实体类别
+## 支持的本体类型
 
+### 1. 通用知识图谱本体
+- **文件**: `ontology/schemas/general/schema_config.yaml`
+- **领域**: 通用架构和框架概念
+- **主要实体**: Algorithm, Framework, Task, Paradigm, Technique, Metric
+- **应用场景**: 企业架构、系统框架、通用概念建模
+- **测试准确率**: 88.9%
+
+#### 实体类别
 | 类别 | 说明 | 示例 |
 |------|------|------|
-| Paradigm | 解决问题的通用范式或决策框架 | Sequential_Decision, Divide_and_Conquer, Probabilistic_Inference, Reinforcement_Learning, Attention_Mechanism |
-| Algorithm | 具体算法或算法家族 | MINERVA, Ant_Colony, Greedy_Search, Path_Ranking_Algorithm, Monte_Carlo_Tree_Search, GNN_Attention_Reasoning |
-| Technique | 面向效率/性能的手段 | Pruning, Random_Walk, Approximate_Computing, Information_Bottleneck, RL_Agent_Pruning_Strategy, Embedding_Compression |
-| Framework | 结合多种组件的体系/方法论 | Graph_Reinforcement_Learning, Graph_Neural_Network, Graph_Contrastive_Learning, Graph_AutoML |
-| Task | 研究/应用任务 | Graph_Sparse_Reasoning, Relation_Prediction, Game_AI_Reasoning, Node_Classification, Complex_KG_QA |
-| Metric | 衡量效果的指标 | Relation_Confidence, Compute_Reduction, Accuracy_Retention, 百分比数值 |
-| Boolean | 布尔值类型 | True, False |
+| Paradigm | 解决问题的通用范式或决策框架 | Sequential_Decision, System_Architect, Operational_Planner |
+| Algorithm | 具体算法或算法家族 | MINERVA, OV-1, SV-1, TV-1, Path_Ranking_Algorithm |
+| Technique | 面向效率/性能的手段 | Pruning, Random_Walk, Approximate_Computing |
+| Framework | 结合多种组件的体系/方法论 | DoDAF, Enterprise_Architecture, Operational_View, System_View |
+| Task | 研究/应用任务 | Graph_Sparse_Reasoning, Relation_Prediction, Node_Classification |
+| Metric | 衡量效果的指标 | Relation_Confidence, Compute_Reduction, Accuracy_Retention |
+
+### 2. 时空本体
+- **文件**: `ontology/schemas/spatiotemporal/spatiotemporal_schema.yaml`
+- **领域**: 时空概念和DO-DA-F结构
+- **主要实体**: TemporalEntity, SpatialEntity, Event, Action, Condition, Outcome
+- **应用场景**: 水利系统、时空事件建模、DO-DA-F架构
+- **测试准确率**: 85.7% (时空) / 66.7% (DO-DA-F)
+
+#### 实体类别
+| 类别 | 说明 | 示例 |
+|------|------|------|
+| TemporalEntity | 时间实体，表示时间点、时间段 | 2024-10-23 08:00, 4小时, 2024年夏季 |
+| SpatialEntity | 空间实体，表示地理位置、空间区域 | 长江流域, 河流, 监测站 |
+| Event | 事件实体，具有时空属性的动态过程 | 洪水事件, 降水过程, 监测事件 |
+| Action | 动作实体，表示系统中的行为或操作（DO） | checkTemperature, monitorWaterLevel, executeFloodWarning |
+| Condition | 条件实体，表示系统运行的前提条件（DA） | temperature > 30, sensor_status == normal |
+| Outcome | 结果实体，表示动作执行后的结果（F） | turnOnAirConditioner, generateWaterLevelReport |
+| MonitoringData | 监测数据实体 | 水位测量值, 降水量, 温度值 |
+| MonitoringStation | 监测站实体 | 水文站, 气象站, 监测点 |
 
 ## 关系类型
 

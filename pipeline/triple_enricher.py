@@ -9,7 +9,7 @@ from collections import defaultdict
 import itertools
 
 # 使用动态本体系统的类
-from ontology.dynamic_schema import DynamicOntologyManager, Entity, Relation
+from ontology.managers.dynamic_schema import DynamicOntologyManager, Entity, Relation
 
 @dataclass
 class EnrichmentRule:

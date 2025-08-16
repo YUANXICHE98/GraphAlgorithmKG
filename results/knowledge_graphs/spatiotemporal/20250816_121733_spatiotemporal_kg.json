@@ -1,0 +1,1708 @@
+{
+  "metadata": {
+    "schema": "spatiotemporal_schema.yaml",
+    "source_document": "data/test_documents/pure_dodaf_structure.json",
+    "created_at": "2025-08-16T12:17:33.274807",
+    "processing_time": 0.20958304405212402,
+    "builder_version": "3.0.0"
+  },
+  "entities": [
+    {
+      "id": "entity_c23fa999",
+      "name": "DO",
+      "type": "View",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 8.106231689453125e-05,
+        "original_name": "DO",
+        "type_description": "视图实体，表示不同的架构视角",
+        "aliases": [
+          "视图",
+          "视角"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_d8662f62",
+      "name": "OnAirConditioner",
+      "type": "Condition",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 3.409385681152344e-05,
+        "original_name": "OnAirConditioner",
+        "type_description": "条件实体，表示系统运行的前提条件或环境状态（DA）",
+        "aliases": [
+          "条件",
+          "状态",
+          "判断条件",
+          "阈值条件"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_1092dd15",
+      "name": "monitorWaterLevel",
+      "type": "Action",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 2.47955322265625e-05,
+        "original_name": "monitorWaterLevel",
+        "type_description": "动作实体，表示系统中的行为或操作（DO）",
+        "aliases": [
+          "动作",
+          "操作",
+          "行为",
+          "系统动作"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_ee7a8e26",
+      "name": "Temperature",
+      "type": "Condition",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 3.1948089599609375e-05,
+        "original_name": "Temperature",
+        "type_description": "条件实体，表示系统运行的前提条件或环境状态（DA）",
+        "aliases": [
+          "条件",
+          "状态",
+          "判断条件",
+          "阈值条件"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_9a639daf",
+      "name": "represents",
+      "type": "Unknown",
+      "properties": {
+        "inference_method": "unknown",
+        "inference_time": 0.00018715858459472656,
+        "original_name": "represents"
+      },
+      "confidence": 0.0,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_a4704fd3",
+      "name": "The",
+      "type": "Unknown",
+      "properties": {
+        "inference_method": "unknown",
+        "inference_time": 0.0001590251922607422,
+        "original_name": "The"
+      },
+      "confidence": 0.0,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_17e62138",
+      "name": "WaterLevel",
+      "type": "Unknown",
+      "properties": {
+        "inference_method": "unknown",
+        "inference_time": 0.00017189979553222656,
+        "original_name": "WaterLevel"
+      },
+      "confidence": 0.0,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_8cb7776d",
+      "name": "FloodWarning",
+      "type": "Action",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 2.6226043701171875e-05,
+        "original_name": "FloodWarning",
+        "type_description": "动作实体，表示系统中的行为或操作（DO）",
+        "aliases": [
+          "动作",
+          "操作",
+          "行为",
+          "系统动作"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_853200fe",
+      "name": "checkTemperature",
+      "type": "Action",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 2.5033950805664062e-05,
+        "original_name": "checkTemperature",
+        "type_description": "动作实体，表示系统中的行为或操作（DO）",
+        "aliases": [
+          "动作",
+          "操作",
+          "行为",
+          "系统动作"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_03c7c0ac",
+      "name": "s",
+      "type": "Unknown",
+      "properties": {
+        "inference_method": "unknown",
+        "inference_time": 0.0001556873321533203,
+        "original_name": "s"
+      },
+      "confidence": 0.0,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_8964cf2f",
+      "name": "activateEmergencyResponse",
+      "type": "Outcome",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 4.792213439941406e-05,
+        "original_name": "activateEmergencyResponse",
+        "type_description": "结果实体，表示动作执行后的结果或输出（F）",
+        "aliases": [
+          "结果",
+          "输出",
+          "执行结果",
+          "系统响应"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_767a362c",
+      "name": "EmergencyResponse",
+      "type": "Outcome",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 4.482269287109375e-05,
+        "original_name": "EmergencyResponse",
+        "type_description": "结果实体，表示动作执行后的结果或输出（F）",
+        "aliases": [
+          "结果",
+          "输出",
+          "执行结果",
+          "系统响应"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_c7d0d691",
+      "name": "turnOnAirConditioner",
+      "type": "Condition",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 3.1948089599609375e-05,
+        "original_name": "turnOnAirConditioner",
+        "type_description": "条件实体，表示系统运行的前提条件或环境状态（DA）",
+        "aliases": [
+          "条件",
+          "状态",
+          "判断条件",
+          "阈值条件"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_7f01b7e1",
+      "name": "executeFloodWarning",
+      "type": "Action",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 2.384185791015625e-05,
+        "original_name": "executeFloodWarning",
+        "type_description": "动作实体，表示系统中的行为或操作（DO）",
+        "aliases": [
+          "动作",
+          "操作",
+          "行为",
+          "系统动作"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_78332e7c",
+      "name": "generateWaterLevelReport",
+      "type": "Outcome",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 4.673004150390625e-05,
+        "original_name": "generateWaterLevelReport",
+        "type_description": "结果实体，表示动作执行后的结果或输出（F）",
+        "aliases": [
+          "结果",
+          "输出",
+          "执行结果",
+          "系统响应"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_03895f91",
+      "name": "DA",
+      "type": "View",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 5.602836608886719e-05,
+        "original_name": "DA",
+        "type_description": "视图实体，表示不同的架构视角",
+        "aliases": [
+          "视图",
+          "视角"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_b6f34b44",
+      "name": "WaterLevelReport",
+      "type": "Outcome",
+      "properties": {
+        "inference_method": "schema",
+        "inference_time": 4.506111145019531e-05,
+        "original_name": "WaterLevelReport",
+        "type_description": "结果实体，表示动作执行后的结果或输出（F）",
+        "aliases": [
+          "结果",
+          "输出",
+          "执行结果",
+          "系统响应"
+        ]
+      },
+      "confidence": 0.9,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "entity_f6170105",
+      "name": "cluding",
+      "type": "Unknown",
+      "properties": {
+        "inference_method": "unknown",
+        "inference_time": 0.00016689300537109375,
+        "original_name": "cluding"
+      },
+      "confidence": 0.0,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_1fe94e22",
+      "subject_id": "entity_a4704fd3",
+      "subject_name": "The",
+      "predicate": "hasCondition",
+      "object_id": "entity_03c7c0ac",
+      "object_name": "s",
+      "properties": {
+        "extraction_confidence": 0.7,
+        "triple_index": 0,
+        "relation_description": "动作具有条件关系",
+        "expected_subject_types": [
+          "Action"
+        ],
+        "expected_object_types": [
+          "Condition"
+        ]
+      },
+      "confidence": 0.7,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_a8108de9",
+      "subject_id": "entity_9a639daf",
+      "subject_name": "represents",
+      "predicate": "resultsIn",
+      "object_id": "entity_f6170105",
+      "object_name": "cluding",
+      "properties": {
+        "extraction_confidence": 0.7,
+        "triple_index": 1,
+        "relation_description": "结果关系",
+        "expected_subject_types": [
+          "Action",
+          "Event"
+        ],
+        "expected_object_types": [
+          "Outcome"
+        ]
+      },
+      "confidence": 0.7,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_7ea5557e",
+      "subject_id": "entity_c23fa999",
+      "subject_name": "DO",
+      "predicate": "locatedAt",
+      "object_id": "entity_1092dd15",
+      "object_name": "monitorWaterLevel",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 2,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_2de1819a",
+      "subject_id": "entity_c23fa999",
+      "subject_name": "DO",
+      "predicate": "locatedAt",
+      "object_id": "entity_ee7a8e26",
+      "object_name": "Temperature",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 3,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_55ffb7ff",
+      "subject_id": "entity_c23fa999",
+      "subject_name": "DO",
+      "predicate": "locatedAt",
+      "object_id": "entity_a4704fd3",
+      "object_name": "The",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 4,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_ae47f670",
+      "subject_id": "entity_c23fa999",
+      "subject_name": "DO",
+      "predicate": "locatedAt",
+      "object_id": "entity_17e62138",
+      "object_name": "WaterLevel",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 5,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_14874722",
+      "subject_id": "entity_c23fa999",
+      "subject_name": "DO",
+      "predicate": "locatedAt",
+      "object_id": "entity_8cb7776d",
+      "object_name": "FloodWarning",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 6,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_a16f4721",
+      "subject_id": "entity_c23fa999",
+      "subject_name": "DO",
+      "predicate": "locatedAt",
+      "object_id": "entity_853200fe",
+      "object_name": "checkTemperature",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 7,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_f321ef31",
+      "subject_id": "entity_c23fa999",
+      "subject_name": "DO",
+      "predicate": "locatedAt",
+      "object_id": "entity_7f01b7e1",
+      "object_name": "executeFloodWarning",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 8,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_cd112e70",
+      "subject_id": "entity_c23fa999",
+      "subject_name": "DO",
+      "predicate": "locatedAt",
+      "object_id": "entity_03895f91",
+      "object_name": "DA",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 9,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_cfe74567",
+      "subject_id": "entity_1092dd15",
+      "subject_name": "monitorWaterLevel",
+      "predicate": "locatedAt",
+      "object_id": "entity_ee7a8e26",
+      "object_name": "Temperature",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 10,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_6384bf61",
+      "subject_id": "entity_1092dd15",
+      "subject_name": "monitorWaterLevel",
+      "predicate": "locatedAt",
+      "object_id": "entity_a4704fd3",
+      "object_name": "The",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 11,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_d96cee52",
+      "subject_id": "entity_1092dd15",
+      "subject_name": "monitorWaterLevel",
+      "predicate": "locatedAt",
+      "object_id": "entity_17e62138",
+      "object_name": "WaterLevel",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 12,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_6cbd52a3",
+      "subject_id": "entity_1092dd15",
+      "subject_name": "monitorWaterLevel",
+      "predicate": "locatedAt",
+      "object_id": "entity_8cb7776d",
+      "object_name": "FloodWarning",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 13,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_042039bb",
+      "subject_id": "entity_1092dd15",
+      "subject_name": "monitorWaterLevel",
+      "predicate": "locatedAt",
+      "object_id": "entity_853200fe",
+      "object_name": "checkTemperature",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 14,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_058940d4",
+      "subject_id": "entity_1092dd15",
+      "subject_name": "monitorWaterLevel",
+      "predicate": "locatedAt",
+      "object_id": "entity_7f01b7e1",
+      "object_name": "executeFloodWarning",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 15,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_a6314d96",
+      "subject_id": "entity_1092dd15",
+      "subject_name": "monitorWaterLevel",
+      "predicate": "locatedAt",
+      "object_id": "entity_03895f91",
+      "object_name": "DA",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 16,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_cdeee100",
+      "subject_id": "entity_ee7a8e26",
+      "subject_name": "Temperature",
+      "predicate": "locatedAt",
+      "object_id": "entity_a4704fd3",
+      "object_name": "The",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 17,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_87338bf8",
+      "subject_id": "entity_ee7a8e26",
+      "subject_name": "Temperature",
+      "predicate": "locatedAt",
+      "object_id": "entity_17e62138",
+      "object_name": "WaterLevel",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 18,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_aeda9298",
+      "subject_id": "entity_ee7a8e26",
+      "subject_name": "Temperature",
+      "predicate": "locatedAt",
+      "object_id": "entity_8cb7776d",
+      "object_name": "FloodWarning",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 19,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_dd59b504",
+      "subject_id": "entity_ee7a8e26",
+      "subject_name": "Temperature",
+      "predicate": "locatedAt",
+      "object_id": "entity_853200fe",
+      "object_name": "checkTemperature",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 20,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_e291691b",
+      "subject_id": "entity_ee7a8e26",
+      "subject_name": "Temperature",
+      "predicate": "locatedAt",
+      "object_id": "entity_7f01b7e1",
+      "object_name": "executeFloodWarning",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 21,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_0e1c7199",
+      "subject_id": "entity_ee7a8e26",
+      "subject_name": "Temperature",
+      "predicate": "locatedAt",
+      "object_id": "entity_03895f91",
+      "object_name": "DA",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 22,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_082407f5",
+      "subject_id": "entity_a4704fd3",
+      "subject_name": "The",
+      "predicate": "locatedAt",
+      "object_id": "entity_17e62138",
+      "object_name": "WaterLevel",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 23,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_ce2d169f",
+      "subject_id": "entity_a4704fd3",
+      "subject_name": "The",
+      "predicate": "locatedAt",
+      "object_id": "entity_8cb7776d",
+      "object_name": "FloodWarning",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 24,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_25b79fab",
+      "subject_id": "entity_a4704fd3",
+      "subject_name": "The",
+      "predicate": "locatedAt",
+      "object_id": "entity_853200fe",
+      "object_name": "checkTemperature",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 25,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_7b23850e",
+      "subject_id": "entity_a4704fd3",
+      "subject_name": "The",
+      "predicate": "locatedAt",
+      "object_id": "entity_7f01b7e1",
+      "object_name": "executeFloodWarning",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 26,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_b5a91d37",
+      "subject_id": "entity_a4704fd3",
+      "subject_name": "The",
+      "predicate": "locatedAt",
+      "object_id": "entity_03895f91",
+      "object_name": "DA",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 27,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_028f2978",
+      "subject_id": "entity_17e62138",
+      "subject_name": "WaterLevel",
+      "predicate": "locatedAt",
+      "object_id": "entity_8cb7776d",
+      "object_name": "FloodWarning",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 28,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_1373407a",
+      "subject_id": "entity_17e62138",
+      "subject_name": "WaterLevel",
+      "predicate": "locatedAt",
+      "object_id": "entity_853200fe",
+      "object_name": "checkTemperature",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 29,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_ac83d731",
+      "subject_id": "entity_17e62138",
+      "subject_name": "WaterLevel",
+      "predicate": "locatedAt",
+      "object_id": "entity_7f01b7e1",
+      "object_name": "executeFloodWarning",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 30,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_e053ae5d",
+      "subject_id": "entity_17e62138",
+      "subject_name": "WaterLevel",
+      "predicate": "locatedAt",
+      "object_id": "entity_03895f91",
+      "object_name": "DA",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 31,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_c90b8535",
+      "subject_id": "entity_8cb7776d",
+      "subject_name": "FloodWarning",
+      "predicate": "locatedAt",
+      "object_id": "entity_853200fe",
+      "object_name": "checkTemperature",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 32,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_d7027101",
+      "subject_id": "entity_8cb7776d",
+      "subject_name": "FloodWarning",
+      "predicate": "locatedAt",
+      "object_id": "entity_7f01b7e1",
+      "object_name": "executeFloodWarning",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 33,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_d4fac78d",
+      "subject_id": "entity_8cb7776d",
+      "subject_name": "FloodWarning",
+      "predicate": "locatedAt",
+      "object_id": "entity_03895f91",
+      "object_name": "DA",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 34,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_726efe92",
+      "subject_id": "entity_853200fe",
+      "subject_name": "checkTemperature",
+      "predicate": "locatedAt",
+      "object_id": "entity_7f01b7e1",
+      "object_name": "executeFloodWarning",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 35,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_d83a7b37",
+      "subject_id": "entity_853200fe",
+      "subject_name": "checkTemperature",
+      "predicate": "locatedAt",
+      "object_id": "entity_03895f91",
+      "object_name": "DA",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 36,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_77e61e92",
+      "subject_id": "entity_7f01b7e1",
+      "subject_name": "executeFloodWarning",
+      "predicate": "locatedAt",
+      "object_id": "entity_03895f91",
+      "object_name": "DA",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 37,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_591fd972",
+      "subject_id": "entity_d8662f62",
+      "subject_name": "OnAirConditioner",
+      "predicate": "locatedAt",
+      "object_id": "entity_8964cf2f",
+      "object_name": "activateEmergencyResponse",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 38,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_926fef2b",
+      "subject_id": "entity_d8662f62",
+      "subject_name": "OnAirConditioner",
+      "predicate": "locatedAt",
+      "object_id": "entity_767a362c",
+      "object_name": "EmergencyResponse",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 39,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_b6167de3",
+      "subject_id": "entity_d8662f62",
+      "subject_name": "OnAirConditioner",
+      "predicate": "locatedAt",
+      "object_id": "entity_c7d0d691",
+      "object_name": "turnOnAirConditioner",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 40,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_7fbb850f",
+      "subject_id": "entity_d8662f62",
+      "subject_name": "OnAirConditioner",
+      "predicate": "locatedAt",
+      "object_id": "entity_78332e7c",
+      "object_name": "generateWaterLevelReport",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 41,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_9ba67dd0",
+      "subject_id": "entity_d8662f62",
+      "subject_name": "OnAirConditioner",
+      "predicate": "locatedAt",
+      "object_id": "entity_b6f34b44",
+      "object_name": "WaterLevelReport",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 42,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_168a8d70",
+      "subject_id": "entity_8964cf2f",
+      "subject_name": "activateEmergencyResponse",
+      "predicate": "locatedAt",
+      "object_id": "entity_767a362c",
+      "object_name": "EmergencyResponse",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 43,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_a975b086",
+      "subject_id": "entity_8964cf2f",
+      "subject_name": "activateEmergencyResponse",
+      "predicate": "locatedAt",
+      "object_id": "entity_c7d0d691",
+      "object_name": "turnOnAirConditioner",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 44,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_10589575",
+      "subject_id": "entity_8964cf2f",
+      "subject_name": "activateEmergencyResponse",
+      "predicate": "locatedAt",
+      "object_id": "entity_78332e7c",
+      "object_name": "generateWaterLevelReport",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 45,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_82a3bc68",
+      "subject_id": "entity_8964cf2f",
+      "subject_name": "activateEmergencyResponse",
+      "predicate": "locatedAt",
+      "object_id": "entity_b6f34b44",
+      "object_name": "WaterLevelReport",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 46,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_1f8d32be",
+      "subject_id": "entity_767a362c",
+      "subject_name": "EmergencyResponse",
+      "predicate": "locatedAt",
+      "object_id": "entity_c7d0d691",
+      "object_name": "turnOnAirConditioner",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 47,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_0ccdc77c",
+      "subject_id": "entity_767a362c",
+      "subject_name": "EmergencyResponse",
+      "predicate": "locatedAt",
+      "object_id": "entity_78332e7c",
+      "object_name": "generateWaterLevelReport",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 48,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_b82594bb",
+      "subject_id": "entity_767a362c",
+      "subject_name": "EmergencyResponse",
+      "predicate": "locatedAt",
+      "object_id": "entity_b6f34b44",
+      "object_name": "WaterLevelReport",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 49,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_f952589e",
+      "subject_id": "entity_c7d0d691",
+      "subject_name": "turnOnAirConditioner",
+      "predicate": "locatedAt",
+      "object_id": "entity_78332e7c",
+      "object_name": "generateWaterLevelReport",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 50,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_e705bf5c",
+      "subject_id": "entity_c7d0d691",
+      "subject_name": "turnOnAirConditioner",
+      "predicate": "locatedAt",
+      "object_id": "entity_b6f34b44",
+      "object_name": "WaterLevelReport",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 51,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    },
+    {
+      "id": "rel_0a6c07b5",
+      "subject_id": "entity_78332e7c",
+      "subject_name": "generateWaterLevelReport",
+      "predicate": "locatedAt",
+      "object_id": "entity_b6f34b44",
+      "object_name": "WaterLevelReport",
+      "properties": {
+        "extraction_confidence": 0.6,
+        "triple_index": 52,
+        "relation_description": "位于空间位置",
+        "expected_subject_types": [
+          "Event",
+          "Action",
+          "MonitoringStation"
+        ],
+        "expected_object_types": [
+          "SpatialEntity"
+        ]
+      },
+      "confidence": 0.6,
+      "source": "data/test_documents/pure_dodaf_structure.json",
+      "created_at": "2025-08-16T12:17:33.268381",
+      "schema": "spatiotemporal_schema.yaml"
+    }
+  ],
+  "statistics": {
+    "total_entities": 18,
+    "total_relations": 53,
+    "entity_type_distribution": {
+      "View": 2,
+      "Condition": 3,
+      "Action": 4,
+      "Unknown": 5,
+      "Outcome": 4
+    },
+    "relation_type_distribution": {
+      "hasCondition": 1,
+      "resultsIn": 1,
+      "locatedAt": 51
+    },
+    "average_entity_confidence": 0.6500000000000001,
+    "average_relation_confidence": 0.6037735849056609,
+    "extraction_method_breakdown": {
+      "dodaf_pattern": {
+        "count": 2,
+        "avg_confidence": 0.7
+      },
+      "context_inference": {
+        "count": 51,
+        "avg_confidence": 0.6000000000000005
+      }
+    },
+    "rule_extraction_count": 53,
+    "llm_extraction_count": 0,
+    "extraction_methods_used": [
+      "rule_extraction"
+    ],
+    "triple_extraction_time": 0.024155855178833008
+  }
+}

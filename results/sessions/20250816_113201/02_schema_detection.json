@@ -1,0 +1,35 @@
+{
+  "stage_name": "schema_detection",
+  "stage_number": 2,
+  "timestamp": "2025-08-16T11:32:01.955683",
+  "description": "Schema检测和选择，最终选择: ../schema_config.yaml",
+  "data": {
+    "candidates": [
+      {
+        "schema_file": "../schema_config.yaml",
+        "confidence": 0.3076190476190476,
+        "method": "hybrid",
+        "evidence": [
+          "Algorithm:OV-1",
+          "Algorithm:OV-2",
+          "Algorithm:SV-1",
+          "Algorithm:SV-2",
+          "Algorithm:TV-1"
+        ]
+      },
+      {
+        "schema_file": "spatiotemporal_schema.yaml",
+        "confidence": 0.22944444444444445,
+        "method": "hybrid",
+        "evidence": [
+          "Architecture:DoDAF",
+          "View:OV",
+          "View:SV",
+          "View:TV",
+          "Model:OV-1"
+        ]
+      }
+    ],
+    "selected_schema": "../schema_config.yaml"
+  }
+}

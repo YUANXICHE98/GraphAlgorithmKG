@@ -1,0 +1,44 @@
+{
+  "stage_name": "triple_extraction",
+  "stage_number": 3,
+  "timestamp": "2025-08-16T12:36:11.293063",
+  "description": "混合三元组抽取，规则:3个，LLM:0个",
+  "data": {
+    "extraction_method": "hybrid",
+    "rule_extraction_count": 3,
+    "llm_extraction_count": 0,
+    "methods_used": [
+      "rule_extraction"
+    ],
+    "extraction_time": 0.008546829223632812,
+    "triples": [
+      {
+        "subject": "Monte",
+        "predicate": "used_in",
+        "object": "Carlo",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The framework applies Monte Carlo techniques for ...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Monte",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The framework applies Monte Carlo techniques for ...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Carlo",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The framework applies Monte Carlo techniques for ...",
+        "original_predicate": "locatedAt"
+      }
+    ]
+  }
+}

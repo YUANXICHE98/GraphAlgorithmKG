@@ -1,0 +1,48 @@
+{
+  "data_collection": {
+    "source_sessions_path": "results/sessions",
+    "min_session_quality": 0.5,
+    "include_unknown_entities": false,
+    "max_samples_per_schema": 1000
+  },
+  "schema_classifier": {
+    "model_type": "RandomForestClassifier",
+    "hyperparameters": {
+      "n_estimators": 100,
+      "max_depth": 10,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2,
+      "max_features": 5000,
+      "ngram_range": [
+        1,
+        2
+      ]
+    },
+    "validation_split": 0.2,
+    "output_path": "training/models/schema_classifier/latest.pkl"
+  },
+  "entity_inferer": {
+    "model_type": "GradientBoostingClassifier",
+    "hyperparameters": {
+      "n_estimators": 100,
+      "learning_rate": 0.1,
+      "max_depth": 6,
+      "min_samples_split": 10,
+      "min_samples_leaf": 4
+    },
+    "validation_split": 0.2,
+    "output_path": "training/models/entity_inferer/latest.pkl"
+  },
+  "relation_extractor": {
+    "model_type": "TBD",
+    "hyperparameters": {},
+    "validation_split": 0.2,
+    "output_path": "training/models/relation_extractor/latest.pkl"
+  },
+  "entity_merger": {
+    "model_type": "TBD",
+    "hyperparameters": {},
+    "validation_split": 0.2,
+    "output_path": "training/models/entity_merger/latest.pkl"
+  }
+}

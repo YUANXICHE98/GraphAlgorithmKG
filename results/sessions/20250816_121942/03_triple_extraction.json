@@ -1,0 +1,881 @@
+{
+  "stage_name": "triple_extraction",
+  "stage_number": 3,
+  "timestamp": "2025-08-16T12:19:42.885108",
+  "description": "混合三元组抽取，规则:107个，LLM:0个",
+  "data": {
+    "extraction_method": "hybrid",
+    "rule_extraction_count": 107,
+    "llm_extraction_count": 0,
+    "methods_used": [
+      "rule_extraction"
+    ],
+    "extraction_time": 0.05259203910827637,
+    "triples": [
+      {
+        "subject": "view",
+        "predicate": "implements",
+        "object": "specific",
+        "confidence": 0.7,
+        "method": "architecture_pattern",
+        "evidence": "Contains pattern: (\\w+)[^a-zA-Z]*contains[^a-zA-Z]*(\\w+)",
+        "original_predicate": "contains"
+      },
+      {
+        "subject": "Resource",
+        "predicate": "used_in",
+        "object": "Level",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Resource",
+        "predicate": "used_in",
+        "object": "Concept",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Resource",
+        "predicate": "used_in",
+        "object": "Flow",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Resource",
+        "predicate": "used_in",
+        "object": "Graphic",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Resource",
+        "predicate": "used_in",
+        "object": "Operational",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Resource",
+        "predicate": "used_in",
+        "object": "View",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Resource",
+        "predicate": "used_in",
+        "object": "Description",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Resource",
+        "predicate": "used_in",
+        "object": "OV",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Resource",
+        "predicate": "used_in",
+        "object": "High",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Resource",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Level",
+        "predicate": "used_in",
+        "object": "Concept",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Level",
+        "predicate": "used_in",
+        "object": "Flow",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Level",
+        "predicate": "used_in",
+        "object": "Graphic",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Level",
+        "predicate": "used_in",
+        "object": "Operational",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Level",
+        "predicate": "used_in",
+        "object": "View",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Level",
+        "predicate": "used_in",
+        "object": "Description",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Level",
+        "predicate": "used_in",
+        "object": "OV",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Level",
+        "predicate": "used_in",
+        "object": "High",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Level",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Concept",
+        "predicate": "used_in",
+        "object": "Flow",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Concept",
+        "predicate": "used_in",
+        "object": "Graphic",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Concept",
+        "predicate": "used_in",
+        "object": "Operational",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Concept",
+        "predicate": "used_in",
+        "object": "View",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Concept",
+        "predicate": "used_in",
+        "object": "Description",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Concept",
+        "predicate": "used_in",
+        "object": "OV",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Concept",
+        "predicate": "used_in",
+        "object": "High",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Concept",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Flow",
+        "predicate": "used_in",
+        "object": "Graphic",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Flow",
+        "predicate": "used_in",
+        "object": "Operational",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Flow",
+        "predicate": "used_in",
+        "object": "View",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Flow",
+        "predicate": "used_in",
+        "object": "Description",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Flow",
+        "predicate": "used_in",
+        "object": "OV",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Flow",
+        "predicate": "used_in",
+        "object": "High",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Flow",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Graphic",
+        "predicate": "used_in",
+        "object": "Operational",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Graphic",
+        "predicate": "used_in",
+        "object": "View",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Graphic",
+        "predicate": "used_in",
+        "object": "Description",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Graphic",
+        "predicate": "used_in",
+        "object": "OV",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Graphic",
+        "predicate": "used_in",
+        "object": "High",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Graphic",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Operational",
+        "predicate": "used_in",
+        "object": "View",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Operational",
+        "predicate": "used_in",
+        "object": "Description",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Operational",
+        "predicate": "used_in",
+        "object": "OV",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Operational",
+        "predicate": "used_in",
+        "object": "High",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Operational",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "View",
+        "predicate": "used_in",
+        "object": "Description",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "View",
+        "predicate": "used_in",
+        "object": "OV",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "View",
+        "predicate": "used_in",
+        "object": "High",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "View",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Description",
+        "predicate": "used_in",
+        "object": "OV",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Description",
+        "predicate": "used_in",
+        "object": "High",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Description",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "OV",
+        "predicate": "used_in",
+        "object": "High",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "OV",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "High",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Operational View (OV) captures the operationa...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "SV",
+        "predicate": "used_in",
+        "object": "System",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "SV",
+        "predicate": "used_in",
+        "object": "Resource",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "SV",
+        "predicate": "used_in",
+        "object": "Flow",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "SV",
+        "predicate": "used_in",
+        "object": "Interface",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "SV",
+        "predicate": "used_in",
+        "object": "View",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "SV",
+        "predicate": "used_in",
+        "object": "Description",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "SV",
+        "predicate": "used_in",
+        "object": "Systems",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "SV",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "System",
+        "predicate": "used_in",
+        "object": "Resource",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "System",
+        "predicate": "used_in",
+        "object": "Flow",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "System",
+        "predicate": "used_in",
+        "object": "Interface",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "System",
+        "predicate": "used_in",
+        "object": "View",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "System",
+        "predicate": "used_in",
+        "object": "Description",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "System",
+        "predicate": "used_in",
+        "object": "Systems",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "System",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Resource",
+        "predicate": "used_in",
+        "object": "Interface",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Resource",
+        "predicate": "used_in",
+        "object": "Systems",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Flow",
+        "predicate": "used_in",
+        "object": "Interface",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Flow",
+        "predicate": "used_in",
+        "object": "Systems",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Interface",
+        "predicate": "used_in",
+        "object": "View",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Interface",
+        "predicate": "used_in",
+        "object": "Description",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Interface",
+        "predicate": "used_in",
+        "object": "Systems",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Interface",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "View",
+        "predicate": "used_in",
+        "object": "Systems",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Description",
+        "predicate": "used_in",
+        "object": "Systems",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Systems",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The System View (SV) describes the systems and in...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Standards",
+        "predicate": "used_in",
+        "object": "View",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Technical View (TV) provides the technical st...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Standards",
+        "predicate": "used_in",
+        "object": "TV",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Technical View (TV) provides the technical st...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Standards",
+        "predicate": "used_in",
+        "object": "Profile",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Technical View (TV) provides the technical st...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Standards",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Technical View (TV) provides the technical st...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Standards",
+        "predicate": "used_in",
+        "object": "Technical",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Technical View (TV) provides the technical st...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "View",
+        "predicate": "used_in",
+        "object": "TV",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Technical View (TV) provides the technical st...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "View",
+        "predicate": "used_in",
+        "object": "Profile",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Technical View (TV) provides the technical st...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "View",
+        "predicate": "used_in",
+        "object": "Technical",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Technical View (TV) provides the technical st...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "TV",
+        "predicate": "used_in",
+        "object": "Profile",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Technical View (TV) provides the technical st...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "TV",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Technical View (TV) provides the technical st...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "TV",
+        "predicate": "used_in",
+        "object": "Technical",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Technical View (TV) provides the technical st...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Profile",
+        "predicate": "used_in",
+        "object": "The",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Technical View (TV) provides the technical st...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "Profile",
+        "predicate": "used_in",
+        "object": "Technical",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Technical View (TV) provides the technical st...",
+        "original_predicate": "locatedAt"
+      },
+      {
+        "subject": "The",
+        "predicate": "used_in",
+        "object": "Technical",
+        "confidence": 0.6,
+        "method": "context_inference",
+        "evidence": "Context:  The Technical View (TV) provides the technical st...",
+        "original_predicate": "locatedAt"
+      }
+    ]
+  }
+}
